@@ -12,3 +12,4 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 - [Cleyton]()
 - [Emmanuel]()
 - [Kenny]()
+- [Matheus Vinicius](https://github.com/MatheusVinicius01)
