@@ -10,7 +10,7 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 ## Colaboradores
 
--   [Alvaro]()
+-   [Alvaro Flor](https://github.com/AlvarogFlor)
 -   [Carolina](https://github.com/bastoscarolina)
 -   [Cleyton]()
 -   [Emmanuel]()
