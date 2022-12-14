@@ -15,3 +15,4 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 -   [Cleyton]()
 -   [Emmanuel Moreira](https://github.com/EmmanuelAlbuquerque)
 -   [Kenny]()
+-   [José Honorato](https://github.com/HonoratoSilva)
