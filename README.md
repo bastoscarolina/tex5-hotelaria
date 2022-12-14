@@ -13,5 +13,5 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 -   [Alvaro Flor](https://github.com/AlvarogFlor)
 -   [Carolina](https://github.com/bastoscarolina)
 -   [Cleyton]()
--   [Emmanuel]()
+-   [Emmanuel Moreira](https://github.com/EmmanuelAlbuquerque)
 -   [Kenny]()
