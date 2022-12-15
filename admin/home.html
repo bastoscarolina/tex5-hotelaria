@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="../images/Hotel-PNG-Photo.png" alt="logo" width="40" />
+      <span>Hotel Tex ***</span>
+      <hr />
+      <nav style="text-align: center;">
+        |<a href="../public/home.html">Sair</a>| <br /><br />
+      </nav>
+      <h2>SEJA BEM-VINDO!</h2>
+      <h3>Área Administrativa do Hotel Tex</h2>
+      
+    </header>
+    <main>
+      <div style="display: flex; justify-content:left">
+
+        <section style="border: 1px solid #000; width: 20%;">
+          <aside>
+            <h3>Módulos</h3>
+            <ul>
+              <li><a href="homeAdm.html" target="contentModulo">Home Adm</a></li><br />
+              <li><a href="funcionarios.html" target="contentModulo">Funcionários</a></li><br />
+              <li><a href="hospedes.html" target="contentModulo">Hóspedes</a></li><br />
+              <li><a href="reservas.html" target="contentModulo">Reservas</a></li><br />
+            </ul>
+          </aside>
+        </section>
+
+        <section style="border: 1px solid #000; width: 80%;">
+          <iframe src="homeAdm.html" name="contentModulo" width="100%"  height="100%" frameborder="0"> </iframe>
+        </section>
+      </div>  
+
+    </main>
+
+    <footer>
+      <td colspan="2">
+        <p>&copy;2022 - Todos os direitos reservados</p>
+      </td>
+    </footer>
+  </body>
 </html>
