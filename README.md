@@ -6,14 +6,15 @@ Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento d
 
 ## Trello
 
--   [Trello da Equipe](https://trello.com/b/HbGKk1c1/modelo-de-projeto-scrum)
+- [Trello da Equipe](https://trello.com/b/HbGKk1c1/modelo-de-projeto-scrum)
 
 ## Colaboradores
 
--   [Alvaro Flor](https://github.com/AlvarogFlor)
--   [Carolina](https://github.com/bastoscarolina)
--   [Cleyton]()
--   [Emmanuel Moreira](https://github.com/EmmanuelAlbuquerque)
--   [Kenny]()
--   [José Honorato](https://github.com/HonoratoSilva)
--   [Matheus Vinicius](https://github.com/MatheusVinicius01)
+- [Alvaro Flor](https://github.com/AlvarogFlor)
+- [Carolina](https://github.com/bastoscarolina)
+- [Cleber Ribeiro](https://github.com/gitcleber)
+- [Cleyton]()
+- [Emmanuel Moreira](https://github.com/EmmanuelAlbuquerque)
+- [Kenny]()
+- [José Honorato](https://github.com/HonoratoSilva)
+- [Matheus Vinicius](https://github.com/MatheusVinicius01)
