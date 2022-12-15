@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <header></header>
-    <nav></nav>
-    <main>
-        <form action="" method="get">
-            <fieldset>
-                <legend>Faça já sua reserva!</legend>
-                <ul>
-                    <li>
-                        <label for="pesquisa">Pesquisar</label><br />
-                        
-                        <input type="search" id="pesquisa" name="pesquisa" placeholder="Procure por quartos">
-                        
-                    </li>
-                    <li>
-                        <label for="checkin" >Data de entrada</label>
-                        <input type="date" id="checkin" name="checkin" >
-                    </li>
-                    <li>
-                        <label for="checkout" >Data de saída</label>
-                        <input type="date" id="checkout" name="checkout" >
-                    </li>
-                    <li>
-                        <label for="quantidade">Adultos</label>
-                        <input type="number" id="quantidade" name="quantidade" min="1" max="9">
-                    </li>
-                    <li>
-                        <label for="quantidade">Crianças</label>
-                        <input type="number" id="quantidade" name="quantidade" min="0" max="9">
-                    </li>
-                    <li>
-                        <label for="quantidade">Quartos</label>
-                        <input type="number" id="quantidade" name="quantidade" min="1" max="4">
-                    </li>
-                    <li>
-                        <button type="submit">Pesquisar <i class="fa fa-search"></i>
-                        </button>
-                        
-                    </li>
-                </ul>
-            </fieldset>
-        </form>
-    </main>
-    <footer></footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reservas</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <img src="../images/Hotel-PNG-Photo.png" alt="logo" width="40" />
+            <span>Hotel ***</span>
+        </header>
+        <nav>
+            <a href="home.html">HOME</a> |
+            <a href="acomodacoes.html">ACOMODAÇÕES</a> |
+            <a href="reservas.html">RESERVAS</a> |
+            <a href="sobre-nos.html">SOBRE</a> |
+            <a href="contato.html">CONTATO</a>
+        </nav>
+        <main>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Faça já sua reserva!</legend>
+                    <ul>
+                        <li>
+                            <label for="pesquisa">Pesquisar</label><br />
+
+                            <input
+                                type="search"
+                                id="pesquisa"
+                                name="pesquisa"
+                                placeholder="Procure por quartos"
+                            />
+                        </li>
+                        <li>
+                            <label for="checkin">Data de entrada</label>
+                            <input type="date" id="checkin" name="checkin" />
+                        </li>
+                        <li>
+                            <label for="checkout">Data de saída</label>
+                            <input type="date" id="checkout" name="checkout" />
+                        </li>
+                        <li>
+                            <label for="quantidade">Adultos</label>
+                            <input
+                                type="number"
+                                id="quantidade"
+                                name="quantidade"
+                                min="1"
+                                max="9"
+                            />
+                        </li>
+                        <li>
+                            <label for="quantidade">Crianças</label>
+                            <input
+                                type="number"
+                                id="quantidade"
+                                name="quantidade"
+                                min="0"
+                                max="9"
+                            />
+                        </li>
+                        <li>
+                            <label for="quantidade">Quartos</label>
+                            <input
+                                type="number"
+                                id="quantidade"
+                                name="quantidade"
+                                min="1"
+                                max="4"
+                            />
+                        </li>
+                        <li>
+                            <button type="submit">
+                                Pesquisar <i class="fa fa-search"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <span>
+                <p>&copy;2045 - Todos os direitos reservados</p>
+            </span>
+        </footer>
+    </body>
 </html>
