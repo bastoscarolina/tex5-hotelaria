@@ -4,62 +4,59 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/login-style.css">
         <title>Login</title>
     </head>
     <body>
-        <header>
-            <img src="../images/Hotel-PNG-Photo.png" alt="logo" width="40" />
-            <span>Hotel ***</span>
-        </header>
-        <nav>
-            <a href="/admin/login.html">Admin Login</a>
-        </nav>
+        
+        
         <section>
-            <div>
-                <form action="" method="post">
-                    <div>
-                        <h2>Login Cliente</h2>
+            <div class="content">
+                <form class="card"action="" method="post">
+                    <img class="logo" src="../images/svg/Logo_01.svg" alt="">
+                    <div class="title">
+                        <!-- <img class="title-img"src="../images/Hotel-PNG-Photo.png" alt=""> -->
                     </div>
-                    <div>
-                        <div>
-                            <label for="email">Email</label><br />
+                    <div class="card-content">
+                        <h2>Login</h2>
+                        <div class="card-content-area">
+                            <label for="email">Email</label>
 
                             <input type="text" id="email" required  />
                         </div>
-                        <div>
-                            <label for="senha">Senha</label><br />
+                        <div class="card-content-area">
+                            <label for="senha">Senha</label>
 
                             <input type="password" id="senha" required />
                         </div>
+                        <div class="card-button">
+                            <button type="submit" class="submit">Login</button>
+                        </div>
                     </div>
-                    <div>
-                        <button>Login</button>
-                        <!-- <input type="submit" value="Login" /> -->
+                    <div class="button">
 
                         <a href="#">Esqueceu sua senha?</a><br />
-                        <input type="button" value="Cadastro" /><br />
+                        <!-- <input type="button" value="Cadastro" /><br /> -->
                     </div>
-                    <div>
-                        <h4>ou</h4>
+                    <div class="login-outros">
+                        <h4>OU</h4>
                         <!-- <button>Google</button> -->
-                        <input
+                        <!-- <input
                             type="button"
                             value="Conectar com Google"
                             id="google"
-                        /><br />
+                        />
                         <input
                             type="button"
                             value="Conectar com Facebook"
                             id="facebook"
                         />
-                    </div>
+                    </div> -->
+                    <input type="image" src="../images/Google_Logo.png" alt="Google"/>
+                    <input type="image" src="../images/Facebook_Logo.png" alt="Facebook"/>
                 </form>
             </div>
         </section>
-        <footer>
-            <span>
-                <p>&copy;2045 - Todos os direitos reservados</p>
-            </span>
-        </footer>
+        
     </body>
 </html>
