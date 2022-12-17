@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
 body{
+  margin: 0;
   background-color: #272727;
+  font-family: 'Inter', serif;
 }
 .principal .text_acomodacao{
   text-align: center;
@@ -15,9 +19,45 @@ body{
   width: 100%;
   height: 200px;
 }
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  color: goldenrod;
+}
+
+header a {
+  text-decoration: none;
+  color: greenyellow;
+  font-weight: 900;
+}
+
+.account {
+  display: flex;
+  justify-content: end;
+  padding: 15px 0;
+}
+
+.signout {
+  margin-left: 10px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+}
+
 .principal {
   background-color: antiquewhite;
 }
+
 .produto_destaque{
   display: flex;
   width: 80%;
