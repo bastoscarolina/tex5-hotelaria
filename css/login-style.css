@@ -33,7 +33,7 @@ nav div a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .card {
@@ -63,13 +63,13 @@ nav div a {
 .card-content {
     padding: 30px;
     /* background-color: #dccea8; */
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid #101828;
     border-radius: 5px;
 }
 .card-content label {
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
+    font-weight: 900;
+    color: #101828;
+    font-size: 18px;
 }
 .card-content-area {
     display: flex;
@@ -77,11 +77,12 @@ nav div a {
 }
 
 .card-content-area input {
-    background-color: rgb(255, 255, 255);
-    margin-top: 5px;
+    background-color: #272727;
+    margin-top: 10px;
+    margin-bottom: 10px;
     height: 25px;
     border-radius: 5px;
-    border: 1px solid #000000;
+    border: 1px solid black;
     color: black;
 }
 .card-button {
@@ -91,43 +92,47 @@ nav div a {
 
 .card-button .submit {
     height: 40px;
-    background-color: #ffffff;
+    background-color: #272727;
     border: 1px solid #000000;
     border-radius: 5px;
-    color: #000000;
+    color: #dccea8;
     margin: 10px 0;
     cursor: pointer;
 }
+
 .button {
-    display: flex;
-    width: 100%;
-    padding-left: 50px;
+    margin-top: 15px;
 }
+
 .button a {
-    font-weight: 700;
-    text-align: left;
-    margin-top: 5px;
-    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 18px;
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-.login-outros h4 {
-    padding-top: 20px;
 
-    margin: 0 25px 0;
+.login-outros {
+    width: 100%;
+}
+
+.login-outros h4 {
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    border-top: 1px solid #101828;
+    border-bottom: 1px solid #101828;
     text-align: center;
 }
 
 .login-outros div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.login-outros input {
+.login-social input {
     padding-top: 20px;
     cursor: pointer;
-    width: 30px;
-    margin-left: 15px;
+    width: 40px;
     text-align: center;
 }
