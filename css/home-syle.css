@@ -83,6 +83,27 @@ main {
     padding-top: 30px;
 }
 
+.maisPopulares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 90vw;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight:bold;
+}
+
+.card img{
+    width: 25vw;
+    height: 200px;
+}
+
                     /*artigo03*/
 .art_02 {
     display: flex;
@@ -117,7 +138,7 @@ main {
 }
 
 .help {
-    margin-right: 440px;
+    margin-right: 20px;
 }
 
 .redes-sociais{
@@ -126,6 +147,7 @@ main {
     justify-content: center;
     align-items: flex-end;
     padding-top: 20px;
+    margin-right: 250px;
 }
 
 .redes-sociais a{
@@ -138,7 +160,8 @@ main {
 }
 
 .copyrt {
-    padding-top: 250px
+    margin-left: 120px;
+    padding-top: 40px
 }
 
 .links {
