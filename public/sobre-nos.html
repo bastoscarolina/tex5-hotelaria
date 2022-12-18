@@ -5,13 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>O Hotel</title>
+        <link rel="stylesheet" href="../css/sobre-nos-style.css"/>
     </head>
     <body>
-        <header>
-            <img src="../images/Hotel-PNG-Photo.png" alt="logo" width="40" />
-            <span>Hotel ***</span>
+        <header class="cabecalho">
+            <h1>
+                <img src="../images/svg/Logo_04.svg" alt="logo"/>
+            </h1>
+            <span>CONFORTO E PRATICIDADE PARA VOCÊ</span>
         </header>
-        <nav>
+        <nav class="navbar">
             <a href="home.html">HOME</a> |
             <a href="acomodacoes.html">ACOMODAÇÕES</a> |
             <a href="reservas.html">RESERVAS</a> |
@@ -19,33 +22,50 @@
             <a href="contato.html">CONTATO</a>
         </nav>
         <main>
-            <section id="sobre_nos">
+            <section class="sobre_nos">
                 <h1>Sobre Nós</h1>
-                <img
-                    src="../images/1246280_16061017110043391702.jpg"
-                    alt="Foto_Hotel"
-                />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Architecto dolorem quisquam veniam excepturi nam quo
-                    explicabo omnis optio, provident nihil accusantium
-                    praesentium dignissimos voluptatum maxime necessitatibus
-                    nesciunt. Modi, incidunt eveniet? Lorem ipsum, dolor sit
-                    amet consectetur adipisicing elit. Tempora voluptates
-                    assumenda incidunt nam sit earum. Quo molestiae a,
-                    voluptatem fugiat nihil ex pariatur reprehenderit ipsam
-                    ducimus consectetur debitis laboriosam esse. Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit. Numquam
-                    sapiente voluptas qui animi, aspernatur aliquam amet minima
-                    aut aliquid quas. Eius, ratione facilis nisi nulla adipisci
-                    error necessitatibus ipsam esse!
-                </p>
+                <div class="conteudo">
+                    <img
+                        src="../images/1246280_16061017110043391702.jpg"
+                        alt="Fachada Hotel"
+                    />
+                    <p>
+                        The Experience Hotel foi criado em 1995 na cidade de Petrópolis e desde então vem oferecendo a melhor experiência para seus hóspedes através de acomodações de luxo e serviço personalizado.
+                    </p>
+                </div>
+            </section>
+            <section class="maisPopulares">
+                <div class="card">
+                    <img src="../images/quartos/quarto_7.png" alt="apartamento premium">
+                    <span>Apartamento Premium</span>
+                </div>
+                <div class="card">
+                    <img src="../images/quartos/quarto_8.png" alt="quarto solteiro duplo">
+                    <span>Quarto Solteiro Duplo</span>
+                </div>
+                <div class="card">
+                    <img src="../images/quartos/quarto_5.png" alt="quarto solteiro simples">
+                    <span>Quarto Solteiro Simples</span>
+                </div>
             </section>
         </main>
-        <footer>
-            <span>
-                <p>&copy;2045 - Todos os direitos reservados</p>
-            </span>
+        <footer class="rodape">
+            <p>&copy;2045 - Todos os direitos reservados</p>
+            <a href="contato.html">Precisa de ajuda?</a>
+            <div class="redes-sociais">
+                <span>Confira nossas redes sociais</span>
+                <div>
+                    <a href="http://www.facebook.com/" target="_blank">
+                        <img src="../images/icones/facebook-dourado-claro.png" alt="logo facebook">
+                    </a>
+                    <a href="http://www.instagram.com/" target="_blank">
+                        <img src="../images/icones/instagram-dourado-claro.png" alt="logo instagram">
+                    </a>
+                    <a href="http://www.twitter.com/" target="_blank">
+                        <img src="../images/icones/twitter-dourado-claro.png" alt="logo twitter">
+                    </a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
