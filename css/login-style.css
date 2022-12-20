@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
     color: #101828;
@@ -8,25 +8,11 @@ html {
 h2 {
     margin: 0 0 20px 0;
 }
+
 body {
     padding: 0;
     margin: 0;
     background-color: #272727;
-}
-
-nav div {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 50px;
-    border-bottom: 1px solid #dccea8;
-}
-
-nav div a {
-    font-weight: 900;
-    margin-top: 5px;
-    font-size: 18px;
-    color: greenyellow;
-    text-decoration: none;
 }
 
 .content {
@@ -38,15 +24,22 @@ nav div a {
 
 .card {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     background-color: #dccea8;
     padding: 40px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid #101828;
     border-radius: 5px;
     width: 280px;
 }
+
+.card a {
+    text-align: left;
+    font-size: 18px;
+    color: #101828;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
 .logo {
     display: flex;
     align-self: center;
@@ -54,23 +47,28 @@ nav div a {
     width: 70%;
     margin-bottom: 5%;
 }
+
 .title {
     width: 50px;
 }
+
 .title-img {
     width: 50px;
 }
+
 .card-content {
     padding: 30px;
     /* background-color: #dccea8; */
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid #101828;
     border-radius: 5px;
 }
+
 .card-content label {
-    font-weight: 700;
-    color: rgb(0, 0, 0);
+    font-weight: 600;
+    color: #101828;
     font-size: 15px;
 }
+
 .card-content-area {
     display: flex;
     flex-direction: column;
@@ -79,55 +77,81 @@ nav div a {
 .card-content-area input {
     background-color: rgb(255, 255, 255);
     margin-top: 5px;
+    margin-bottom: 15px;
     height: 25px;
     border-radius: 5px;
-    border: 1px solid #000000;
-    color: black;
+    border: 1px solid #101828;
+    color: #101828;
 }
+
 .card-button {
     display: flex;
     flex-direction: column;
 }
 
+.card-button .submit a{
+    text-decoration: none;
+    color: #101828;
+}
+
 .card-button .submit {
     height: 40px;
-    background-color: #ffffff;
-    border: 1px solid #000000;
+    background-color: #fff;
+    border: 1px solid #101828;
     border-radius: 5px;
-    color: #000000;
+    color: #101828;
     margin: 10px 0;
     cursor: pointer;
 }
-.button {
-    display: flex;
-    width: 100%;
-    padding-left: 50px;
-}
-.button a {
-    font-weight: 700;
-    text-align: left;
-    margin-top: 5px;
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-.login-outros h4 {
-    padding-top: 20px;
 
-    margin: 0 25px 0;
+.button {
+   margin-top: 15px;
+   display: flex;
+   flex-direction: column;
+}
+
+
+.button a {
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    color: #101828;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.button a:hover {
+    border-bottom: 1px solid #101828;
+}
+
+.login-outros {
+    width: 100%;
+}
+
+.login-outros h4 {
+    font-weight: 400;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    border-top: 1px solid #101828;
+    border-bottom: 1px solid #101828;
     text-align: center;
 }
 
 .login-outros div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.login-outros input {
+.login-social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login-social input {
     padding-top: 20px;
     cursor: pointer;
     width: 30px;
-    margin-left: 15px;
     text-align: center;
+    justify-content: center;
 }
