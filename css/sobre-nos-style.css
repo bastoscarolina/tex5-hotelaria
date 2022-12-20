@@ -60,10 +60,9 @@ header a:hover{
 
 .principal{
     border:1px solid goldenrod;
-    border-radius: 20px;
-    max-width:90%;
-    margin:2rem auto;
-    background: rgba(250, 235, 215, 0.534);
+    max-width:100%;
+    margin:2rem auto 0 auto;
+    background:antiquewhite;
     color:#272727;
 }
 .sobre_nos{
