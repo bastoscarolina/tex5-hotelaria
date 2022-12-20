@@ -118,10 +118,12 @@ body {
     color: #101828;
     text-decoration: none;
     margin-bottom: 10px;
+    transition: .5s;
 }
 
 .button a:hover {
-    border-bottom: 1px solid #101828;
+    color: #6d695b;
+    transition: .5s;
 }
 
 .login-outros {
