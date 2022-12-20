@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
 
 *{
     margin:0;
@@ -9,41 +9,62 @@
 body{
     font-family: 'Inter', serif;
     background-color: #272727;
-    color:#dccea8;
-    /* color:goldenrod; */
+    /* color:#dccea8; */
+    color:goldenrod;
 }
 
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.cabecalho img{
-    width: 10rem;
+/* css cabeçalho igual home */
+header {
+    width: 96%;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: goldenrod;
 }
 
-.navbar{
-    text-align: center;
-    margin:auto;
-    padding: 1rem;
-}
-
-.navbar a{
-    color:#daa520;
+header a {
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.5s;
-}
-.navbar a:hover{
-    font-weight: bolder;
-    font-size: larger;
-    
+    color: greenyellow;
+    font-weight: 500;
+    transition:0.75s
 }
 
+header a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+.account {
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+}
+
+.signout {
+    margin-left: 10px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slogan {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.principal{
+    border:1px solid goldenrod;
+    max-width:100%;
+    margin:2rem auto 0 auto;
+    background:antiquewhite;
+    color:#272727;
+}
 .sobre_nos{
     display: flex;
     flex-direction: column;
@@ -62,17 +83,18 @@ body{
 .conteudo img{
     height: 40vh;
     margin: 1rem;
+    border:1px solid goldenrod;
 }
 
 .conteudo p{
     text-align: left;
+    font-weight:600;
 }
 
 .maisPopulares{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    max-width: 90vw;
     margin: auto;
     padding: 2rem 0;
 }
@@ -81,12 +103,13 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-weight:bold;
+    font-weight:600;
 }
 
 .card img{
     width: 25vw;
     height: 200px;
+    border:1px solid goldenrod;
 }
 
 .card span{
@@ -97,7 +120,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-top: 1px solid #dccea8
+    border-top: 1px solid #dccea8;
+    color:#dccea8;
 }
 
 .rodape a{
@@ -110,7 +134,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 .redes-sociais a{
     padding:1rem;
