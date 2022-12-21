@@ -55,6 +55,58 @@ header a:hover{
     justify-content: center;
     font-size: 35px;
 }
+
+main{
+    width: 100%;
+    margin: auto;
+    background-color: antiquewhite;
+  }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ÍNICIO ESTILOS SEÇÃO FORMULÁRIO DE RESERVAS */
+.title-reserva {
+	padding: 50px 0 30px 0;
+	font-size: 2rem;
+	color: #272727;
+}
+
+.form-reserva {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0;
+	color: #272727;
+}
+
+.field-form-reserva {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+}
+
+.field-form-reserva label {
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+.field-form-reserva input[type=date],
+.field-form-reserva input[type=number] {
+	padding: 12px 20px;
+	margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.field-form-reserva label {
+	padding-bottom: .7rem;
+}
+/* FIM ESTILOS SEÇÃO FORMULÁRIO DE RESERVAS */
+
 .rodape{
     display: flex;
     align-items: center;
