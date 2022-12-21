@@ -46,7 +46,7 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="principal">
             <!-- HTML antigo -->
             <!-- <form action="" method="get">
                 <fieldset>
@@ -108,10 +108,26 @@
                     </ul>
                 </fieldset>
             </form> -->
-            <section class="inputs">
-
+            <section class="container inputs">
+							<h2 class="title-reserva">Minha Reserva</h2>
+							<span class="info-reserva">Forneça a data de entrada, saída e quantidade de pessoas</span>
+							<form class="form-reserva" action="">
+								<div class="field-form-reserva">
+									<label for="checkin">Escolha a data de entrada</label>
+									<input type="date" name="checkin" id="checkin autofocus required">
+								</div>
+								<div class="field-form-reserva">
+									<label for="checkout">Escolha a data de saída</label>
+									<input type="date" name="checkout" id="checkout">
+								</div>
+								<div class="field-form-reserva">
+									<label for="qtd_pessoas">Quantidade de pessoas</label>
+									<input type="number" name="qtd_pessoas" id="qtd_pessoas" min="1">
+								</div>	
+							</form>
             </section>
-            <section class="conteudo-reservas">
+
+            <section class="conteudo-reservas container">
                 <section class="opcoes-acomodacoes">
                     <p>Escolha sua opção de quarto</p>
                     <div>
