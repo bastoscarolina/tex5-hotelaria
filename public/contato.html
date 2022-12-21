@@ -4,114 +4,153 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/contatos.css" />
         <title>Contato</title>
     </head>
     <body>
         <header>
-            <img src="../images/Hotel-PNG-Photo.png" alt="logo" width="40" />
-            <span>Hotel ***</span>
+            <div>
+                <div class="head">
+                    <img
+                        src="../images/svg/Logo_04.svg"
+                        alt="logo"
+                        width="150"
+                    />
+                    <strong class="slogan">
+                        CONFORTO E PRATICIDADE PARA VOCÊ
+                    </strong>
+                </div>
+                <div class="nav">
+                    <nav>
+                        <a href="home.html">HOME</a> |
+                        <a href="acomodacoes.html">ACOMODAÇÕES</a> |
+                        <a href="reservas.html">RESERVAS</a> |
+                        <a href="sobre-nos.html">SOBRE</a> |
+                        <a href="contato.html">CONTATO</a>
+                    </nav>
+                </div>
+            </div>
         </header>
-        <nav>
-            <a href="home.html">HOME</a> |
-            <a href="acomodacoes.html">ACOMODAÇÕES</a> |
-            <a href="reservas.html">RESERVAS</a> |
-            <a href="sobre-nos.html">SOBRE</a> |
-            <a href="contato.html">CONTATO</a>
-        </nav>
         <main>
-            <article id="contato">
-                <h1>Contato</h1>
-                <form action="" method="get">
-                    <fieldset>
-                        <legend>Prencha todos os campos</legend>
-                        <ul>
-                            <li>
-                                <label for="nome">Nome</label> <br />
-                                <input
-                                    type="text"
-                                    id="nome"
-                                    name="nome"
-                                    required
-                                />
-                            </li>
-                            <li>
-                                <label for="email">Email</label> <br />
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                />
-                            </li>
-                            <li>
-                                <label for="telefone">Telefone</label> <br />
-                                <input
-                                    type="text"
-                                    id="telefone"
-                                    name="telefone"
-                                    required
-                                />
-                            </li>
-                            <h2>Assunto</h2>
-                            <li>
-                                <input
-                                    type="checkbox"
-                                    id="cancela_reserva"
-                                    name="cancela_reserva"
-                                />
-                                <label for="canclamento_reserva"
-                                    >Cancelamento de Reserva</label
-                                >
-                            </li>
-                            <li>
-                                <input
-                                    type="checkbox"
-                                    id="ouvidoria"
-                                    name="ouvidoria"
-                                />
-                                <label for="ouvidoria">Ouvidoria</label>
-                            </li>
-                            <li>
-                                <input
-                                    type="checkbox"
-                                    id="cancela_reserva"
-                                    name="cancela_reserva"
-                                />
-                                <label for="canclamento_reserva"
-                                    >Cancelamento de Reserva</label
-                                >
-                            </li>
-                            <li>
-                                <input
-                                    type="checkbox"
-                                    id="dep_financeiro"
-                                    name="dep_financeiro"
-                                />
-                                <label for="dep_financeiro"
-                                    >Departamento financeiro</label
-                                >
-                            </li>
-                            <li>
-                                <label for="mensagem">Mensagem</label> <br />
-                                <textarea
-                                    name="mensagem"
-                                    id="mensagem"
-                                    cols="30"
-                                    rows="10"
-                                ></textarea>
-                            </li>
-                            <li>
-                                <button>Enviar</button>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
-            </article>
+            <div class="content">
+                <article id="contato">
+                    <h1>Entre em contato com a gente!!</h1>
+                    <form class="form" action="" method="post" enctype="multipart/form-data">
+                        <fieldset class="principal">
+                            <legend class="title_form">
+                                Prencha todos os campos
+                            </legend>
+                            <ul class="form">
+                                <li>
+                                    <label for="nome">Nome</label>
+                                    <br />
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
+                                        placeholder="Digite seu Nome"
+                                        required/>
+                                </li>
+                                <li>
+                                    <label for="email">Email</label>
+                                    <br />
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Digite seu Email"
+                                        required/>
+                                </li>
+                                <li>
+                                    <label for="telefone">Telefone</label>
+                                    <br />
+                                    <input
+                                        type="number"
+                                        id="telefone"
+                                        name="telefone"
+                                        placeholder="Digite seu Número"
+                                        required/>
+                                </li>
+                                <li>
+                                    <label for="tipo_servico">Assunto</label>
+                                    <br />
+                                    <select name="serviso" id="serviso">
+                                        <option value="auto_select">
+                                            Selecione uma Opção
+                                        </option>
+                                        <option id="cancela_reserva">
+                                            Cancelamento de Reserva
+                                        </option>
+                                        <option value="ouvidoria">
+                                            Ouvidoria
+                                        </option>
+                                        <option value="departamento_financeiro">
+                                            Departamento financeiro
+                                        </option>
+                                        <option value="datas">
+                                            Remarcação de datas
+                                        </option>
+                                        <option value="feedback">
+                                            Reclamações/Opiniões
+                                        </option>
+                                    </select>
+                                </li>
+                                <br />
+                                <li class="mensage">
+                                    <label for="mensagem">Mensagem</label>
+                                    <br />
+                                    <textarea
+                                        name="mensagem"
+                                        id="mensagem"
+                                        cols="30"
+                                        rows="10"
+                                    ></textarea>
+                                </li>
+                                <li class="button">
+                                    <button>Enviar</button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </article>
+            </div>
         </main>
-        <footer>
-            <span>
+        <footer class="rodape">
+            <div class="copyrt">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941899.454243292!2d-47.79013423460252!3d-22.75444051088309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5135ca421c39%3A0x68ceda0bae5dbdae!2zUGFsw6FjaW8gVGFuZ2Fyw6E!5e0!3m2!1spt-BR!2sbr!4v1671285215967!5m2!1spt-BR!2sbr"
+                    width="400"
+                    height="300"
+                    style="border: 0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
                 <p>&copy;2045 - Todos os direitos reservados</p>
-            </span>
+            </div>
+            <a href="contato.html">Precisa de ajuda?</a>
+            <div class="redes-sociais">
+                <span>Confira nossas redes sociais</span>
+                <div>
+                    <a href="http://www.facebook.com/" target="_blank">
+                        <img
+                            src="../images/icones/facebook-dourado-claro.png"
+                            alt="logo facebook"
+                        />
+                    </a>
+                    <a href="http://www.instagram.com/" target="_blank">
+                        <img
+                            src="../images/icones/instagram-dourado-claro.png"
+                            alt="logo instagram"
+                        />
+                    </a>
+                    <a href="http://www.twitter.com/" target="_blank">
+                        <img
+                            src="../images/icones/twitter-dourado-claro.png"
+                            alt="logo twitter"
+                        />
+                    </a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
