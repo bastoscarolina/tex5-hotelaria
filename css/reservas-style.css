@@ -1,101 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Inter', serif;
-    background-color: #272727;
-    color:goldenrod;
-}
-
-header {
-    width: 96%;
-    margin-left: 30px;
-    margin-right: 30px;
-    color: goldenrod;
-}
-
-header a {
-    text-decoration: none;
-    color: greenyellow;
-    font-weight: 500;
-    transition:0.75s
-}
-
-header a:hover{
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-}
-.account {
-    display: flex;
-    justify-content: end;
-    padding: 15px;
-}
-
-.signout {
-    margin-left: 10px;
-}
-
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.slogan {
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-
-main{
-    width: 100%;
-    margin: auto;
-    background-color: antiquewhite;
-  }
+/* main {
+  width: 100%;
+  margin: auto;
+  background-color: antiquewhite;
+} */
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* ÍNICIO ESTILOS SEÇÃO FORMULÁRIO DE RESERVAS */
 .title-reserva {
-	padding: 50px 0 30px 0;
-	font-size: 2rem;
-	color: #272727;
+  padding: 50px 0 30px 0;
+  font-size: 2rem;
+  color: #272727;
 }
 
 .form-reserva {
-	display: flex;
-	justify-content: center;
-	margin: 2rem 0;
-	color: #272727;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  color: #272727;
 }
 
 .field-form-reserva {
-	display: flex;
-	flex-direction: column;
-	padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
 }
 
 .field-form-reserva label {
-	font-size: 1.2rem;
-	font-weight: 900;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
-.field-form-reserva input[type=date],
-.field-form-reserva input[type=number] {
-	padding: 12px 20px;
-	margin: 8px 0;
+.field-form-reserva input[type="date"],
+.field-form-reserva input[type="number"] {
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -103,35 +45,6 @@ main{
 }
 
 .field-form-reserva label {
-	padding-bottom: .7rem;
+  padding-bottom: 0.7rem;
 }
 /* FIM ESTILOS SEÇÃO FORMULÁRIO DE RESERVAS */
-
-.rodape{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-top: 1px solid #dccea8;
-    color:#dccea8;
-}
-
-.rodape a{
-    text-decoration: none;
-    color: #dccea8;
-    font-weight: bold;
-}
-
-.redes-sociais{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.redes-sociais a{
-    padding:1rem;
-    text-decoration: none;
-}
-.redes-sociais span{
-    margin:1rem;
-}
