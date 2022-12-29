@@ -1,173 +1,121 @@
-@import url(https://fonts.google.com/share?selection.family=Inter:wght@200);
-body {
-    display: block;
-    margin: 3%;
-    background-color: #272727;
-    font-family: "Inter", serif;
-    border: 2px solid goldenrod;
-    color:#dccea8;
-}
-
-                /*cabeçalho*/
-
-header {
-    width: 96%;
-    margin-left: 30px;
-    margin-right: 30px;
-    color: goldenrod;
-}
-
-header a {
-    text-decoration: none;
-    color: greenyellow;
-    font-weight: 900;
-}
-main {
-    margin-top: 150px;
-    width: 100%;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-}
-
-.account {
-    display: flex;
-    justify-content: end;
-    padding: 15px;
-}
-
-.signout {
-    margin-left: 10px;
-}
-
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.slogan {
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-
-                    /*artigo01*/
-
+/*Artigo1*/
 .art_01 {
-    display: flex;
-    width: 96%;
-    margin: 50px;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  margin: 2rem auto;
+}
+
+.title_art01 {
+  margin: 2rem 0 0 2rem;
+}
+
+.sub01 {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin: 2rem;
 }
 
 .sub01 img {
-    font-size: 20px;
-    width: 85%;
-    border: 2px solid #f3cb7477;
+  width: 45%;
+  border-radius: 8px;
+  border: 2px solid goldenrod;
 }
 
-.text {
-    width: 100%;
-    padding: 30px;
-    padding-top: 100px;
+.sub01 p {
+  width: 55%;
+  padding: 25px;
+  text-align: justify;
 }
 
-                    /*artigo02*/
-
-.title_acomodacoes {
-    font-size: 20px;
-    text-align: center;
-    padding-top: 30px;
+/*Artigo2*/
+.title_acomodacao {
+  margin: 2rem;
+  text-align: center;
 }
 
-.maisPopulares{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    max-width: 90vw;
-    margin: auto;
-    padding: 2rem 0;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 30px 15px 30px;
+  display: grid;
+  gap: 3rem;
+}
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid goldenrod;
 }
 
-.card{
-    display: flex;
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .head {
     flex-direction: column;
-    text-align: center;
-    font-weight:bold;
+  }
 }
 
-.card img{
-    width: 25vw;
-    height: 200px;
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-                    /*artigo03*/
+.button .submit a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 545;
+  color: #272727;
+}
+
+.button .submit {
+  height: 65px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 10px 30px 50px 30px;
+  cursor: pointer;
+}
+
+/*Artigo3*/
 .art_02 {
-    display: flex;
-    width: 96%;
-    margin: 50px;
-    margin-top: 100px;
-}                    
-
-.imagem img{
-    font-size: 20px;
-    width: 95%;
-    border: 2px solid #f3cb7477;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  margin: 2rem auto;
 }
 
-                    /*footer*/
-.rodape{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-top: 1px solid #dccea8
+.title_art02 {
+  margin: 0 3rem 0 3rem;
 }
 
-.rodape a{
-    text-decoration: none;
-    color: #dccea8;
-    font-weight: bold;
+.sub02 {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin: 2rem;
 }
 
-.map {
-    width: 60%;
-    margin: 50px
+.sub02 img {
+  width: 45%;
+  border-radius: 8px;
+  border: 2px solid goldenrod;
 }
 
-.help {
-    margin-right: 20px;
+.sub02 p {
+  width: 55%;
+  padding: 25px;
+  text-align: justify;
 }
-
-.redes-sociais{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-top: 20px;
-    margin-right: 250px;
-}
-
-.redes-sociais a{
-    padding:1rem;
-    text-decoration: none;
-}
-
-.redes-sociais span{
-    margin:1rem;
-}
-
-.copyrt {
-    margin-left: 120px;
-    padding-top: 40px
-}
-
-.links {
-    display: block;
-    padding: 10px;
-
-}
-
-
