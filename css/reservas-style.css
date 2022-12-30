@@ -1,8 +1,65 @@
-/* main {
+/* INICIO RESUMO RESERVA - HONORATO */
+.conteudo-reservas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resumo-reservas {
+  margin: 80px;
+  padding: 80px 40px;
+  width: 60%;
+  border: 2px solid #272727;
+}
+
+
+.resumo-reservas p {
+  padding-bottom: 30px;
+}
+
+.resumo-reservas div {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #272727;
+  background-color: rgb(86, 72, 31);
+}
+
+.resumo-reservas span {
+  padding: 10px 0;
+}
+
+.resumo-reservas a {
+  padding: 20px 0;
+  text-decoration: none;
+  color: #ccc;
+  transition: .5s;
+}
+
+.resumo-reservas a:hover {
+  opacity: 0.5;
+  transition: .5s;
+}
+
+.resumo-reservas button {
   width: 100%;
-  margin: auto;
-  background-color: antiquewhite;
-} */
+  margin-top:30px;
+  padding: 12px 20px;
+  background-color: rgb(86, 72, 31);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.resumo-reservas button:hover {
+  background-color: #ccc;
+  color: #272727;
+  transition: .5s;
+}
+
+/* FINAL RESUMO RESERVA - HONORATO */
 
 .container {
   width: 80%;
