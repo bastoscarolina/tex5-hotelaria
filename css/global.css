@@ -9,13 +9,11 @@
 body {
   font-family: "Inter", serif;
   background-color: #272727;
-  /* color:#dccea8; */
   color: goldenrod;
 }
 
 /*Cabeçalho*/
 header {
-  border: solid 1px #dccea8;
   margin: 15px 1px 10px 10px;
   /* color: goldenrod; */
 }
@@ -33,7 +31,6 @@ header a:hover {
 }
 
 .head {
-  border: solid 1px red;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -72,7 +69,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-top: 1px solid #dccea8;
   color: #dccea8;
 }
 
