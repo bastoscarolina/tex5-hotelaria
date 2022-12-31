@@ -14,7 +14,7 @@
     <header>
       <div class="account">
         <div class="ola-usuario">
-          <span>Olá "Jhon Doe"</span>
+          <span>Olá "Jhon Doeh"</span>
         </div>
         <div class="signout">
           <a href="../index.html">Sair</a>
@@ -23,7 +23,7 @@
       </div>
       <div class="head">
         <img src="../images/svg/Logo_04.svg" alt="logo" width="150" />
-        <strong class="slogan"> CONFORTO E PRATICIDADE PARA VOCÊ </strong>
+        <span class="slogan"> CONFORTO E PRATICIDADE PARA VOCÊ </span>
         <!-- <div class="signup"></div> -->
       </div>
       <div class="nav">
@@ -39,85 +39,60 @@
     </header>
 
     <main>
-      <div class="content">
-        <article id="contato">
-          <h1>Entre em contato com a gente!!</h1>
-          <form
-            class="form"
-            action=""
-            method="post"
-            enctype="multipart/form-data"
-          >
-            <fieldset class="principal">
-              <legend class="title_form">Prencha todos os campos</legend>
-              <ul class="form">
-                <li>
-                  <label for="nome">Nome</label>
-                  <br />
-                  <input
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    placeholder="Digite seu Nome"
-                    required
-                  />
-                </li>
-                <li>
-                  <label for="email">Email</label>
-                  <br />
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Digite seu Email"
-                    required
-                  />
-                </li>
-                <li>
-                  <label for="telefone">Telefone</label>
-                  <br />
-                  <input
-                    type="number"
-                    id="telefone"
-                    name="telefone"
-                    placeholder="Digite seu Número"
-                    required
-                  />
-                </li>
-                <li>
-                  <label for="tipo_servico">Assunto</label>
-                  <br />
-                  <select name="serviso" id="serviso">
-                    <option value="auto_select">Selecione uma Opção</option>
-                    <option id="cancela_reserva">
-                      Cancelamento de Reserva
-                    </option>
-                    <option value="ouvidoria">Ouvidoria</option>
-                    <option value="departamento_financeiro">
-                      Departamento financeiro
-                    </option>
-                    <option value="datas">Remarcação de datas</option>
-                    <option value="feedback">Reclamações/Opiniões</option>
-                  </select>
-                </li>
-                <br />
-                <li class="mensage">
-                  <label for="mensagem">Mensagem</label>
-                  <br />
-                  <textarea
-                    name="mensagem"
-                    id="mensagem"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </li>
-                <li class="button">
-                  <button>Enviar</button>
-                </li>
-              </ul>
-            </fieldset>
+      <div class="contato">
+        <fieldset class="informacao_de_contato">
+          <legend class="titulo_da_secao">Fale Conosco</legend>
+          <div class="info">
+            <ul>
+            <li>R. Dep. Laércio Corte, 1501 - Panamby, São Paulo</li>
+            <li>+55 (11) 9999 - 9999</li>
+            <li>+55 (11) 9999 - 9999</li>
+            <li>reservas@texhotel.com</li>
+          </ul>
+          </div>
+        </fieldset>
+
+        <form class="form" action="" method="post" enctype="multipart/form-data"></form>
+          <fieldset class="informacao_de_contato">
+            <legend class="titulo_da_secao">Deixe Seus Dados Conosco</legend>  
+                <ul>
+                  <li class="nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required />
+                  </li>
+                  <li class="email">
+                    <label  for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu Email" required />
+                  </li>
+                   <li class="telefone">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" id="telefone" name="telefone" placeholder="Digite seu Número" required />
+                  </li>
+                  <li class="assunto" >
+                    <label for="tipo_servico">Assunto</label>
+                    <select class="select"name="serviso" id="serviso">
+                      <option value="auto_select">Selecione uma Opção</option>
+                      <option id="cancela_reserva">
+                        Cancelamento de Reserva
+                      </option>
+                      <option value="ouvidoria">Ouvidoria</option>
+                      <option value="departamento_financeiro">
+                        Departamento financeiro
+                      </option>
+                      <option value="datas">Remarcação de datas</option>
+                      <option value="feedback">Reclamações/Opiniões</option>
+                    </select>
+                  </li>
+                  <li >
+                    <label class="mensage" for="mensagem">Mensagem</label>
+                    <textarea class="textarea"name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                  </li>
+                  <li>
+                    <button class="button" >Enviar Mensagem</button>
+                  </li>
+                </ul>
+            </fieldset>    
           </form>
-        </article>
       </div>
     </main>
     <!-- Rodapé -->
