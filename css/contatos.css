@@ -1,21 +1,73 @@
 /*form*/
-.content {
+.contato {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  width: 80%;
+  margin: auto;
 }
-
-.form {
-  list-style: none;
+.informacao_de_contato {
+  width: 50%;
+  margin: 50px 50px 50px 0;
+  border: 1px solid gray;
+  box-shadow: 7px 9px 3px gray;
+  color: #272727;
 }
-
-.principal {
-  border-color: #272727;
+legend {
+  text-align: center;
 }
-
+.info {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.info ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+li {
+  font-size: 30px;
+  color: #272727;
+}
+.select {
+  width: 40%;
+  height: 25px;
+}
+.titulo_da_secao {
+  font-size: 30px;
+  font-weight: bold;
+}
+label {
+  font-size: 15px;
+  display: flex;
+}
+input {
+  width: 50%;
+  height: 30px;
+}
+.nome {
+  margin: 20px 0 0 20px;
+}
+.email {
+  margin: 10px 0 0 20px;
+}
+.telefone {
+  margin: 10px 0 0 20px;
+}
+.assunto {
+  margin: 10px 0 0 20px;
+}
 .mensage {
-  border-top: 1px solid #272727;
+  margin: 15px 0 0 20px;
+}
+.textarea {
+  width: 80%;
+  height: 75px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.button {
+  width: 30%;
+  height: 25px;
+  margin: 5px 0 20px 20px;
 }
 
 /* Chrome e outros */
