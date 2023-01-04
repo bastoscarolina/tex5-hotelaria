@@ -1,5 +1,4 @@
 @mixin container {
-  min-width: 1170px;
   margin: 0 auto;
   padding: 1.5rem 0;
   width: 90%;
@@ -7,9 +6,13 @@
 }
 
 @mixin container-fluid {
-  min-width: 1170px;
   margin: 0 auto;
-  padding: 1.5rem 0;
   width: 100%;
   position: relative;
+}
+
+@mixin row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
