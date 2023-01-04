@@ -1,16 +1,25 @@
 /*form*/
+<<<<<<< HEAD
 .principal01{
+=======
+.contato {
+>>>>>>> befc9b5414f963d27906dcefdf96816a99d0e801
   display: flex;
   width: 80%;
   margin: auto;
 }
+<<<<<<< HEAD
 .informacao_de_contato{
+=======
+.informacao_de_contato {
+>>>>>>> befc9b5414f963d27906dcefdf96816a99d0e801
   width: 50%;
   margin: 50px 50px 50px 0;
   border: 1px solid gray;
   box-shadow: 7px 9px 3px gray;
   color: #272727;
 }
+<<<<<<< HEAD
 
 li{
   font-size: 30px;
@@ -23,6 +32,65 @@ li{
   font-size: 40px;
   font-weight: bold;
   margin-left: 20px;
+=======
+legend {
+  text-align: center;
+}
+.info {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.info ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+li {
+  font-size: 30px;
+  color: #272727;
+}
+.select {
+  width: 40%;
+  height: 25px;
+}
+.titulo_da_secao {
+  font-size: 30px;
+  font-weight: bold;
+}
+label {
+  font-size: 15px;
+  display: flex;
+}
+input {
+  width: 50%;
+  height: 30px;
+}
+.nome {
+  margin: 20px 0 0 20px;
+}
+.email {
+  margin: 10px 0 0 20px;
+}
+.telefone {
+  margin: 10px 0 0 20px;
+}
+.assunto {
+  margin: 10px 0 0 20px;
+}
+.mensage {
+  margin: 15px 0 0 20px;
+}
+.textarea {
+  width: 80%;
+  height: 75px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.button {
+  width: 30%;
+  height: 25px;
+  margin: 5px 0 20px 20px;
+>>>>>>> befc9b5414f963d27906dcefdf96816a99d0e801
 }
 
 /* Chrome e outros */
