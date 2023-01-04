@@ -2,6 +2,53 @@
 @use 'mixins' as mx;
 @use 'extends';
 
+.header {
+  @include mx.container-fluid;
+  background-color: v.$corFundo;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/hero-hotel.jpg);
+  height: 100vh;
+}
+
+.nav {
+  width: 80%;
+  @include mx.row-flex;
+  margin: 0 auto;
+  padding: v.$p-y;
+  align-items: center;
+
+  &__logo {
+    width: 200px;
+    padding: v.$p-x;
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: v.$tamanhoFonteLink;
+  }
+  
+  &__link {
+    color: #fff;
+    font-weight: 900;
+    padding: v.$p-y;
+    @extend %decoration-none;
+  }
+
+  &__link:hover {
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 5px;
+  }
+}
+
+.slogan { 
+  color: v.$corSlogan;
+  text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+  font-size: 4rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 // RESPONSIVIDADE
 // Smartphones - Retrato
