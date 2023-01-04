@@ -1,0 +1,27 @@
+@use 'variaveis' as v;
+@use 'mixins' as mx;
+@use 'extends';
+
+
+// RESPONSIVIDADE
+// Smartphones - Retrato
+// @media (max-width: 415px) and (orientation: portrait) {
+// 
+//  }
+// 
+// Smartphones - Paisagem
+// @media (max-width: 915px) and (orientation: landscape) {
+// 
+// }
+// 
+// Trablets - Retrato
+// @media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+// 
+//  }
+// 
+// Tablets - Paisagem
+// @media (max-width: 1195px) and (orientation: landscape),
+// (max-width: 1367px) and (min-height: 1023px) and (orientation: landscape) {
+// 
+// }
+

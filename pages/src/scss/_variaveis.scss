@@ -1,0 +1,22 @@
+// VARIAVEIS SASS 
+$fonte: 'Inter', sans-serif;
+$corSlogan: #fff;
+$corFundo: #DCCEA8;           //Cor do background
+$corTitulo: #1C1C1C;          //Cor H1
+$corSubtitulo: #1c1c1cd7;     //Cor H2, H3 ...
+$corParagrafo:  #363636;      //Cor parágrafo 
+$corLink: #4F4F4F;            //Cor link
+$corLinkHover: #696969;       //Cor hover link
+$p1: 1rem;                      //Padding
+$p-y: 1.5rem 1.5rem;            //Padding direito e esquerdo
+$p-x: 1.5rem 1.5rem;            //Padding top e bottom
+$m1:  1rem;                     //Margin 
+$m-y: 1.5rem 1.5rem;            //Margin direito e esquerdo
+$m-x: 1.5rem 1.5rem;            //Margin top e bottom
+
+* {
+  font-family: $fonte;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
