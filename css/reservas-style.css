@@ -110,6 +110,29 @@
 }
 /* FIM ESTILOS SEÇÃO FORMULÁRIO DE RESERVAS */
 
+/* INICIO ESTILO OPCOES RESERVA */
+.opcoes-acomodacoes p {
+    font-size:1.25rem;
+    margin:1rem 0;
+}
+.opcao{
+    margin-bottom: 1.25rem;
+}
+.opcao-titulo{
+    font-weight:700;
+    margin-top: 1rem;
+}
+.opcao-imagem{
+    width: 100%;
+}
+.opcao-descricao{
+    display: block;
+    margin: 1rem 0;
+}
+.opcao-preco{
+    font-weight:600;
+}
+/* FIM ESTILO OPCOES RESERVA */
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 950px) {
