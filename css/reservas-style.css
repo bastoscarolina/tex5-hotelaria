@@ -165,3 +165,27 @@
     padding: 10px;
   }
 }
+
+/* CELULAR */
+@media screen and (max-width:415px){
+    .form-reserva{
+        display:flex;
+        flex-direction: column;
+    }
+    .slogan{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .nav a{
+        font-size:0.85rem;
+    }
+    .nav {
+        margin:1rem 0;
+    }
+    .rodape{
+        flex-direction:column;
+    }
+    .rodape a {
+        margin-top:0.5rem;    
+    }
+}
