@@ -15,7 +15,6 @@ body {
 
 /*Cabeçalho*/
 header {
-  border: solid 1px #dccea8;
   margin: 15px 1px 10px 10px;
   /* color: goldenrod; */
 }
@@ -33,9 +32,8 @@ header a:hover {
 }
 
 .head {
-  border: solid 1px red;
   display: flex;
-  align-items: center;
+  margin: auto;
   justify-content: space-evenly;
 }
 
@@ -55,7 +53,7 @@ header a:hover {
 
 .slogan {
   display: flex;
-  justify-content: center;
+  margin: auto;
   font-size: 35px;
 }
 
@@ -71,7 +69,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-top: 1px solid #dccea8;
   color: #dccea8;
 }
 
