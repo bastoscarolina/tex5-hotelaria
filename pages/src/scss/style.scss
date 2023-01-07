@@ -1,11 +1,12 @@
-@use 'variaveis' as v;
-@use 'mixins' as mx;
-@use 'extends';
+@use "variaveis" as v;
+@use "mixins" as mx;
+@use "extends";
 
 .header {
   @include mx.container-fluid;
   background-color: v.$corFundo;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/hero-hotel.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/hero-hotel.jpg);
   height: 100vh;
 }
 
@@ -25,7 +26,7 @@
     display: inline-block;
     font-size: v.$tamanhoFonteLink;
   }
-  
+
   &__link {
     color: #fff;
     font-weight: 900;
@@ -39,7 +40,7 @@
   }
 }
 
-.slogan { 
+.slogan {
   color: v.$corSlogan;
   text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
   font-size: 4rem;
@@ -49,26 +50,85 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.contato {
+  @include mx.container-fluid;
+  background-color: v.$corFundocont;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  text-align: left;
+  padding: 2rem 0 0 5rem;
+  font-size: 4rem;
+  color: v.$corSlogan;
+}
+.geral {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+.div01 {
+  padding-right: 20%;
+}
+.fone {
+  width: 10%;
+  display: flex;
+  margin: 1rem 0 1rem 5px;
+}
+.nub {
+  text-align: right;
+  margin: 50% 0 0 4rem;
+}
+i {
+  padding-right: 30px;
+  size: 30px;
+  position: absolute;
+}
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15% auto;
+  border: 1px solid red;
+}
+.cont li {
+  @extend %list-none;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contato-endereco {
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-social {
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
 
 // RESPONSIVIDADE
 // Smartphones - Retrato
 // @media (max-width: 415px) and (orientation: portrait) {
-// 
+//
 //  }
-// 
+//
 // Smartphones - Paisagem
 // @media (max-width: 915px) and (orientation: landscape) {
-// 
+//
 // }
-// 
+//
 // Trablets - Retrato
 // @media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
-// 
+//
 //  }
-// 
+//
 // Tablets - Paisagem
 // @media (max-width: 1195px) and (orientation: landscape),
 // (max-width: 1367px) and (min-height: 1023px) and (orientation: landscape) {
-// 
+//
 // }
-
