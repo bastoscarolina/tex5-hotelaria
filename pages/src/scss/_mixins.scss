@@ -1,0 +1,18 @@
+@mixin container {
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+}
+
+@mixin container-fluid {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+@mixin row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

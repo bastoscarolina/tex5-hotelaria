@@ -1,131 +1,82 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Inter", serif;
-    background-color: #272727;
-    /* color:#dccea8; */
-}
-
-main {
-    max-width: 80%;
-    margin: 2rem auto;
-    background: #dccea8;
-    color: #272727;
-}
-
-/*Cabeçalho*/
-header {
-    width: 80%;
-    margin-left: 30px;
-    margin-right: 30px;
-    color: goldenrod;
-}
-
-header a {
-    text-decoration: none;
-    color: greenyellow;
-    font-weight: 500;
-    transition: 0.75s;
-}
-
-header a:hover {
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-}
-
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-.slogan {
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-
-
-
-
 /*form*/
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.contato {
+  display: flex;
+  width: 80%;
+  margin: auto;
 }
-
-.form {
-    list-style: none;
+.informacao_de_contato {
+  width: 50%;
+  margin: 50px 50px 50px 0;
+  border: 1px solid gray;
+  box-shadow: 7px 9px 3px gray;
+  color: #272727;
 }
-
-.principal {
-    border-color: #272727;
+legend {
+  text-align: center;
 }
-
+.info {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.info ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+li {
+  font-size: 30px;
+  color: #272727;
+}
+.select {
+  width: 40%;
+  height: 25px;
+}
+.titulo_da_secao {
+  font-size: 30px;
+  font-weight: bold;
+}
+label {
+  font-size: 15px;
+  display: flex;
+}
+input {
+  width: 50%;
+  height: 30px;
+}
+.nome {
+  margin: 20px 0 0 20px;
+}
+.email {
+  margin: 10px 0 0 20px;
+}
+.telefone {
+  margin: 10px 0 0 20px;
+}
+.assunto {
+  margin: 10px 0 0 20px;
+}
 .mensage {
-    border-top: 1px solid #272727
+  margin: 15px 0 0 20px;
 }
-
-
-
-
-/*footer*/
-.rodape {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-top: 1px solid #dccea8;
-    color: #dccea8;
+.textarea {
+  width: 80%;
+  height: 75px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
-
-.rodape a {
-    text-decoration: none;
-    color: #dccea8;
-    font-weight: bold;
-}
-
-.copyrt {
-    justify-content: center;
-    text-align: center;
-}
-
-.map {
-    height: 230px;
-    margin: 10px;
-}
-
-.redes-sociais {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.redes-sociais a {
-    padding: 1rem;
-    text-decoration: none;
-}
-.redes-sociais span {
-    margin: 1rem;
+.button {
+  width: 30%;
+  height: 25px;
+  margin: 5px 0 20px 20px;
 }
 
 /* Chrome e outros */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 /* Firefox */
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }

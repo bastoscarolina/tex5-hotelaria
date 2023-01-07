@@ -1,165 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Reservas</title>
-        <!-- <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        /> -->
-        <link rel="stylesheet" href="../css/reservas-style.css">
-    </head>
-    <body>
-        <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/reservas-style.css" />
+  </head>
+  <body>
+    <!--Cabeçalho-->
+    <header>
+      <div class="account">
+        <div class="ola-usuario">
+          <span>Olá "Jhon Doe"</span>
+        </div>
+        <div class="signout">
+          <a href="../index.html">Sair</a>
+          <a href="../public/login.html">Login</a>
+        </div>
+      </div>
+      <div class="head">
+        <img src="../images/svg/Logo_04.svg" alt="logo" width="150" />
+        <strong class="slogan"> CONFORTO E PRATICIDADE PARA VOCÊ </strong>
+      </div>
+      <div class="nav">
+        <nav>
+          <a href="../index.html">HOME</a> |
+          <a href="acomodacoes.html">ACOMODAÇÕES</a> |
+          <a href="reservas.html">RESERVAS</a> |
+          <a href="sobre-nos.html">SOBRE</a> |
+          <a href="contato.html">CONTATO</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container inputs">
+        <h2 class="title-reserva">Minha Reserva</h2>
+        <span class="info-reserva"
+          >Forneça a data de entrada, saída e quantidade de pessoas</span
+        >
+        <form class="form-reserva" action="">
+          <div class="field-form-reserva">
+            <label for="checkin">Escolha a data de entrada</label>
+            <input type="date" name="checkin" id="checkin autofocus required" />
+          </div>
+          <div class="field-form-reserva">
+            <label for="checkout">Escolha a data de saída</label>
+            <input type="date" name="checkout" id="checkout" />
+          </div>
+          <div class="field-form-reserva">
+            <label for="qtd_pessoas">Quantidade de pessoas</label>
+            <input type="number" name="qtd_pessoas" id="qtd_pessoas" min="1" />
+          </div>
+        </form>
+      </section>
+
+      <section class="conteudo-reservas container">
+        <section class="opcoes-acomodacoes">
+          <p>Escolha sua opção de quarto</p>
+          <div class="opcao">
+            <img src="../images/quartos/quarto_1.jpg" alt="quarto tipo X" class="opcao-imagem"/>
             <div>
-                <div class="account">
-                    <div class="ola-usuario">
-                        <span>Olá "Jhon Doe"</span>
-                    </div>
-                    <div class="signout">
-                        <a href="#">Sair</a>
-                    </div>
-                </div>
-                <div class="head">
-                    <img
-                        src="../images/svg/Logo_04.svg"
-                        alt="logo"
-                        width="150"
-                    />
-                    <strong class="slogan">
-                        CONFORTO E PRATICIDADE PARA VOCÊ
-                    </strong>
-                    <div class="signup">
-                        <a href="#">Cadastre-se</a>
-                    </div>
-                </div>
-                <div class="nav">
-                    <nav>
-                        <a href="home.html">HOME</a> |
-                        <a href="acomodacoes.html">ACOMODAÇÕES</a> |
-                        <a href="reservas.html">RESERVAS</a> |
-                        <a href="sobre-nos.html">SOBRE</a> |
-                        <a href="contato.html">CONTATO</a>
-                    </nav>
-                </div>
+              <h3 class="opcao-titulo">Quarto X</h3>
+              <span class="opcao-descricao">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+                neque est sint soluta, fugit reprehenderit quia ipsa corrupti
+                necessitatibus unde sapiente? Perferendis voluptatibus, totam
+                vero voluptates enim cum facilis amet.
+              </span>
+              <span class="opcao-preco">R$150,00</span>
+              <input
+                type="radio"
+                name="tipo-acomodacao"
+                id="quartoX"
+                value="quartoX"
+              />
+              <label for="quartoX">Selecionar o quarto X</label>
             </div>
-        </header>
-        <main>
-            <!-- HTML antigo -->
-            <!-- <form action="" method="get">
-                <fieldset>
-                    <legend>Faça já sua reserva!</legend>
-                    <ul>
-                        <li>
-                            <label for="pesquisa">Pesquisar</label><br />
+          </div>
+          <div class="opcao">
+            <img src="../images/quartos/quarto_2.jpg" alt="quarto tipo Y" class="opcao-imagem"/>
+            <h3 class="opcao-titulo">Quarto Y</h3>
+            <span class="opcao-descricao">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+              neque est sint soluta, fugit reprehenderit quia ipsa corrupti
+              necessitatibus unde sapiente? Perferendis voluptatibus, totam vero
+              voluptates enim cum facilis amet.
+            </span>
+            <span class="opcao-preco">R$100,00</span>
+            <input
+              type="radio"
+              name="tipo-acomodacao"
+              id="quartoY"
+              value="quartoY"
+            />
+            <label for="quartoY">Selecionar o quarto Y</label>
+          </div>
+          <div class="opcao">
+            <img src="../images/quartos/quarto_3.jpg" alt="quarto tipo Z" class="opcao-imagem"/>
+            <h3 class="opcao-titulo" >Quarto Z</h3>
+            <span class="opcao-descricao">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+              neque est sint soluta, fugit reprehenderit quia ipsa corrupti
+              necessitatibus unde sapiente? Perferendis voluptatibus, totam vero
+              voluptates enim cum facilis amet.
+            </span>
+            <span class="opcao-preco">R$200,00</span>
+            <input
+              type="radio"
+              name="tipo-acomodacao"
+              id="quartoZ"
+              value="quartoZ"
+            />
+            <label for="quartoZ">Selecionar o quarto Z</label>
+          </div>
+        </section>
 
-                            <input
-                                type="search"
-                                id="pesquisa"
-                                name="pesquisa"
-                                placeholder="Procure por quartos"
-                            />
-                        </li>
-                        <li>
-                            <label for="checkin">Data de entrada</label>
-                            <input type="date" id="checkin" name="checkin" />
-                        </li>
-                        <li>
-                            <label for="checkout">Data de saída</label>
-                            <input type="date" id="checkout" name="checkout" />
-                        </li>
-                        <li>
-                            <label for="quantidade">Adultos</label>
-                            <input
-                                type="number"
-                                id="quantidade"
-                                name="quantidade"
-                                min="1"
-                                max="9"
-                            />
-                        </li>
-                        <li>
-                            <label for="quantidade">Crianças</label>
-                            <input
-                                type="number"
-                                id="quantidade"
-                                name="quantidade"
-                                min="0"
-                                max="9"
-                            />
-                        </li>
-                        <li>
-                            <label for="quantidade">Quartos</label>
-                            <input
-                                type="number"
-                                id="quantidade"
-                                name="quantidade"
-                                min="1"
-                                max="4"
-                            />
-                        </li>
-                        <li>
-                            <button type="submit">
-                                Pesquisar <i class="fa fa-search"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </fieldset>
-            </form> -->
-            <section class="inputs">
+        <section class="resumo-reservas">
+          <p>RESUMO DA RESERVA</p>
 
-            </section>
-            <section class="conteudo-reservas">
-                <section class="opcoes-acomodacoes">
-                    <p>Escolha sua opção de quarto</p>
-                    <div>
-                        <img src="../images/quartos/quarto_1.jpg" alt="quarto tipo X">
-                        <div>
-                            <h3>Quarto X</h3>
-                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus neque est sint soluta, fugit reprehenderit quia ipsa corrupti necessitatibus unde sapiente? Perferendis voluptatibus, totam vero voluptates enim cum facilis amet.</span>
-                            <span>R$150,00</span>
-                            <input type="radio" name="tipo-acomodacao" id="quartoX" value="quartoX"> <label for="quartoX">Selecionar o quarto X</label>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../images/quartos/quarto_2.jpg" alt="quarto tipo Y">
-                        <h3>Quarto Y</h3>
-                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus neque est sint soluta, fugit reprehenderit quia ipsa corrupti necessitatibus unde sapiente? Perferendis voluptatibus, totam vero voluptates enim cum facilis amet.</span>
-                            <span>R$100,00</span>
-                            <input type="radio" name="tipo-acomodacao" id="quartoY" value="quartoY"> <label for="quartoY">Selecionar o quarto Y</label>
-                    </div>
-                    <div>
-                        <img src="../images/quartos/quarto_3.jpg" alt="quarto tipo Z">
-                        <h3>Quarto Z</h3>
-                            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus neque est sint soluta, fugit reprehenderit quia ipsa corrupti necessitatibus unde sapiente? Perferendis voluptatibus, totam vero voluptates enim cum facilis amet.</span>
-                            <span>R$200,00</span>
-                            <input type="radio" name="tipo-acomodacao" id="quartoZ" value="quartoZ"> <label for="quartoZ">Selecionar o quarto Z</label>
-                    </div>
-                </section>
-                <section class="resumo-reservas">
-                    
-                </section>
-            </section>
-        </main>
-        <footer class="rodape">
-            <p>&copy;2045 - Todos os direitos reservados</p>
-            <a href="contato.html">Precisa de ajuda?</a>
-            <div class="redes-sociais">
-                <span>Confira nossas redes sociais</span>
-                <div>
-                    <a href="http://www.facebook.com/" target="_blank">
-                        <img src="../images/icones/facebook-dourado-claro.png" alt="logo facebook">
-                    </a>
-                    <a href="http://www.instagram.com/" target="_blank">
-                        <img src="../images/icones/instagram-dourado-claro.png" alt="logo instagram">
-                    </a>
-                    <a href="http://www.twitter.com/" target="_blank">
-                        <img src="../images/icones/twitter-dourado-claro.png" alt="logo twitter">
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </body>
+          <div>
+            <span>Apartamento: XXX</span>
+            <span>Checkin: XXX</span>
+            <span>Checkout: XXX</span>
+            
+          </div>
+          
+          <a href="#">Adicionar mais SERVIÇOS</a>
+          <button>CONTINUAR</button>
+
+        </section>
+
+      </section>
+
+    </main>
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <div class="copyrt">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941899.454243292!2d-47.79013423460252!3d-22.75444051088309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5135ca421c39%3A0x68ceda0bae5dbdae!2zUGFsw6FjaW8gVGFuZ2Fyw6E!5e0!3m2!1spt-BR!2sbr!4v1671285215967!5m2!1spt-BR!2sbr"
+          width="400"
+          height="300"
+          style="border: 0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <a href="contato.html">Precisa de ajuda?</a>
+      <div class="redes-sociais">
+        <span>Confira nossas redes sociais</span>
+        <div>
+          <a href="http://www.facebook.com/" target="_blank">
+            <img
+              src="../images/icones/facebook-dourado-claro.png"
+              alt="logo facebook"
+            />
+          </a>
+          <a href="http://www.instagram.com/" target="_blank">
+            <img
+              src="../images/icones/instagram-dourado-claro.png"
+              alt="logo instagram"
+            />
+          </a>
+          <a href="http://www.twitter.com/" target="_blank">
+            <img
+              src="../images/icones/twitter-dourado-claro.png"
+              alt="logo twitter"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

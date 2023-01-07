@@ -1,85 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+/* INICIO RESUMO RESERVA - HONORATO */
+.conteudo-reservas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-body{
-    font-family: 'Inter', serif;
-    background-color: #272727;
-    color:goldenrod;
+.resumo-reservas {
+  margin: 80px;
+  padding: 80px 40px;
+  width: 60%;
+  border: 2px solid #272727;
 }
 
-header {
-    width: 96%;
-    margin-left: 30px;
-    margin-right: 30px;
-    color: goldenrod;
+
+.resumo-reservas p {
+  padding-bottom: 30px;
 }
 
-header a {
-    text-decoration: none;
-    color: greenyellow;
-    font-weight: 500;
-    transition:0.75s
+.resumo-reservas div {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #272727;
+  background-color: #dccea8;
 }
 
-header a:hover{
-    font-weight: 700;
-    text-decoration: underline;
+.resumo-reservas span {
+  padding: 10px 0;
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
-}
-.account {
-    display: flex;
-    justify-content: end;
-    padding: 15px;
+.resumo-reservas a {
+  padding: 20px 0;
+  text-decoration: none;
+  color: #272727;
+  transition: .5s;
 }
 
-.signout {
-    margin-left: 10px;
+.resumo-reservas a:hover {
+  opacity: 0.5;
+  transition: .5s;
 }
 
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.slogan {
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-.rodape{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-top: 1px solid #dccea8;
-    color:#dccea8;
+.resumo-reservas button {
+  width: 100%;
+  margin-top:30px;
+  padding: 12px 20px;
+  background-color: #dccea8;
+  border: 1px solid #272727;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .5s;
 }
 
-.rodape a{
-    text-decoration: none;
-    color: #dccea8;
-    font-weight: bold;
+.resumo-reservas button:hover {
+  background-color: #6d695b;
+  color: #272727;
+  transition: .5s;
 }
 
-.redes-sociais{
+.opcoes-acomodacoes img {
+  width: 100%;
+}
+
+/* FINAL RESUMO RESERVA - HONORATO */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ÍNICIO ESTILOS SEÇÃO FORMULÁRIO DE RESERVAS */
+.title-reserva {
+  padding: 50px 0 30px 0;
+  font-size: 2rem;
+  color: #272727;
+}
+
+.form-reserva {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  color: #272727;
+}
+
+.field-form-reserva {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.field-form-reserva label {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.field-form-reserva input[type="date"],
+.field-form-reserva input[type="number"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.field-form-reserva label {
+  padding-bottom: 0.7rem;
+}
+/* FIM ESTILOS SEÇÃO FORMULÁRIO DE RESERVAS */
+
+/* INICIO ESTILO OPCOES RESERVA */
+.opcoes-acomodacoes p {
+    font-size:1.25rem;
+    margin:1rem 0;
+}
+.opcao{
+    margin-bottom: 1.25rem;
+}
+.opcao-titulo{
+    font-weight:700;
+    margin-top: 1rem;
+}
+.opcao-imagem{
+    width: 100%;
+}
+.opcao-descricao{
+    display: block;
+    margin: 1rem 0;
+}
+.opcao-preco{
+    font-weight:600;
+}
+/* FIM ESTILO OPCOES RESERVA */
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 950px) {
+  .container {
+    margin: 20px;
+    width: 95%;
+  }
+
+  .opcoes-acomodacoes img {
+    width: 100%;
+  }
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 824px) {
+  .conteudo-reservas {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 100%;
+  }
+
+  .opcoes-acomodacoes {
+    width: 85%;
+  }
+
+  .container {
+    padding: 10px;
+  }
 }
 
-.redes-sociais a{
-    padding:1rem;
-    text-decoration: none;
-}
-.redes-sociais span{
-    margin:1rem;
+/* CELULAR */
+@media screen and (max-width:415px){
+    .form-reserva{
+        display:flex;
+        flex-direction: column;
+    }
+    .slogan{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .nav a{
+        font-size:0.85rem;
+    }
+    .nav {
+        margin:1rem 0;
+    }
+    .rodape{
+        flex-direction:column;
+    }
+    .rodape a {
+        margin-top:0.5rem;    
+    }
 }
