@@ -118,6 +118,61 @@ i {
   flex-direction: column;
 }
 
+//Rodape//
+
+.footer {
+    background-color: v.$corFundocont;
+
+    li {
+        list-style: none;
+    }
+    fieldset {
+        border-style: none;
+    }
+}
+
+.form {
+    display: flex;
+}
+
+.formulario {
+    width: 50%;
+    margin: 3rem 0 0 5rem;
+}
+
+.cont-text {
+    margin-bottom: 25px;
+
+    & input {
+        border-radius: 5px;
+        width: 60%;
+        height: 40px;
+    }
+}
+
+.formulario .button {
+    width: 8rem;
+    height: 40px;
+    margin: 10px 0 40px 0;
+    border-radius: 4px;
+}
+
+.links {
+    width: 50%;
+    margin: 6.5rem 0 0 5rem;
+
+    & a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: v.$corTitulo;
+        font-weight: 900;
+        padding: 0 1rem 0 1rem;
+        border: 2px v.$corLink solid;
+        border-radius: 10px;
+        background-color: v.$corSlogan;
+    }
+}
+
 // RESPONSIVIDADE
 
 @import 'mobile';
