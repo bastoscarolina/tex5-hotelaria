@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Inter", sans-serif;
   padding: 0;
@@ -65,9 +66,9 @@
   width: 100%;
   position: relative;
   background-color: #4e4b4b;
+  flex-direction: column;
   height: 100vh;
   display: flex;
-  flex-direction: column;
 }
 
 .title {
@@ -80,27 +81,32 @@
 .geral {
   display: flex;
   margin: 0 auto;
-  padding-top: 5%;
+  padding: 12% 0 10% 0;
+  color: #eee;
 }
 
 .div01 {
-  padding-right: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 350px;
+  margin-right: 85px;
 }
 
 .fone {
-  width: 10%;
+  width: 5%;
   display: flex;
-  margin: 1rem 0 1rem 5px;
+  margin: 1rem 0 1rem 0;
 }
 
 .nub {
+  font-size: 25px;
   text-align: right;
   margin: 50% 0 0 4rem;
 }
 
 i {
   padding-right: 30px;
-  size: 30px;
   position: absolute;
 }
 
@@ -128,6 +134,39 @@ i {
   min-width: 350px;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 840px) {
+  /* Responsividade Seção de contato */
+  .contato h2 {
+    font-size: 50px;
+  }
+  .geral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    width: 100%;
+  }
+  /* Responsividade Seção de contato */
+  .contato {
+    height: 100%;
+  }
+  .contato h2 {
+    font-size: 30px;
+  }
+  .geral {
+    width: 90%;
+  }
+  .nub {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

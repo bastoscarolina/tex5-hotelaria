@@ -1,0 +1,39 @@
+@use "mixins" as mx;
+
+@media screen and (max-width: 840px) {
+    /* Responsividade Seção de contato */
+    .contato h2 {
+        font-size: 50px;
+    }
+    
+    .geral {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .header {
+        @include mx.container-fluid;
+        width: 100%;
+    }
+
+    /* Responsividade Seção de contato */
+    .contato {
+        height: 100%;
+    }
+
+    .contato h2 {
+        font-size: 30px;
+    }
+
+    .geral {
+        width: 90%;
+    }
+
+    .nub {
+        font-size: 20px;
+    }
+}
