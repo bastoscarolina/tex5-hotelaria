@@ -1,19 +1,20 @@
-// VARIAVEIS SASS 
-$fonte: 'Inter', sans-serif;
+// VARIAVEIS SASS
+$fonte: "Inter", sans-serif;
 $corSlogan: #fff;
-$tamanhoFonteLink: 1.2rem;      //Tamanho da fonte dos links
-$corFundo: #DCCEA8;           //Cor do background
-$corTitulo: #1C1C1C;          //Cor H1
-$corSubtitulo: #1c1c1cd7;     //Cor H2, H3 ...
-$corParagrafo:  #363636;      //Cor parágrafo 
-$corLink: #4F4F4F;            //Cor link
-$corLinkHover: #696969;       //Cor hover link
-$p1: 1rem;                      //Padding
-$p-y: 0 1.5rem 0 1.5rem;            //Padding direito e esquerdo
-$p-x: 1.5rem 0 1.5rem 0;            //Padding top e bottom
-$m1:  1rem;                     //Margin 
-$m-y: 0 1.5rem 0 1.5rem;            //Margin direito e esquerdo
-$m-x: 1.5rem 0 1.5rem 0;            //Margin top e bottom
+$tamanhoFonteLink: 1.2rem; //Tamanho da fonte dos links
+$corFundo: #dccea8; //Cor do background
+$corTitulo: #1c1c1c; //Cor H1
+$corSubtitulo: #1c1c1cd7; //Cor H2, H3 ...
+$corParagrafo: #363636; //Cor parágrafo
+$corLink: #4f4f4f; //Cor link
+$corLinkHover: #696969; //Cor hover link
+$p1: 1rem; //Padding
+$p-y: 0 1.5rem 0 1.5rem; //Padding direito e esquerdo
+$p-x: 1.5rem 0 1.5rem 0; //Padding top e bottom
+$m1: 1rem; //Margin
+$m-y: 0 1.5rem 0 1.5rem; //Margin direito e esquerdo
+$m-x: 1.5rem 0 1.5rem 0; //Margin top e bottom
+$corFundocont: #4e4b4b;
 
 * {
   font-family: $fonte;

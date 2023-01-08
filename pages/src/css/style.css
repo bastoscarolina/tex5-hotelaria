@@ -1,8 +1,13 @@
+@charset "UTF-8";
 * {
   font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.cont li {
+  list-style: none;
 }
 
 .nav__link {
@@ -13,7 +18,7 @@
   margin: 0 auto;
   width: 100%;
   position: relative;
-  background-color: #DCCEA8;
+  background-color: #dccea8;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/hero-hotel.jpg);
   height: 100vh;
 }
@@ -54,6 +59,164 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.contato {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  background-color: #4e4b4b;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+
+.title {
+  text-align: left;
+  padding: 2rem 0 0 5rem;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.geral {
+  display: flex;
+  margin: 0 auto;
+  padding: 12% 0 10% 0;
+  color: #eee;
+}
+
+.div01 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 350px;
+  margin-right: 85px;
+}
+
+.fone {
+  width: 5%;
+  display: flex;
+  margin: 1rem 0 1rem 0;
+}
+
+.nub {
+  font-size: 25px;
+  text-align: right;
+  margin: 50% 0 0 4rem;
+}
+
+i {
+  padding-right: 30px;
+  position: absolute;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15% auto;
+  border: 1px solid red;
+}
+
+.cont li {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contato-endereco {
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-social {
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #4e4b4b;
+}
+.footer li {
+  list-style: none;
+}
+.footer fieldset {
+  border-style: none;
+}
+
+.form {
+  display: flex;
+}
+
+.formulario {
+  width: 50%;
+  margin: 3rem 0 0 5rem;
+}
+
+.cont-text {
+  margin-bottom: 25px;
+}
+.cont-text input {
+  border-radius: 5px;
+  width: 60%;
+  height: 40px;
+}
+
+.formulario .button {
+  width: 8rem;
+  height: 40px;
+  margin: 10px 0 40px 0;
+  border-radius: 4px;
+}
+
+.links {
+  width: 50%;
+  margin: 6.5rem 0 0 5rem;
+}
+.links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #1c1c1c;
+  font-weight: 900;
+  padding: 0 1rem 0 1rem;
+  border: 2px #4f4f4f solid;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 840px) {
+  /* Responsividade Seção de contato */
+  .contato h2 {
+    font-size: 50px;
+  }
+  .geral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    width: 100%;
+  }
+  /* Responsividade Seção de contato */
+  .contato {
+    height: 100%;
+  }
+  .contato h2 {
+    font-size: 30px;
+  }
+  .geral {
+    width: 90%;
+  }
+  .nub {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
