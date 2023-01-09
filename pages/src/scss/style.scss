@@ -173,6 +173,20 @@ i {
     }
 }
 
+//secao oferta
+
+.destaque{
+  background-color: v.$corFundocont;
+  height: 100vh;
+
+  & iframe{
+    display: block;
+    width:60%;
+    height:60%;
+    margin: 5% auto;
+  }
+}
+
 // RESPONSIVIDADE
 
 @import 'mobile';
