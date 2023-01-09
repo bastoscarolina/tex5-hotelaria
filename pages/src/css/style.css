@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+a:hover {
+  opacity: 1;
+}
 .cont li {
   list-style: none;
 }
@@ -19,7 +30,12 @@
   width: 100%;
   position: relative;
   background-color: #dccea8;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/hero-hotel.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(204, 203, 196, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../images/hero-hotel.jpg);
   height: 100vh;
 }
 
@@ -61,14 +77,203 @@
   transform: translate(-50%, -50%);
 }
 
+/*Oferta CSS */
+:root {
+  --dark-color: #2d2c2c;
+  --purple-solid: #350a4f;
+  --purple-transparent: rgba(53, 10, 79, 0.7);
+  --purple-transparent-alt: rgba(53, 10, 79, 0.5);
+  --purple-light: #8f50fb;
+  --yellow-solid: #fa9e2c;
+  --gradient-color: linear-gradient(
+    to right,
+    var(--yellow-solid),
+    var(--purple-light)
+  );
+  --gradient-color-alt: linear-gradient(
+    to right,
+    var(--purple-light),
+    var(--yellow-solid)
+  );
+}
+
+.oferta {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(250, 158, 44, 0.8),
+      rgba(143, 80, 251, 0.8)
+    ),
+    url("../../images/the_paradise_bg.jpg") bottom center no-repeat;
+  background-size: cover;
+}
+.oferta-container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+.oferta-content {
+  background-color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  /* margin-bottom: 2.5rem; */
+  font-weight: bold;
+}
+.oferta-content h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #191c03;
+  text-align: center;
+}
+.oferta-content p {
+  /* max-width: 800px; */
+  margin-bottom: 35px;
+  color: #56247f;
+  /* color: #191c03; */
+  text-align: center;
+}
+
+.desconto {
+  background-color: var(--yellow-solid);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: 2px solid var(--yellow-solid);
+  outline-offset: 0.5rem;
+}
+.oferta-nome {
+  text-align: center;
+  font-size: 2.6rem;
+}
+.hotel-estrelas {
+  margin: 1rem 0 2.5rem;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.rating {
+  color: var(--yellow-solid);
+}
+
+.btn {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 3.5rem;
+  border: none;
+  border-radius: 10rem;
+  display: inline-flex;
+}
+.oferta .btn-gradient {
+  background-image: var(--gradient-color);
+}
+.oferta .btn-gradient:hover {
+  background-image: var(--gradient-color-alt);
+}
+.oferta .dots {
+  font-size: 2.4rem;
+  margin-left: 0.5rem;
+  opacity: 0.75;
+}
+.oferta .btn-purple {
+  background-color: var(--purple-solid);
+}
+.oferta .btn-purple:hover {
+  background-color: #56247f;
+}
+
+/* ------------------------ */
+/* * CARACTERISTICAS */
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f3ea;
+  align-items: center;
+  padding: 80px 10px;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(174, 125, 180, 0.8),
+      rgba(173, 126, 168, 0.8)
+    ),
+    url("../../images/the_paradise_bg.jpg") bottom center no-repeat;
+  background-size: cover;
+}
+
+.caracteristicas h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #191c03;
+  text-align: center;
+}
+
+.caracteristicas p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  color: #191c03;
+  text-align: center;
+}
+.caracteristicas hr {
+  width: 200px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 70px;
+  border: none;
+}
+.caracteristicas .grid {
+  width: 100%;
+  display: flex;
+}
+.caracteristicas .grid li {
+  padding: 20px;
+  text-align: center;
+}
+.caracteristicas .grid li i {
+  color: var(--purple-solid);
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.caracteristicas .grid li h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #dfe23f;
+  margin-bottom: 30px;
+}
+.caracteristicas .grid li p {
+  color: #2d2c2c;
+  font-weight: bold;
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
 .contato {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   background-color: #4e4b4b;
-  flex-direction: column;
+  align-items: center;
   height: 100vh;
-  display: flex;
+  background: linear-gradient(
+      to right,
+      rgba(204, 109, 241, 0.8),
+      rgba(143, 80, 251, 0.8)
+    ),
+    url("../../images/the_paradise_bg.jpg") bottom center no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -82,7 +287,8 @@
   display: flex;
   margin: 0 auto;
   padding: 12% 0 10% 0;
-  color: #eee;
+  color: #2d2c2c;
+  font-weight: bold;
 }
 
 .div01 {
@@ -97,17 +303,13 @@
   width: 5%;
   display: flex;
   margin: 1rem 0 1rem 0;
+  cursor: pointer;
 }
 
 .nub {
   font-size: 25px;
   text-align: right;
   margin: 50% 0 0 4rem;
-}
-
-i {
-  padding-right: 30px;
-  position: absolute;
 }
 
 .cont {
@@ -137,7 +339,14 @@ i {
 }
 
 .footer {
-  background-color: #4e4b4b;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(250, 158, 44, 0.8),
+      rgba(143, 80, 251, 0.8)
+    ),
+    url("../../images/footer-bg.jpg") bottom center no-repeat;
+  background-size: cover;
 }
 .footer li {
   list-style: none;
@@ -184,17 +393,6 @@ i {
   border: 2px #4f4f4f solid;
   border-radius: 10px;
   background-color: #fff;
-}
-
-.destaque {
-  background-color: #4e4b4b;
-  height: 100vh;
-}
-.destaque iframe {
-  display: block;
-  width: 60%;
-  height: 60%;
-  margin: 5% auto;
 }
 
 @media screen and (max-width: 840px) {
