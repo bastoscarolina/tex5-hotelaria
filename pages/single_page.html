@@ -26,7 +26,7 @@
     <title>The Experience Hotel</title>
   </head>
   <body>
-    <header class="header">
+    <header id="home" class="header">
       <nav class="nav">
         <div class="nav__brand">
           <!-- <img src="https://hotel-project-seven.vercel.app/images/logo.png" alt=""> -->
@@ -35,16 +35,16 @@
         <div class="nav__navbar">
           <ul class="nav__navlist">
             <li class="nav__item">
-              <a href="../pages/single_page.html" class="nav__link">Início</a>
+              <a href="#" class="nav__link">Início</a>
             </li>
             <li class="nav__item">
               <a href="#oferta" class="nav__link">Oferta</a>
             </li>
             <li class="nav__item">
-              <a href="beneficios" class="nav__link">Benefícios</a>
+              <a href="#beneficios" class="nav__link">Benefícios</a>
             </li>
             <li class="nav__item">
-              <a href="#contato" class="nav__link">Contatos</a>
+              <a href="#contatos" class="nav__link">Contatos</a>
             </li>
             <li class="nav__item">
               <a href="#formulario" class="nav__link">Formulário</a>
@@ -55,95 +55,56 @@
       <h1 class="slogan">Conforto e praticidade para você</h1>
     </header>
     <main class="main">
-      <section class="destaque"></section>
-      <section class="oferta" id="oferta">
-        <div class="oferta-container">
-          <h5 class="oferta-nome">OFERTA</h5>
+      <section id="oferta" class="destaque">
+        <h2 class="title">Seção Oferta</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/eAW1TNnjrzs"
+          title="Video promocional hotel"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          seamless="seamless"
+        ></iframe>
+      </section>
+      <section id="beneficios" class="beneficios">
+        <h2 class="beneficios__title">Benefícios</h2>
 
-          <div class="oferta-content">
-            <div class="desconto">40% Desconto</div>
-            <h3>The Experience Days</h3>
-            <h4>Tenha uma experiência no melhor hotel do Brasil</h4>
-
-            <!-- <h2 class="title">Seção Oferta</h2> -->
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/eAW1TNnjrzs"
-              title="Video promocional hotel"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              seamless="seamless"
-            ></iframe>
-
+        <div class="beneficios__tipo">
+          <div class="beneficios__item">
             <p>
-              Implantado em uma área completamente arborizada, o the Experience
-              Hotel é o único hotel pé na areia da região. O mar será o seu
-              companheiro e você terá as belezas da natureza como guia.
+              Conheça os nossos diferenciais e com certeza você irá se apaixonar
             </p>
-            <a href="#" class="btn btn-gradient"
-              >Reserve Já
-              <!-- <span class="dots"><i class="fa fa-ellipsis-h"></i></span> -->
-            </a>
+          </div>
+          <div class="beneficios__item">
+            <i class="beneficios__icon fa fa-cutlery" aria-hidden="true"></i>
+            <h4 class="beneficios__itemTitle">Restaurante</h4>
+            <img src="./images/restaurante.jpg" alt="Restaurante" />
+          </div>
+          <div class="beneficios__item">
+            <i class="beneficios__icon fa fa-bus" aria-hidden="true"></i>
+            <h4 class="beneficios__itemTitle">Translado</h4>
+            <img src="./images/translado.jpg" alt="Translado" />
+          </div>
+          <div class="beneficios__item">
+            <i class="beneficios__icon fa fa-bicycle" aria-hidden="true"></i>
+            <h4 class="beneficios__itemTitle">Academia</h4>
+            <img src="./images/academia.jpg" alt="Academia" />
+          </div>
+          <div class="beneficios__item">
+            <i class="beneficios__icon fa fa-diamond" aria-hidden="true"></i>
+            <h4 class="beneficios__itemTitle">Spa</h4>
+            <img src="./images/spa.jpg" alt="Spa" />
+          </div>
+          <div class="beneficios__item">
+            <i class="beneficios__icon fa fa-tint" aria-hidden="true"></i>
+            <h4 class="beneficios__itemTitle">Lavanderia</h4>
+            <img src="./images/lavanderia.jpg" alt="Lavanderia" />
           </div>
         </div>
       </section>
-      <section class="caracteristicas" id="caracteristicas">
-        <h3>Benefícios da Oferta</h3>
-        <hr />
-        <ul class="grid">
-          <li>
-            <i class="fa fa-location-arrow"></i>
-            <h4>Localização</h4>
-            <p>
-              Localizado no nordeste, entre o mar e a Mata Atlântica, a região
-              tem refrescantes cachoeiras e praias belíssimas, muitas delas tão
-              pequenas que nem aparecem nos mapas.
-            </p>
-          </li>
-          <li>
-            <i class="fa fa-gift"></i>
-            <h4>Pacote de Ofertas</h4>
-            <p>
-              Passe momentos inesquecíveis com sua familia e amigos .Nossa com
-              uma diversidade de espaços que proporcionam momentos
-              inesquecíveis.
-            </p>
-          </li>
-          <li>
-            <i class="fa fa-home"></i>
-            <h4>Acomodações</h4>
-            <p>
-              Hotel Paraíso possuí 29 unidades, divididas entre 11 chalés, 16
-              amplas suítes e 2 todas com TV a cabo, frigobar, além de varanda
-              com rede.
-            </p>
-          </li>
-          <li>
-            <i class="fa fa-plane"></i>
-
-            <h4>Translado</h4>
-            <p>
-              Sabe aquele descontraído encontro com a familia e amigos? Ou um
-              momento relax? Nossa instalações conta com uma diversidade de
-              espaços que proporcionam momentos inesquecíveis.
-            </p>
-          </li>
-          <li>
-            <i class="fa fa-sun-o" aria-hidden="true"></i>
-
-            <h4>Passeios</h4>
-            <p>
-              Hotel Paraíso possuí 29 unidades, divididas entre 11 chalés, 16
-              amplas suítes e 2 todas com TV a cabo, frigobar, além de varanda
-              com rede.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="contato" id="contato">
+      <section id="contatos" class="contato">
         <h2 class="title">Seção Contato</h2>
         <div class="geral">
           <div class="div01">
@@ -192,8 +153,8 @@
       </section>
     </main>
     <hr />
-    <footer class="footer">
-      <div id="formulario">
+    <footer id="formulario" class="footer">
+      <div>
         <h2 class="title">Formulário de interesse</h2>
         <form
           class="form"
@@ -244,16 +205,16 @@
             <nav>
               <ul class="">
                 <li>
-                  <a href="#Destaque">Nossos Destaques</a>|
-                  <a href="#Benefícios">Melhores Benefícios</a>|
-                  <a href="#Contato">Contato</a>
+                  <a href="#home">Início</a>|
+                  <a href="#oferta">Nossos Destaques</a>|
+                  <a href="#beneficios">Melhores Benefícios</a>|
+                  <a href="#contatos">Contato</a>
                 </li>
               </ul>
             </nav>
           </fieldset>
         </form>
       </div>
-      <p>Todos os direitos reservados - The Experience Hotel 2023</p>
     </footer>
   </body>
 </html>
