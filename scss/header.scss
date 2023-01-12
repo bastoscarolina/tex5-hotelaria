@@ -1,1 +1,79 @@
+@use "variaveis" as v;
+@use "mixins" as mx;
 /* Header */
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
+}
+
+.navbar {
+    @include mx.display_nav;
+    padding: 20px;
+    background-color: v.$navBackgroud;
+    opacity: 0.9;
+    width: 100%;
+    color: v.$linkNav;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav__links a {
+    color: v.$linkNav;
+  }
+  /* LOGO */
+.logo {
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    & li {
+      padding: 5px 14px;
+    }
+    & li:hover {
+      background-color: v.$navBackgroudHover;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+}
+
+/* MENU SUSPENSO */
+.services {
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown {
+    background-color: v.$navBackgroud;
+    padding: 1em 0;
+    position: absolute; /*COM RELAÇÃO AOS PAIS*/
+    display: none;
+    border-radius: 8px;
+    top: 30px;
+    & li + li {
+        margin-top: 10px;
+    }
+    & li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+    }
+    & li:hover {
+      background-color: v.$navBackgroudHover;
+    }
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/* RESPONSIVIDADE */
+@import "mobile";
