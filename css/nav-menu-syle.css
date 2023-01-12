@@ -32,6 +32,7 @@ li {
   justify-content: space-between;
   padding: 20px;
   background-color: teal;
+  opacity: 0.9;
   width: 100%;
   color: #fff;
   position: fixed;
@@ -169,7 +170,7 @@ input[type="checkbox"] {
 }
 .hero h3 {
   font-size: 2rem;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 .hero .btn {
   background-color: #fff;
@@ -372,16 +373,17 @@ footer ul {
 }
 
 footer ul li {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 footer ul li:last-child {
   margin-right: 0;
 }
 footer ul li a {
   color: #c3c63b;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 footer p {
+  font-size: 0.7rem;
   color: #c3c63b;
   text-align: center;
 }
