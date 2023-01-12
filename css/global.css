@@ -15,46 +15,46 @@ body {
 
 /*Cabeçalho*/
 header {
-  margin: 15px 1px 10px 10px;
+  /* margin: 15px 1px 10px 10px; */
   /* color: goldenrod; */
 }
 
 header a {
-  text-decoration: none;
+  /* text-decoration: none;
   color: greenyellow;
   font-weight: 500;
-  transition: 0.75s;
+  transition: 0.75s; */
 }
 
 header a:hover {
-  font-weight: 700;
-  text-decoration: underline;
+  /* font-weight: 700;
+  text-decoration: underline; */
 }
 
 .head {
-  display: flex;
+  /* display: flex;
   margin: auto;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .account {
-  display: flex;
+  /* display: flex;
   justify-content: end;
-  padding: 15px;
+  padding: 15px; */
 }
 
 .signout {
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .slogan {
-  display: flex;
+  /* display: flex;
   margin: auto;
-  font-size: 35px;
+  font-size: 35px; */
 }
 
 main {
@@ -65,7 +65,7 @@ main {
 }
 
 /* Rodapé */
-.rodape {
+/* .rodape {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -101,7 +101,7 @@ main {
 
 .redes-sociais span {
   margin: 1rem;
-}
+} */
 
 /* ESTILO MOBILE  */
 @media (min-width: 600px) {
