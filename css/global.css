@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,52 +9,52 @@
 body {
   font-family: "Inter", serif;
   background-color: #272727;
-  /* color:#dccea8; */
+  color:#dccea8;
   color: goldenrod;
-}
+} */
 
 /*Cabeçalho*/
 header {
-  /* margin: 15px 1px 10px 10px; */
-  /* color: goldenrod; */
+  margin: 15px 1px 10px 10px;
+  color: goldenrod;
 }
 
 header a {
-  /* text-decoration: none;
+  text-decoration: none;
   color: greenyellow;
   font-weight: 500;
-  transition: 0.75s; */
+  transition: 0.75s;
 }
 
 header a:hover {
-  /* font-weight: 700;
-  text-decoration: underline; */
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .head {
-  /* display: flex;
+  display: flex;
   margin: auto;
-  justify-content: space-evenly; */
+  justify-content: space-evenly;
 }
 
 .nav {
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
 }
 .account {
-  /* display: flex;
+  display: flex;
   justify-content: end;
-  padding: 15px; */
+  padding: 15px;
 }
 
 .signout {
-  /* margin-left: 10px; */
+  margin-left: 10px;
 }
 
 .slogan {
-  /* display: flex;
+  display: flex;
   margin: auto;
-  font-size: 35px; */
+  font-size: 35px;
 }
 
 main {
