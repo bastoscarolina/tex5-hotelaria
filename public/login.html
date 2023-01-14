@@ -4,52 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/login-style.css" />
-    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>T.EXperience Hotel | Login</title>
   </head>
   <body>
-    <!-- <nav></nav> -->
-
-    <section>
-      <div class="content">
-        <div class="card">
-          <a href="../index.html">&lsaquo; Voltar</a>
-          <img class="logo" src="../images/svg/Logo_04.svg" alt="Logo" />
-          <div class="title">
-            <!-- <img class="title-img"src="../images/Hotel-PNG-Photo.png" alt=""> -->
-          </div>
-          <div class="card-content">
-            <h2>Login</h2>
-            <div class="card-content-area">
+    <section class="section">
+      <div class="section__card">
+        <h2 class="section__cardTitle">T.EXperience Hotel</h2>
+        <div class="section__cardBody">
+          <form action="" method="post">
+            <div class="bodyItems">
               <label for="email">Email</label>
               <input type="email" id="email" placeholder="Digite seu e-mail" required />
+            </div>
+            <div class="bodyItems">
               <label for="password">Senha</label>
               <input type="password" id="senha" placeholder="Digite sua senha" required />
             </div>
-            <div class="card-button">
-              <button class="submit" >
-                <a href="./home.html">Login</a>
+            <div class="bodyItem">
+              <button type="submit">Entrar</a>
               </button>
             </div>
           </div>
-          <div class="button">
-            <a href="#">Esqueceu sua senha?</a>
-            <a href="#">Cadastre-se</a>  
+          <div class="cardFooter">
+            <button type="button" class="voltarBtn">Voltar</button>
+            <span class="psw">Esqueceu a <a href="#">senha?</a></span>
           </div>
-          <div class="login-outros">
-            <h4>OU</h4>
-          </div>
-          <div class="login-social">
-            <input type="image" src="../images/Google_Logo.png" alt="Google"/>
-            <input type="image" src="../images/Facebook_Logo.png" alt="Facebook"/>
-          </div>                
-                   
-        </div>
-      </div>
-          </div>
-      </form>
+          </form>
       </div>
     </section>
   </body>

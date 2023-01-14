@@ -1,0 +1,101 @@
+span.psw a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/home_hotel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section {
+  background-color: rgba(65, 90, 119, 0.9);
+  width: 50vh;
+  padding: 1rem;
+  color: #e0e1dd;
+}
+.section__cardTitle {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  background-color: #0d1b2a;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 4px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgba(13, 27, 42, 0.9);
+}
+
+.bodyItems label {
+  display: block;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+span.psw a {
+  color: #e0e1dd;
+  font-weight: 900;
+}
+
+.voltarBtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #e0e1dd;
+  color: #0d1b2a;
+}
+
+.voltarBtn:hover {
+  background-color: rgba(224, 225, 221, 0.9);
+}
+
+@media (max-width: 415px) and (orientation: portrait) {
+  .section {
+    width: 90%;
+  }
+}
+@media (max-width: 915px) and (orientation: landscape) {
+  .section {
+    width: 40vw;
+  }
+}
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .section {
+    width: 45vw;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */
