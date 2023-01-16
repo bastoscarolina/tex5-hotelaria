@@ -1,0 +1,100 @@
+@use "variaveis" as v;
+@use "mixins" as mx;
+@use "extends";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: v.$fonte;
+}
+
+body {
+  @include mx.login-container-fluid;
+  // background-color: v.$navBackgroud;
+  background-image: url(../images/home_hotel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section {
+  background-color: rgb(v.$navBackgroud, .9);
+  width: 50vh;
+  padding: 1rem;
+  color: v.$backgroud;
+
+  &__cardTitle {
+    text-align: center;
+    padding: 2rem 0;
+  }
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  background-color: v.$h1;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 4px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgb(v.$h1, 0.9);
+}
+
+.bodyItems label {
+  display: block;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+span.psw a {
+  @extend %decoration-none;
+  color: v.$backgroud;
+  font-weight: 900;
+}
+
+.voltarBtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: v.$backgroud;
+  color: v.$h1;
+}
+
+.voltarBtn:hover {
+  background-color: rgb(v.$backgroud, .9);
+}
+
+@media (max-width: 415px) and (orientation: portrait) {
+  .section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 915px) and (orientation: landscape) { 
+  .section {
+    width: 40vw;
+  }
+}
+
+ @media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .section {
+    width: 45vw;
+  }
+}
