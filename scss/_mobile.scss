@@ -80,3 +80,30 @@ input[type="checkbox"] {
     flex-direction: column;
   }
 }
+
+/* RESPONSIVIDADE CONTATOS */
+
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+
+
+   & .informacao_de_contato {
+      & button {
+        margin-top: .3rem;
+        padding: .5rem;
+      }
+    }
+
+    
+   & input {
+      width: 50%;
+      height: 10px;
+      text-indent: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1520px) {
+
+}

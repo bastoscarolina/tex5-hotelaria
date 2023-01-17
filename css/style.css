@@ -165,6 +165,21 @@ input[type=checkbox] {
     flex-direction: column;
   }
 }
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
 /* Footer */
 footer {
   display: flex;
@@ -268,6 +283,21 @@ input[type=checkbox] {
 @media (max-width: 700px) {
   .caracteristicas .grid {
     flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
   }
 }
 /* HOME */
@@ -448,6 +478,425 @@ input[type=checkbox] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* ACOMODAÇÕES */
+/* Header */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+a:hover {
+  opacity: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #415a77;
+  opacity: 0.9;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav__links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu li {
+  padding: 5px 14px;
+}
+.menu li:hover {
+  background-color: #516b8a;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* MENU SUSPENSO */
+.services {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown {
+  background-color: #415a77;
+  padding: 1em 0;
+  position: absolute; /*COM RELAÇÃO AOS PAIS*/
+  display: none;
+  border-radius: 8px;
+  top: 30px;
+}
+.dropdown li + li {
+  margin-top: 10px;
+}
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+.dropdown li:hover {
+  background-color: #516b8a;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c1926;
+  padding: 3% 0;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  margin: 30px 0;
+}
+footer ul li {
+  margin-right: 20px;
+}
+footer ul li:last-child {
+  margin-right: 0;
+}
+footer ul li a {
+  color: #fff;
+  font-size: 2rem;
+}
+footer p {
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+main {
+  width: 100%;
+  height: 71vh;
+  background: #e0e1dd;
+}
+
+/*form*/
+.contato {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.informacao_de_contato {
+  width: 50%;
+  margin: 50px 50px 50px 0;
+  align-items: center;
+  border: 1px solid #415a77;
+  box-shadow: 7px 9px 3px #415a77;
+  color: #25334a;
+}
+
+legend {
+  text-align: center;
+}
+
+.info {
+  margin-top: 10px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15% 5%;
+}
+
+.contato ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.informacao_de_contato ul li {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #25334a;
+  text-transform: uppercase;
+}
+.informacao_de_contato input {
+  width: 90%;
+  margin-top: 10px;
+  padding: 20px 0;
+  background-color: #fff;
+  border: none;
+}
+
+.select {
+  width: 40%;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: none;
+  text-indent: 1rem;
+  color: gray;
+}
+
+.titulo_da_secao {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 15px;
+  display: flex;
+}
+
+input {
+  width: 50%;
+  height: 30px;
+  text-indent: 1rem;
+}
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.nome, .email, .telefone, .assunto, .mensage {
+  margin: 1rem 0 0 1rem;
+}
+
+.textarea {
+  width: 80%;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border: none;
+  resize: none;
+}
+
+.informacao_de_contato button {
+  border: none;
+  background-color: #0d1b2a;
+  color: #fff;
+  margin: 1rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.informacao_de_contato button:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+/* Chrome e outros */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
