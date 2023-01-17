@@ -450,4 +450,525 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
+/* Header */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #415a77;
+  opacity: 0.9;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav__links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.menu li:hover {
+  background-color: #516b8a;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* MENU SUSPENSO */
+.services {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown {
+  background-color: #415a77;
+  padding: 1em 0;
+  position: absolute; /*COM RELAÇÃO AOS PAIS*/
+  display: none;
+  border-radius: 8px;
+  top: 30px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #516b8a;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c1926;
+  padding: 3% 0;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  margin: 30px 0;
+}
+
+footer ul li {
+  margin-right: 20px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* PÁGINA DE RESERVAS */
+.reservaHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../images/recepcao.png);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  color: #415a77;
+}
+.reservaHero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  color: #e0e1dd;
+}
+.reservaHero h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.reservaHero .btn {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #0c1926;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+
+.containerReserv {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__title {
+  color: #0c1926;
+  font-size: 2rem;
+  margin: 45px 0 35px 0;
+  text-align: center;
+}
+
+.form__infoReserva {
+  color: #0c1926;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.divider {
+  width: 200px;
+  height: 2px;
+  background-color: #0c1926;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+
+.form__date {
+  display: flex;
+  padding: 5rem 0 4rem 0;
+  justify-content: space-evenly;
+  column-gap: 1rem;
+}
+
+.form__date label {
+  padding: 0 0 1rem 0;
+}
+
+.form__date input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.reservContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roomOptions__paragraph {
+  position: relative;
+  color: #0c1926;
+  font-size: 2rem;
+  margin: 45px 0 35px 0;
+  text-align: left;
+}
+
+.roomOptions {
+  margin-bottom: 3rem;
+  width: 45%;
+}
+.roomOptions__room {
+  background-color: #fff;
+  border: 1px solid #415a77;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.07);
+}
+.roomOptions__roomImagem {
+  padding: 0 0 2rem 0;
+  width: 100%;
+}
+.roomOptions__roomTitle {
+  padding: 0 0 1rem 1rem;
+  color: #0c1926;
+}
+.roomOptions__roomDescription {
+  text-align: justify;
+  padding: 0 1rem 1.7rem 1rem;
+}
+.roomOptions__roomPrice {
+  display: block;
+  width: 10vw;
+  background-color: #00FF00;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 0 0 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+.roomOptions__selectRoom {
+  padding: 1rem 0 1rem 1rem;
+}
+.roomOptions__selectRoom label {
+  padding-left: 0.5rem;
+}
+
+.resume {
+  position: sticky;
+  height: 400px;
+  background: #415a77;
+  color: #fff;
+  top: 200px;
+  width: 50%;
+  margin-bottom: 5.1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.07);
+}
+.resume__reserve {
+  padding: 2rem;
+}
+.resume__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.resume__item {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+.resume__addServices {
+  display: block;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: right;
+}
+.resume__continue {
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #415a77;
+  cursor: pointer;
+}
+
+@media (max-width: 415px) and (orientation: portrait) {
+  .reservaHero {
+    padding: 0 0.5rem;
+  }
+  .containerReserv {
+    width: 90%;
+  }
+  .form__date {
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+  .form__date div {
+    padding: 1rem 0;
+  }
+  .roomOptions__paragraph {
+    margin: 0 0 35px 0;
+    text-align: center;
+  }
+  .reservContent {
+    flex-direction: column;
+  }
+  .roomOptions {
+    margin: 0;
+  }
+  .roomOptions, .resume {
+    width: 100%;
+  }
+  .roomOptions__roomPrice {
+    width: 100%;
+    margin: 0;
+  }
+  .resume {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 915px) and (orientation: landscape) {
+  .reservaHero {
+    padding: 0 0.5rem;
+  }
+  .containerReserv {
+    width: 90%;
+  }
+  .form__date {
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+  .form__date div {
+    padding: 1rem 0;
+  }
+  .roomOptions__paragraph {
+    margin: 0 0 35px 0;
+    text-align: center;
+  }
+  .reservContent {
+    flex-direction: column;
+  }
+  .roomOptions {
+    margin: 0;
+  }
+  .roomOptions, .resume {
+    width: 100%;
+  }
+  .roomOptions__roomPrice {
+    width: 100%;
+    margin: 0;
+  }
+  .resume {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .roomOptions__roomPrice {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
