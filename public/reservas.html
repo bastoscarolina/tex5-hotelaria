@@ -4,177 +4,203 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/854cc3527e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Reservas</title>
-
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/reservas-style.css" />
   </head>
   <body>
-    <!--Cabeçalho-->
     <header>
-      <div class="account">
-        <div class="ola-usuario">
-          <span>Olá "Jhon Doe"</span>
-        </div>
-        <div class="signout">
-          <a href="../index.html">Sair</a>
-          <a href="../public/login.html">Login</a>
-        </div>
-      </div>
-      <div class="head">
-        <img src="../images/svg/Logo_04.svg" alt="logo" width="150" />
-        <strong class="slogan"> CONFORTO E PRATICIDADE PARA VOCÊ </strong>
-      </div>
-      <div class="nav">
-        <nav>
-          <a href="../index.html">HOME</a> |
-          <a href="acomodacoes.html">ACOMODAÇÕES</a> |
-          <a href="reservas.html">RESERVAS</a> |
-          <a href="sobre-nos.html">SOBRE</a> |
-          <a href="contato.html">CONTATO</a>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">T.EXperience Hotel</div>
+        <!-- NAVEGAÇÃO MENU -->
+        <ul class="nav__links">
+          <!-- CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVEGAÇÃO MENUS -->
+          <div class="menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="./acomodacoes.html">Acomodações</a></li>
+            <li><a href="./reservas.html">Reservas</a></li>
+            <li><a href="./sobre-nos.html">Sobre</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li class="services">
+              <a href="/">Visitante <span class="arrow-icon">&#9660;</span></a>
+              <!-- MENU SUSPENSO OU DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="./login.html">Entrar </a></li>
+                <li><a href="/">Sair</a></li>
+                <li><a href="/">Perfil</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-      <section class="container inputs">
-        <h2 class="title-reserva">Minha Reserva</h2>
-        <span class="info-reserva"
-          >Forneça a data de entrada, saída e quantidade de pessoas</span
-        >
-        <form class="form-reserva" action="">
-          <div class="field-form-reserva">
-            <label for="checkin">Escolha a data de entrada</label>
+    <section class="reservaHero">
+      <h1>As férias dos seus sonhos está aqui...</h1>
+      <h3>"Facilidade e segurança que você precisa"</h3>
+      <a href="#reserves" class="btn">Reserve agora</a>
+    </section>
+
+    <main class="containerReserv">
+      <section class="containerReserv__form">
+        <h2 class="form__title">Minha Reserva</h2>
+        <p class="form__infoReserva">
+          Forneça a data de entrada, saída e quantidade de pessoas
+        </p>
+
+        <hr class="divider">
+
+        <form class="form__date" action="" id="reserves">
+          <div>
+            <label class="field-form-reserva" for="checkin"
+              >Escolha a data de entrada</label
+            >
             <input type="date" name="checkin" id="checkin autofocus required" />
           </div>
-          <div class="field-form-reserva">
-            <label for="checkout">Escolha a data de saída</label>
+
+          <div>
+            <label class="field-form-reserva" for="checkout"
+              >Escolha a data de saída</label
+            >
             <input type="date" name="checkout" id="checkout" />
           </div>
-          <div class="field-form-reserva">
-            <label for="qtd_pessoas">Quantidade de pessoas</label>
+
+          <div>
+            <label class="field-form-reserva" for="qtd_pessoas"
+              >Quantidade de pessoas</label
+            >
             <input type="number" name="qtd_pessoas" id="qtd_pessoas" min="1" />
           </div>
         </form>
       </section>
 
-      <section class="conteudo-reservas container">
-        <section class="opcoes-acomodacoes">
-          <p>Escolha sua opção de quarto</p>
-          <div class="opcao">
-            <img src="../images/quartos/quarto_1.jpg" alt="quarto tipo X" class="opcao-imagem"/>
+      <h2 class="roomOptions__paragraph">Escolha seu quarto</h2>
+      <div class="reservContent">
+        <div class="roomOptions">
+          <article class="roomOptions__room">
+            <img
+              src="../images/quartos/quarto_1.jpg"
+              alt="quarto tipo X"
+              class="roomOptions__roomImagem"
+            />
             <div>
-              <h3 class="opcao-titulo">Quarto X</h3>
-              <span class="opcao-descricao">
+              <h3 class="roomOptions__roomTitle">Quarto X</h3>
+              <p class="roomOptions__roomDescription">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
                 neque est sint soluta, fugit reprehenderit quia ipsa corrupti
                 necessitatibus unde sapiente? Perferendis voluptatibus, totam
                 vero voluptates enim cum facilis amet.
-              </span>
-              <span class="opcao-preco">R$150,00</span>
+              </p>
+
+              <label class="roomOptions__roomPrice">R$150,00</label>
+
+              <div class="roomOptions__selectRoom">
+                <input
+                  class="roomOptions__roomRadioBtn"
+                  type="radio"
+                  name="tipo-acomodacao"
+                  id="quartoX"
+                  value="quartoX"
+                />
+
+                <label for="quartoX">Selecionar o quarto X</label>
+              </div>
+            </div>
+          </article>
+
+          <article class="roomOptions__room">
+            <img
+              src="../images/quartos/quarto_2.jpg"
+              alt="quarto tipo Y"
+              class="roomOptions__roomImagem"
+            />
+            <h3 class="roomOptions__roomTitle">Quarto Y</h3>
+            <p class="roomOptions__roomDescription">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+              neque est sint soluta, fugit reprehenderit quia ipsa corrupti
+              necessitatibus unde sapiente? Perferendis voluptatibus, totam vero
+              voluptates enim cum facilis amet.
+            </p>
+            <label class="roomOptions__roomPrice">R$100,00</label>
+
+            <div class="roomOptions__selectRoom">
               <input
+                class="roomOptions__roomRadioBtn"
                 type="radio"
                 name="tipo-acomodacao"
-                id="quartoX"
-                value="quartoX"
+                id="quartoY"
+                value="quartoY"
               />
-              <label for="quartoX">Selecionar o quarto X</label>
+              <label for="quartoY">Selecionar o quarto Y</label>
             </div>
-          </div>
-          <div class="opcao">
-            <img src="../images/quartos/quarto_2.jpg" alt="quarto tipo Y" class="opcao-imagem"/>
-            <h3 class="opcao-titulo">Quarto Y</h3>
-            <span class="opcao-descricao">
+          </article>
+
+          <article class="roomOptions__room">
+            <img
+              src="../images/quartos/quarto_3.jpg"
+              alt="quarto tipo Z"
+              class="roomOptions__roomImagem"
+            />
+            <h3 class="roomOptions__roomTitle">Quarto Z</h3>
+            <p class="roomOptions__roomDescription">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
               neque est sint soluta, fugit reprehenderit quia ipsa corrupti
               necessitatibus unde sapiente? Perferendis voluptatibus, totam vero
               voluptates enim cum facilis amet.
-            </span>
-            <span class="opcao-preco">R$100,00</span>
-            <input
-              type="radio"
-              name="tipo-acomodacao"
-              id="quartoY"
-              value="quartoY"
-            />
-            <label for="quartoY">Selecionar o quarto Y</label>
-          </div>
-          <div class="opcao">
-            <img src="../images/quartos/quarto_3.jpg" alt="quarto tipo Z" class="opcao-imagem"/>
-            <h3 class="opcao-titulo" >Quarto Z</h3>
-            <span class="opcao-descricao">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
-              neque est sint soluta, fugit reprehenderit quia ipsa corrupti
-              necessitatibus unde sapiente? Perferendis voluptatibus, totam vero
-              voluptates enim cum facilis amet.
-            </span>
-            <span class="opcao-preco">R$200,00</span>
-            <input
-              type="radio"
-              name="tipo-acomodacao"
-              id="quartoZ"
-              value="quartoZ"
-            />
-            <label for="quartoZ">Selecionar o quarto Z</label>
-          </div>
-        </section>
+            </p>
+            <span class="roomOptions__roomPrice">R$200,00</span>
 
-        <section class="resumo-reservas">
-          <p>RESUMO DA RESERVA</p>
-
-          <div>
-            <span>Apartamento: XXX</span>
-            <span>Checkin: XXX</span>
-            <span>Checkout: XXX</span>
-            
-          </div>
-          
-          <a href="#">Adicionar mais SERVIÇOS</a>
-          <button>CONTINUAR</button>
-
-        </section>
-
-      </section>
-
-    </main>
-    <!-- Rodapé -->
-    <footer class="rodape">
-      <div class="copyrt">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941899.454243292!2d-47.79013423460252!3d-22.75444051088309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5135ca421c39%3A0x68ceda0bae5dbdae!2zUGFsw6FjaW8gVGFuZ2Fyw6E!5e0!3m2!1spt-BR!2sbr!4v1671285215967!5m2!1spt-BR!2sbr"
-          width="400"
-          height="300"
-          style="border: 0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <a href="contato.html">Precisa de ajuda?</a>
-      <div class="redes-sociais">
-        <span>Confira nossas redes sociais</span>
-        <div>
-          <a href="http://www.facebook.com/" target="_blank">
-            <img
-              src="../images/icones/facebook-dourado-claro.png"
-              alt="logo facebook"
-            />
-          </a>
-          <a href="http://www.instagram.com/" target="_blank">
-            <img
-              src="../images/icones/instagram-dourado-claro.png"
-              alt="logo instagram"
-            />
-          </a>
-          <a href="http://www.twitter.com/" target="_blank">
-            <img
-              src="../images/icones/twitter-dourado-claro.png"
-              alt="logo twitter"
-            />
-          </a>
+            <div class="roomOptions__selectRoom">
+              <input
+                class="roomOptions__roomRadioBtn"
+                type="radio"
+                name="tipo-acomodacao"
+                id="quartoZ"
+                value="quartoZ"
+              />
+              <label for="quartoZ">Selecionar o quarto Z</label>
+            </div>
+          </article>
         </div>
+
+        <aside class="resume">
+          <div class="resume__reserve">
+            <h2 class="resume__title">Resumo da reserva</h2>
+
+            <ul class="resume__items">
+              <li class="resume__item">Apartamento: XXXXX</li>
+              <li class="resume__item">Checkin: XX/XX/XXXX</li>
+              <li class="resume__item">Checkout: XX/XX/XXXX</li>
+            </ul>
+
+            <a class="resume__addServices" href="#">Adicionar mais serviços</a>
+            
+            <button class="resume__continue">Continuar</button>
+          </div>
+        </aside>
       </div>
+    </main>
+
+    <footer id="contato">
+      <ul>
+        <li>
+          <a href=""><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p>Todos os direitos reservados - The Experience Hotel 2023</p>
     </footer>
   </body>
 </html>
