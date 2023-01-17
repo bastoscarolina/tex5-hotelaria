@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../javascripts/aditionalServicesModal.js" async></script>
     <title>Reservas</title>
   </head>
   <body>
@@ -180,7 +181,7 @@
               <li class="resume__item">Checkout: XX/XX/XXXX</li>
             </ul>
 
-            <a class="resume__addServices" href="#">Adicionar mais serviços</a>
+            <a class="resume__addServices" id="myBtn">Adicionar mais serviços</a>
             
             <button class="resume__continue">Continuar</button>
           </div>
@@ -202,5 +203,64 @@
       </ul>
       <p>Todos os direitos reservados - The Experience Hotel 2023</p>
     </footer>
+
+    <!-- MODAL SERVIÇOS ADICIONAIS  -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="modal__title">Serviços adicionais</h2>
+          <form class="modal__form" action="#">
+
+            <div class="modal__options">
+              <div>
+                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="cafe-da-manha">
+                <label for="cafe-da-manha">Café da Manhã</label>
+              </div>
+              <span><strong>R$ 35,00</strong></span>
+            </div>
+
+            <div class="modal__options">
+              <div>
+                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="cofre">
+                <label for="cofre">Cofre</label>
+              </div>
+              <span><strong>R$ 35,00</strong></span>
+            </div>
+
+            <div class="modal__options">
+              <div>
+                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="lavanderia">
+                <label for="lavanderia">Lavanderia</label>
+              </div>
+              <span><strong>R$ 35,00</strong></span>
+            </div>
+
+            <div class="modal__options">
+              <div>
+                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="spa">
+                <label for="spa">Spa</label>
+              </div>
+              <span><strong>R$ 35,00</strong></span>
+            </div>
+
+            <div class="modal__options">
+              <div>
+                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="translado">
+                <label for="translado">Translado</label>
+              </div>
+              <span><strong>R$ 35,00</strong></span>
+            </div>
+
+          </form>
+
+        <hr class="dividerModal">
+
+        <span class="totalServies">
+          <strong>R$ 638,00</strong>
+        </span>
+      </div>
+    </div>
   </body>
 </html>

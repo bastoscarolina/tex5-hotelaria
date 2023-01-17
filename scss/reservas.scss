@@ -148,6 +148,84 @@
   }
 }
 
+// MODAL SERVIÇOS ADICIONAIS 
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 15rem;
+  align-content: center;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+
+  &__title {
+    padding-bottom: 2rem;
+    color: v.$navBackgroud;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  &__options label {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    color: v.$navBackgroud;
+    font-weight: bold;
+  }
+}
+
+.dividerModal {
+  margin: 1rem 0;
+}
+
+.totalServies {
+  display: block;
+  text-align: right;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.checkModal {
+  display: inline !important;
+}
+
 .resume {
   position: sticky;
   height: 400px;
@@ -235,6 +313,14 @@
   .resume {
     margin-bottom: 2rem;
   }
+
+  .modal {
+    padding-top: 7rem;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
 }
 
 @media (max-width: 915px) and (orientation: landscape) {
@@ -279,6 +365,14 @@
 
   .resume {
     margin-bottom: 2rem;
+  }
+
+  .modal {
+    padding-top: 4rem;
+  }
+
+  .modal-content {
+    width: 90%;
   }
 }
 
