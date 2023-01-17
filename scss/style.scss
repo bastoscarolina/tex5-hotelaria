@@ -1,0 +1,28 @@
+@use "variaveis" as v;
+@use "mixins" as mx;
+@use "extends";
+
+
+li {
+    list-style: none;
+}
+
+* {
+    font-family: v.$fonte;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//Seção Header e Footer
+@import "header";
+@import "footer";
+
+//ACOMODACOES
+
+/* HOME */
+@import "home";
+
+@import "reservas";
+
+@import "contatos";

@@ -60,7 +60,7 @@
 .title {
   text-align: left;
   padding: 2rem 0 0 5rem;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: v.$corSlogan;
 }
 .geral {
@@ -117,6 +117,51 @@ i {
   display: flex;
   flex-direction: column;
 }
+
+/* Início seção benefícios */
+.beneficios {
+  @include mx.container-fluid;
+  height: 100vh;
+  background-color: v.$corFundocont;
+  color: #fff;
+
+  &__title {
+    font-size: 2.5rem;
+    padding: 2rem 0 0 5rem;
+  }
+
+  &__tipo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 33%;
+    padding: 1rem .5rem;
+  }
+
+  &__item:nth-child(1) {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    padding: v.$p-y;
+  }
+
+  &__itemTitle {
+    padding: 1rem 0 .5rem 0;
+  }
+}
+
+.beneficios__tipo img {
+  border-radius: 10px;
+  @include mx.shadow;
+  width: 100%;
+  height: 250px;
+}
+/* Término seção benefícios */
 
 //Rodape//
 
@@ -178,6 +223,10 @@ i {
 .destaque{
   background-color: v.$corFundocont;
   height: 100vh;
+
+  & h2 {
+    font-size: 2.5rem;
+  }
 
   & iframe{
     display: block;

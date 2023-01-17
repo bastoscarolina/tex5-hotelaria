@@ -1,0 +1,33 @@
+/* Footer */
+@use "variaveis" as v;
+@use "mixins" as mx;
+
+footer {
+    @include mx.display_footer;
+    background-color: v.$corFooter;
+    padding: 3% 0;
+    align-items: center;
+    & ul {
+      display: flex;
+      margin: 30px 0;
+    }
+    
+    & ul li {
+      margin-right: 20px;
+    }
+    & ul li:last-child {
+      margin-right: 0;
+    }
+    & ul li a {
+      color: v.$linkNav;
+      font-size: 2rem;
+    }
+    & p {
+      font-size: 0.7rem;
+      color: v.$linkNav;
+      text-align: center;
+    }
+}
+
+/* RESPONSIVIDADE */
+@import "mobile";
