@@ -2,12 +2,12 @@
 @use "mixins" as mx;
 
 //Seção Header e Footer
-@import "header";
-@import "footer";
+@use "header";
+@use "footer";
 
 //SEÇÃO CONTATOS
 
-main {
+.main {
     width: 100%;
     height: 71vh;
     background: v.$backgroud;
@@ -28,10 +28,10 @@ main {
     border: 1px solid v.$navBackgroud;
     box-shadow: 7px 9px 3px v.$navBackgroud;
     color: v.$p;
-}
 
-legend {
-    text-align: center;
+    & legend {
+        text-align: center;
+    }
 }
 
 .info {
@@ -68,8 +68,15 @@ legend {
         width: 90%;
         margin-top: 10px;
         padding: 20px 0;
+        height: 30px;
         background-color: #fff;
         border: none;
+        text-indent: 1rem;
+    }
+
+    & label {
+        font-size: 15px;
+        display: flex;
     }
 }
 
@@ -88,23 +95,6 @@ legend {
     font-weight: bold;
 }
 
-label {
-    font-size: 15px;
-    display: flex;
-}
-
-input {
-    width: 50%;
-    height: 30px;
-    text-indent: 1rem;
-}
-
-textarea:focus, input:focus, select:focus {
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-} 
-
 .nome, .email, .telefone, .assunto, .mensage {
     margin: 1rem 0 0 1rem;
 }
@@ -119,8 +109,6 @@ textarea:focus, input:focus, select:focus {
 }
 
 .informacao_de_contato {
-
-
     & button {
         border: none;
         background-color: v.$h1;
@@ -136,12 +124,11 @@ textarea:focus, input:focus, select:focus {
             transition: .5s;
         }
     }
+
+    textarea:focus, input:focus, select:focus {
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    } 
 }
 
-  
-  /* Chrome e outros */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
