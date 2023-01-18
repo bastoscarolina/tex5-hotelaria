@@ -3,7 +3,7 @@
 
 //Seção Header e Footer
 @use "header";
-@use "footer";
+
 
 //SEÇÃO CONTATOS
 
@@ -132,3 +132,4 @@
     } 
 }
 
+@import "footer";
