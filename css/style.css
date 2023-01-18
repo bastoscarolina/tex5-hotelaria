@@ -272,20 +272,23 @@ input[type=checkbox] {
 }
 /* HOME */
 /*HOME*/
+img {
+  width: 100%;
+}
+
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: url(../images/home_hotel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   min-height: 100vh;
   color: #fff;
   background-color: #0c1926;
-  /*     & img {
-          transform: rotate(180deg);
-      } */
 }
 .home h1 {
   font-size: 3.2rem;
