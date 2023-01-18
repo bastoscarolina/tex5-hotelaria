@@ -80,3 +80,51 @@ input[type="checkbox"] {
     flex-direction: column;
   }
 }
+
+/* RESPONSIVIDADE CONTATOS */
+
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+
+
+   & .informacao_de_contato {
+      & button {
+        margin-top: .3rem;
+        padding: .5rem;
+      }
+    }
+
+    
+   & input {
+      width: 50%;
+      height: 10px;
+      text-indent: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1520px) {
+
+}
+
+// /*RESPOSIVIDADE ACOMODACOES*/
+// @media (max-width:900px){
+//   .principal{
+//     margin-top: 11vh;
+//   }
+//   .container {
+
+//       & article figure{
+//         display: inline;
+          
+//           & img{
+//             width:25%
+//           }
+        
+//       }
+//   }
+//   .quarto_destaque{
+//     width:70%;
+//   }
+// }

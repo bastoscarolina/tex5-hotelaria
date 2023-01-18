@@ -60,7 +60,7 @@
 .title {
   text-align: left;
   padding: 2rem 0 0 5rem;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: v.$corSlogan;
 }
 .geral {
@@ -126,7 +126,7 @@ i {
   color: #fff;
 
   &__title {
-    font-size: 4rem;
+    font-size: 2.5rem;
     padding: 2rem 0 0 5rem;
   }
 
@@ -223,6 +223,10 @@ i {
 .destaque{
   background-color: v.$corFundocont;
   height: 100vh;
+
+  & h2 {
+    font-size: 2.5rem;
+  }
 
   & iframe{
     display: block;
