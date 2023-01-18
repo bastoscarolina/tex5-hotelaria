@@ -80,7 +80,7 @@ a:hover {
 /* RESPONSIVIDADE */
 /* NAVBAR MENU RESPONSIVA*/
 /* CHECKBOX HACK */
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -117,7 +117,7 @@ input[type=checkbox] {
   .menu li + li {
     margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .menu {
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
   .hamburger {
@@ -200,7 +200,7 @@ footer p {
 /* RESPONSIVIDADE */
 /* NAVBAR MENU RESPONSIVA*/
 /* CHECKBOX HACK */
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -237,7 +237,7 @@ input[type=checkbox] {
   .menu li + li {
     margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .menu {
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
   .hamburger {
@@ -274,20 +274,37 @@ input[type=checkbox] {
     flex-direction: column;
   }
 }
-/* RESPONSIVIDADE CONTATOS */
-@media (max-width: 1595px) {
-  .contato {
-    height: 75vh;
-  }
-  .contato .informacao_de_contato button {
-    margin-top: 0.3rem;
-    padding: 0.5rem;
-  }
-  .contato input {
-    width: 50%;
-    height: 10px;
-    text-indent: 1rem;
-  }
+/* HOME */
+/*HOME*/
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../images/home_hotel.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #0c1926;
+  /*     & img {
+          transform: rotate(180deg);
+      } */
+}
+.home h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+}
+.home h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.home .btn {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #0c1926;
+  padding: 20px 50px;
+  text-transform: uppercase;
 }
 .principal {
   color: #25334a;
