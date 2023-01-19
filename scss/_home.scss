@@ -2,188 +2,188 @@
 @use "mixins" as mx;
 
 /*HOME*/
-
+img {
+  width: 100%;
+}
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-image: url(../images/home_hotel.jpg);
-    background-size: cover;
-    min-height: 100vh;
-    color: v.$linkNav;
-    background-color: v.$link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 
-/*     & img {
-        transform: rotate(180deg);
-    } */
-    & h1 {
-      font-size: 3.2rem;
-      margin-bottom: 15px;
-    }
-    & h3 {
-      font-size: 2rem;
-      margin-bottom: 50px;
-    }
-    & .btn {
-      background-color: v.$linkNav;
-      border-radius: 4px;
-      color: v.$link;
-      padding: 20px 50px;
-      text-transform: uppercase;
-    }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  color: v.$linkNav;
+  background-color: v.$link;
 
-
+  & h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+  }
+  & h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  & .btn {
+    background-color: v.$linkNav;
+    border-radius: 4px;
+    color: v.$link;
+    padding: 20px 50px;
+    text-transform: uppercase;
+  }
 }
 
 /* CONHEÇA O HOTEL */
 
 .conheca-o-hotel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 50px;
-    & h3 {
-      font-size: 2rem;
-      margin-bottom: 35px;
-      color: v.$link;
-      text-align: center;
-    }
-    
-    & p {
-      max-width: 800px;
-      margin-bottom: 35px;
-      color: v.$link;
-      text-align: center;
-    }
-    & hr {
-      width: 200px;
-      height: 2px;
-      background-color: v.$link;
-      margin-bottom: 70px;
-      border: none;
-    }
-    & .grid {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    & .grid li {
-      height: 350px;
-      padding: 20px;
-      border-radius: 4px;
-      background-clip: content-box;
-      background-size: cover;
-      background-position: center;
-    }
-    & .grid li.small {
-      flex-basis: 40%;
-    }
-    & .grid li.large {
-      flex-basis: 60%;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  & h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: v.$link;
+    text-align: center;
   }
 
-  /* CARACTERISTICAS */
+  & p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: v.$link;
+    text-align: center;
+  }
+  & hr {
+    width: 200px;
+    height: 2px;
+    background-color: v.$link;
+    margin-bottom: 70px;
+    border: none;
+  }
+  & .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  & .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+  }
+  & .grid li.small {
+    flex-basis: 40%;
+  }
+  & .grid li.large {
+    flex-basis: 60%;
+  }
+}
+
+/* CARACTERISTICAS */
 .caracteristicas {
-    background-color: v.$navBackgroud;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 50px;
-    & h3 {
-      font-size: 2rem;
-      margin-bottom: 35px;
-      color: v.$linkNav;
-      text-align: center;
-    }
-    
-    & p {
-      max-width: 800px;
-      margin-bottom: 35px;
-      color: v.$linkNav;
-      text-align: center;
-    }
-    & hr {
-      width: 200px;
-      height: 2px;
-      background-color: v.$linkNav;
-      margin-bottom: 70px;
-      border: none;
-    }
-    & .grid {
-      width: 100%;
-      display: flex;
-    }
-    & .grid li {
-      padding: 0 30px;
-      text-align: center;
-    }
-    & .grid li i {
-      color: v.$backgroud;
-      font-size: 50px;
-      margin-bottom: 30px;
-    }
-    & .grid li h4 {
-      font-size: 1.5rem;
-      color: v.$backgroud;
-      margin-bottom: 30px;
-    }
-    & .grid li p {
-      color: v.$linkNav;
-    }
+  background-color: v.$navBackgroud;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  & h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: v.$linkNav;
+    text-align: center;
   }
 
-  /* CNEWSLETTER */
-.newsletter {
-    min-height: 65vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 50px;
-    & h3 {
-      font-size: 2rem;
-      margin-bottom: 35px;
-      color: v.$h3;
-      text-align: center;
-    }
-    
-    & p {
-      max-width: 800px;
-      margin-bottom: 35px;
-      color: v.$h2;
-      text-align: center;
-    }
-    & hr {
-      width: 200px;
-      height: 2px;
-      background-color: v.$h2;
-      margin-bottom: 70px;
-      border: none;
-    }
-    & form {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 80%;
-      max-width: 800px;
-    }
-    & input {
-      padding: 15px;
-      border: 1px solid v.$h2;
-      border-radius: 4px;
-      margin-right: 15px;
-      flex: 1;
-    }
-    & button {
-      padding: 15px;
-      background-color: v.$h2;
-      color: v.$linkNav;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+  & p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: v.$linkNav;
+    text-align: center;
   }
+  & hr {
+    width: 200px;
+    height: 2px;
+    background-color: v.$linkNav;
+    margin-bottom: 70px;
+    border: none;
+  }
+  & .grid {
+    width: 100%;
+    display: flex;
+  }
+  & .grid li {
+    padding: 0 30px;
+    text-align: center;
+  }
+  & .grid li i {
+    color: v.$backgroud;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  & .grid li h4 {
+    font-size: 1.5rem;
+    color: v.$backgroud;
+    margin-bottom: 30px;
+  }
+  & .grid li p {
+    color: v.$linkNav;
+  }
+}
+
+/* CNEWSLETTER */
+.newsletter {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+  & h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: v.$h3;
+    text-align: center;
+  }
+
+  & p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: v.$h2;
+    text-align: center;
+  }
+  & hr {
+    width: 200px;
+    height: 2px;
+    background-color: v.$h2;
+    margin-bottom: 70px;
+    border: none;
+  }
+  & form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+  }
+  & input {
+    padding: 15px;
+    border: 1px solid v.$h2;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+  }
+  & button {
+    padding: 15px;
+    background-color: v.$h2;
+    color: v.$linkNav;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

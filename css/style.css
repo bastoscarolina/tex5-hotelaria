@@ -91,7 +91,7 @@ a:hover {
 /* RESPONSIVIDADE */
 /* NAVBAR MENU RESPONSIVA*/
 /* CHECKBOX HACK */
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -128,7 +128,7 @@ input[type=checkbox] {
   .menu li + li {
     margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .menu {
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
   .hamburger {
@@ -163,6 +163,122 @@ input[type=checkbox] {
 @media (max-width: 700px) {
   .caracteristicas .grid {
     flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 8%;
+    padding-left: 2%;
+  }
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+  .main .contato .titulo_da_secao {
+    font-size: 1rem;
+  }
+  .main .contato .info ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  .main {
+    margin-top: 12%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 912px) {
+  .main {
+    margin-top: 12%;
+    height: 79vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 10%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 710px) {
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+}
+@media (max-width: 735px) {
+  .main {
+    display: flex;
+    height: 150vh;
+  }
+  .main .contato {
+    display: block;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  .main {
+    height: 115vh;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    height: 142vh;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    height: 146vh;
+    margin-top: 25%;
   }
 }
 /* Footer */
@@ -196,7 +312,7 @@ footer p {
 /* RESPONSIVIDADE */
 /* NAVBAR MENU RESPONSIVA*/
 /* CHECKBOX HACK */
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -233,7 +349,7 @@ input[type=checkbox] {
   .menu li + li {
     margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .menu {
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
   .hamburger {
@@ -268,6 +384,139 @@ input[type=checkbox] {
 @media (max-width: 700px) {
   .caracteristicas .grid {
     flex-direction: column;
+  }
+}
+/* HOME */
+/*HOME*/
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../images/home_hotel.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #0c1926;
+  /*     & img {
+          transform: rotate(180deg);
+      } */
+}
+.home h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+}
+.home h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.home .btn {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #0c1926;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 8%;
+    padding-left: 2%;
+  }
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+  .main .contato .titulo_da_secao {
+    font-size: 1rem;
+  }
+  .main .contato .info ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  .main {
+    margin-top: 12%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 912px) {
+  .main {
+    margin-top: 12%;
+    height: 79vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 10%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 710px) {
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+}
+@media (max-width: 735px) {
+  .main {
+    display: flex;
+    height: 150vh;
+  }
+  .main .contato {
+    display: block;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  .main {
+    height: 115vh;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    height: 142vh;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    height: 146vh;
+    margin-top: 25%;
   }
 }
 /* HOME */
@@ -448,6 +697,1456 @@ input[type=checkbox] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* Header */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #415a77;
+  opacity: 0.9;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav__links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.menu li:hover {
+  background-color: #516b8a;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* MENU SUSPENSO */
+.services {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown {
+  background-color: #415a77;
+  padding: 1em 0;
+  position: absolute; /*COM RELAÇÃO AOS PAIS*/
+  display: none;
+  border-radius: 8px;
+  top: 30px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #516b8a;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 8%;
+    padding-left: 2%;
+  }
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+  .main .contato .titulo_da_secao {
+    font-size: 1rem;
+  }
+  .main .contato .info ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  .main {
+    margin-top: 12%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 912px) {
+  .main {
+    margin-top: 12%;
+    height: 79vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 10%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 710px) {
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+}
+@media (max-width: 735px) {
+  .main {
+    display: flex;
+    height: 150vh;
+  }
+  .main .contato {
+    display: block;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  .main {
+    height: 115vh;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    height: 142vh;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    height: 146vh;
+    margin-top: 25%;
+  }
+}
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c1926;
+  padding: 3% 0;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  margin: 30px 0;
+}
+
+footer ul li {
+  margin-right: 20px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 8%;
+    padding-left: 2%;
+  }
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+  .main .contato .titulo_da_secao {
+    font-size: 1rem;
+  }
+  .main .contato .info ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  .main {
+    margin-top: 12%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 912px) {
+  .main {
+    margin-top: 12%;
+    height: 79vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 10%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 710px) {
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+}
+@media (max-width: 735px) {
+  .main {
+    display: flex;
+    height: 150vh;
+  }
+  .main .contato {
+    display: block;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  .main {
+    height: 115vh;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    height: 142vh;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    height: 146vh;
+    margin-top: 25%;
+  }
+}
+/* PÁGINA DE RESERVAS */
+.reservaHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../images/recepcao.png);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  color: #415a77;
+}
+.reservaHero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  color: #e0e1dd;
+}
+.reservaHero h3 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.reservaHero .btn {
+  background-color: #fff;
+  border-radius: 4px;
+  color: #0c1926;
+  padding: 20px 50px;
+  text-transform: uppercase;
+}
+
+.containerReserv {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__title {
+  color: #0c1926;
+  font-size: 2rem;
+  margin: 45px 0 35px 0;
+  text-align: center;
+}
+
+.form__infoReserva {
+  color: #0c1926;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.divider {
+  width: 200px;
+  height: 2px;
+  background-color: #0c1926;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+
+.form__date {
+  display: flex;
+  padding: 5rem 0 4rem 0;
+  justify-content: space-evenly;
+  column-gap: 1rem;
+}
+
+.form__date label {
+  padding: 0 0 1rem 0;
+}
+
+.form__date input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.reservContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roomOptions__paragraph {
+  position: relative;
+  color: #0c1926;
+  font-size: 2rem;
+  margin: 45px 0 35px 0;
+  text-align: left;
+}
+
+.roomOptions {
+  margin-bottom: 3rem;
+  width: 45%;
+}
+.roomOptions__room {
+  background-color: #fff;
+  border: 1px solid #415a77;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.07);
+}
+.roomOptions__roomImagem {
+  padding: 0 0 2rem 0;
+  width: 100%;
+}
+.roomOptions__roomTitle {
+  padding: 0 0 1rem 1rem;
+  color: #0c1926;
+}
+.roomOptions__roomDescription {
+  text-align: justify;
+  padding: 0 1rem 1.7rem 1rem;
+}
+.roomOptions__roomPrice {
+  display: block;
+  width: 10vw;
+  background-color: #00FF00;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 0 0 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+.roomOptions__selectRoom {
+  padding: 1rem 0 1rem 1rem;
+}
+.roomOptions__selectRoom label {
+  padding-left: 0.5rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 15rem;
+  align-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__title {
+  padding-bottom: 2rem;
+  color: #415a77;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+.modal__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.modal__options label {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  color: #415a77;
+  font-weight: bold;
+}
+
+.dividerModal {
+  margin: 1rem 0;
+}
+
+.totalServies {
+  display: block;
+  text-align: right;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.checkModal {
+  display: inline !important;
+}
+
+.resume {
+  position: sticky;
+  height: 400px;
+  background: #415a77;
+  color: #fff;
+  top: 200px;
+  width: 50%;
+  margin-bottom: 5.1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.07);
+}
+.resume__reserve {
+  padding: 2rem;
+}
+.resume__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.resume__item {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+.resume__addServices {
+  display: block;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: right;
+}
+.resume__continue {
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #415a77;
+  cursor: pointer;
+}
+
+@media (max-width: 415px) and (orientation: portrait) {
+  .reservaHero {
+    padding: 0 0.5rem;
+  }
+  .containerReserv {
+    width: 90%;
+  }
+  .form__date {
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+  .form__date div {
+    padding: 1rem 0;
+  }
+  .roomOptions__paragraph {
+    margin: 0 0 35px 0;
+    text-align: center;
+  }
+  .reservContent {
+    flex-direction: column;
+  }
+  .roomOptions {
+    margin: 0;
+  }
+  .roomOptions, .resume {
+    width: 100%;
+  }
+  .roomOptions__roomPrice {
+    width: 100%;
+    margin: 0;
+  }
+  .resume {
+    margin-bottom: 2rem;
+  }
+  .modal {
+    padding-top: 7rem;
+  }
+  .modal-content {
+    width: 90%;
+  }
+}
+@media (max-width: 915px) and (orientation: landscape) {
+  .reservaHero {
+    padding: 0 0.5rem;
+  }
+  .containerReserv {
+    width: 90%;
+  }
+  .form__date {
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+  .form__date div {
+    padding: 1rem 0;
+  }
+  .roomOptions__paragraph {
+    margin: 0 0 35px 0;
+    text-align: center;
+  }
+  .reservContent {
+    flex-direction: column;
+  }
+  .roomOptions {
+    margin: 0;
+  }
+  .roomOptions, .resume {
+    width: 100%;
+  }
+  .roomOptions__roomPrice {
+    width: 100%;
+    margin: 0;
+  }
+  .resume {
+    margin-bottom: 2rem;
+  }
+  .modal {
+    padding-top: 4rem;
+  }
+  .modal-content {
+    width: 90%;
+  }
+}
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait) {
+  .roomOptions__roomPrice {
+    margin: 0;
+    width: 100%;
+  }
+}
+/* Header */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #415a77;
+  opacity: 0.9;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav__links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.menu li:hover {
+  background-color: #516b8a;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* MENU SUSPENSO */
+.services {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown {
+  background-color: #415a77;
+  padding: 1em 0;
+  position: absolute; /*COM RELAÇÃO AOS PAIS*/
+  display: none;
+  border-radius: 8px;
+  top: 30px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #516b8a;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 8%;
+    padding-left: 2%;
+  }
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+  .main .contato .titulo_da_secao {
+    font-size: 1rem;
+  }
+  .main .contato .info ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  .main {
+    margin-top: 12%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 912px) {
+  .main {
+    margin-top: 12%;
+    height: 79vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 10%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 710px) {
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+}
+@media (max-width: 735px) {
+  .main {
+    display: flex;
+    height: 150vh;
+  }
+  .main .contato {
+    display: block;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  .main {
+    height: 115vh;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    height: 142vh;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    height: 146vh;
+    margin-top: 25%;
+  }
+}
+.main {
+  width: 100%;
+  height: 71vh;
+  background: #e0e1dd;
+}
+
+/*form*/
+.contato {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.informacao_de_contato {
+  width: 50%;
+  margin: 50px 50px 50px 0;
+  align-items: center;
+  border: 1px solid #415a77;
+  box-shadow: 7px 9px 3px #415a77;
+  color: #25334a;
+}
+.informacao_de_contato legend {
+  text-align: center;
+}
+
+.info {
+  margin-top: 10px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15% 5%;
+}
+
+.contato ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.informacao_de_contato ul li {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #25334a;
+  text-transform: uppercase;
+}
+.informacao_de_contato input {
+  width: 90%;
+  margin-top: 10px;
+  padding: 20px 0;
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  text-indent: 1rem;
+}
+.informacao_de_contato label {
+  font-size: 15px;
+  display: flex;
+}
+
+.select {
+  width: 40%;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: none;
+  text-indent: 1rem;
+  color: gray;
+}
+
+.titulo_da_secao {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nome, .email, .telefone, .assunto, .mensage {
+  margin: 1rem 0 0 1rem;
+}
+
+.textarea {
+  width: 80%;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border: none;
+  resize: none;
+}
+
+.informacao_de_contato button {
+  border: none;
+  background-color: #0d1b2a;
+  color: #fff;
+  margin: 1rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.informacao_de_contato button:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+.informacao_de_contato textarea:focus, .informacao_de_contato input:focus, .informacao_de_contato select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c1926;
+  padding: 3% 0;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  margin: 30px 0;
+}
+footer ul li {
+  margin-right: 20px;
+}
+footer ul li:last-child {
+  margin-right: 0;
+}
+footer ul li a {
+  color: #fff;
+  font-size: 2rem;
+}
+footer p {
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 8%;
+    padding-left: 2%;
+  }
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+  .main .contato .titulo_da_secao {
+    font-size: 1rem;
+  }
+  .main .contato .info ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  .main {
+    margin-top: 12%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 912px) {
+  .main {
+    margin-top: 12%;
+    height: 79vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 10%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 710px) {
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+}
+@media (max-width: 735px) {
+  .main {
+    display: flex;
+    height: 150vh;
+  }
+  .main .contato {
+    display: block;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  .main {
+    height: 115vh;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    height: 142vh;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    height: 146vh;
+    margin-top: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
