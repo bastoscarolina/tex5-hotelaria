@@ -1,113 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O Hotel</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/sobre-nos-style.css" />
-  </head>
-  <body>
-    <!--Cabeçalho-->
-    <header>
-      <div class="account">
-        <div class="ola-usuario">
-          <span>Olá "Jhon Doe"</span>
-        </div>
-        <div class="signout">
-          <a href="../index.html">Sair</a>
-          <a href="../public/login.html">Login</a>
-        </div>
-      </div>
-      <div class="head">
-        <img src="../images/svg/Logo_04.svg" alt="logo" width="150" />
-        <strong class="slogan"> CONFORTO E PRATICIDADE PARA VOCÊ </strong>
-        <!-- <div class="signup"></div> -->
-      </div>
-      <div class="nav">
-        <nav>
-          <a href="../index.html">HOME</a> |
-          <a href="./acomodacoes.html">ACOMODAÇÕES</a> |
-          <a href="./reservas.html">RESERVAS</a> |
-          <a href="./sobre-nos.html">SOBRE</a> |
-          <a href="./contato.html">CONTATO</a>
-        </nav>
-      </div>
-      <!-- </div> -->
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>O Hotel</title>
+        <link rel="stylesheet" href="../css/sobre.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../javascripts/aditionalServicesModal.js" async></script>
+        <script
+            src="https://kit.fontawesome.com/854cc3527e.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!--Cabeçalho-->
+        <header>
+            <nav class="navbar">
+                <!-- LOGO -->
+                <div class="logo">T.EXperience Hotel</div>
+                <!-- NAVEGAÇÃO MENU -->
+                <ul class="nav__links">
+                    <!-- CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger"
+                        >&#9776;</label
+                    >
+                    <!-- NAVEGAÇÃO MENUS -->
+                    <div class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li>
+                            <a href="../public/acomodacoes.html">Acomodações</a>
+                        </li>
+                        <li><a href="../public/reservas.html">Reservas</a></li>
+                        <li><a href="../public/sobre-nos.html">Sobre</a></li>
+                        <li><a href="../public/contato.html">Contato</a></li>
+                        <li class="services">
+                            <a href="/"
+                                >Visitante
+                                <span class="arrow-icon">&#9660;</span></a
+                            >
+                            <!-- MENU SUSPENSO OU DROPDOWN MENU -->
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="login.html">Entrar </a>
+                                </li>
+                                <li><a href="/">Sair</a></li>
+                                <li><a href="/">Perfil</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <!-- <header>
+            <div class="account">
+                <div class="ola-usuario">
+                    <span>Olá "Jhon Doe"</span>
+                </div>
+                <div class="signout">
+                    <a href="../index.html">Sair</a>
+                    <a href="../public/login.html">Login</a>
+                </div>
+            </div>
+            <div class="head">
+                <img src="../images/svg/Logo_04.svg" alt="logo" width="150" />
+                <strong class="slogan">
+                    CONFORTO E PRATICIDADE PARA VOCÊ
+                </strong>
+            </div>
+            <div class="nav">
+                <nav>
+                    <a href="../index.html">HOME</a> |
+                    <a href="acomodacoes.html">ACOMODAÇÕES</a> |
+                    <a href="reservas.html">RESERVAS</a> |
+                    <a href="sobre-nos.html">SOBRE</a> |
+                    <a href="contato.html">CONTATO</a>
+                </nav>
+            </div> 
+        </header> -->
+        <main>
+            <section class="sobre_nos">
+                <h1>Um pouco sobre nosso querido hotel</h1>
+                <h3>"Aconchego, conforto, simpatia e alto astral"</h3>
+            </section>
 
-    <main>
-      <section class="sobre_nos">
-        <h2>Sobre Nós</h2>
-        <div class="conteudo">
-          <img src="../images/5451_ho_00_p_1024x768.jpg" alt="Fachada Hotel" />
-          <p>
-            The Experience Hotel foi criado em 1995 na cidade de Petrópolis e
-            desde então vem oferecendo a melhor experiência para seus hóspedes
-            através de acomodações de luxo e serviço personalizado.
-          </p>
-        </div>
-      </section>
-      <section class="maisPopulares">
-        <div class="card">
-          <img src="../images/quartos/quarto_7.png" alt="apartamento premium" />
-          <span>Apartamento Premium</span>
-        </div>
-        <div class="card">
-          <img
-            src="../images/quartos/quarto_8.png"
-            alt="quarto solteiro duplo"
-          />
-          <span>Quarto Solteiro Duplo</span>
-        </div>
-        <div class="card">
-          <img
-            src="../images/quartos/quarto_5.png"
-            alt="quarto solteiro simples"
-          />
-          <span>Quarto Solteiro Simples</span>
-        </div>
-      </section>
-    </main>
-    <!-- Rodapé -->
-    <footer class="rodape">
-      <div class="copyrt">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941899.454243292!2d-47.79013423460252!3d-22.75444051088309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5135ca421c39%3A0x68ceda0bae5dbdae!2zUGFsw6FjaW8gVGFuZ2Fyw6E!5e0!3m2!1spt-BR!2sbr!4v1671285215967!5m2!1spt-BR!2sbr"
-          width="400"
-          height="300"
-          style="border: 0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <a href="contato.html">Precisa de ajuda?</a>
-      <div class="redes-sociais">
-        <span>Confira nossas redes sociais</span>
-        <div>
-          <a href="http://www.facebook.com/" target="_blank">
-            <img
-              src="../images/icones/facebook-dourado-claro.png"
-              alt="logo facebook"
-            />
-          </a>
-          <a href="http://www.instagram.com/" target="_blank">
-            <img
-              src="../images/icones/instagram-dourado-claro.png"
-              alt="logo instagram"
-            />
-          </a>
-          <a href="http://www.twitter.com/" target="_blank">
-            <img
-              src="../images/icones/twitter-dourado-claro.png"
-              alt="logo twitter"
-            />
-          </a>
-        </div>
-      </div>
-    </footer>
-  </body>
+            <section class="lugares_hotel">
+                <h3>T.Experience Hote</h3>
+                <p>
+                    Implantado em uma área completamente arborizada, o The
+                    Experience Hotel é o único hotel pé na areia do Brasil. Aqui
+                    o Mar será o seu companheiro e você terá as belezas da
+                    natureza como guia. The Experience Hotel possuí 29 unidades,
+                    divididas entre 11 chalés, 16 amplas suítes e 2 todas com TV
+                    a cabo, frigobar, além de varanda com rede e muitos outros
+                    lazeres. Em nosso hotel você achara ótimos pontos turísticos
+                    com uma facilidade para sua mobilidade, além de belas praias
+                    além de todos as ferramentas para seus hobbies favoritos
+                    dentro de nosso magnífico hotel de várias experiênias
+                    fantásticas.
+                </p>
+                <hr />
+                <h3>"Cantinhos" do nosso hotel!!</h3>
+                <div class="lugares_hotel">
+                    <div class="card">
+                        <img
+                            src="../images/pexels-asman-chema-594077.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            src="../images/pexels-naim-benjelloun-2290753.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="card">
+                        <img src="../images/pexels-pixabay-161758.jpg" alt="" />
+                    </div>
+                    <div class="card">
+                        <img src="../images/pexels-pixabay-262047.jpg" alt="" />
+                    </div>
+                    <div class="card">
+                        <img src="../images/swimming-pool.jpg" alt="" />
+                    </div>
+                    <div class="card">
+                        <img
+                            src="../images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer id="contato">
+            <ul>
+                <li>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            <p>Todos os direitos reservados - The Experience Hotel 2023</p>
+        </footer>
+        <!-- <footer class="rodape">
+            <div class="copyrt">
+                <iframe
+                    class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941899.454243292!2d-47.79013423460252!3d-22.75444051088309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5135ca421c39%3A0x68ceda0bae5dbdae!2zUGFsw6FjaW8gVGFuZ2Fyw6E!5e0!3m2!1spt-BR!2sbr!4v1671285215967!5m2!1spt-BR!2sbr"
+                    width="400"
+                    height="300"
+                    style="border: 0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <a href="contato.html">Precisa de ajuda?</a>
+            <div class="redes-sociais">
+                <span>Confira nossas redes sociais</span>
+                <div>
+                    <a href="http://www.facebook.com/" target="_blank">
+                        <img
+                            src="../images/icones/facebook-dourado-claro.png"
+                            alt="logo facebook"
+                        />
+                    </a>
+                    <a href="http://www.instagram.com/" target="_blank">
+                        <img
+                            src="../images/icones/instagram-dourado-claro.png"
+                            alt="logo instagram"
+                        />
+                    </a>
+                    <a href="http://www.twitter.com/" target="_blank">
+                        <img
+                            src="../images/icones/twitter-dourado-claro.png"
+                            alt="logo twitter"
+                        />
+                    </a>
+                </div>
+            </div>
+        </footer> -->
+    </body>
 </html>
