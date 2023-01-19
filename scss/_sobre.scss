@@ -1,0 +1,83 @@
+@use "variaveis" as v;
+@use "header";
+@use "footer";
+
+/*SOBRE*/
+
+.sobre_nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.479),
+            rgba(0, 170, 255, 0.075)
+        ),
+        url(../images/5451_ho_00_p_1024x768.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    color: v.$backgroud;
+
+    & h1 {
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+        color: v.$backgroud;
+    }
+
+    & h3 {
+        font-size: 2.2rem;
+        margin-bottom: 50px;
+        color: v.$linkNav;
+    }
+}
+
+.lugares_hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+
+    & h3 {
+        font-size: 2rem;
+        margin-bottom: 35px;
+        color: v.$link;
+        text-align: center;
+    }
+
+    & p {
+        font-size: 1.2rem;
+        max-width: 900px;
+        margin-bottom: 35px;
+        letter-spacing: 1px;
+        color: v.$link;
+        text-align: center;
+    }
+    & hr {
+        width: 500px;
+        height: 2px;
+        background-color: v.$link;
+        margin-bottom: 70px;
+        border: none;
+    }
+
+    & .lugares_hotel {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 21%;
+    }
+    
+    & .card img {
+        max-width: 100%;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        margin: 10px;
+    }
+}
