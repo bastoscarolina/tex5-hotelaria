@@ -6,7 +6,7 @@
 .principal{
     color: v.$p;
     background: v.$backgroud;
-    margin-top: 17vh;
+    margin-top: 11vh;
     text-align: center;
     font-family: v.$fonte;
     display: flex;
@@ -19,8 +19,13 @@
     }
 }
 .container{
-    @include mx.login-container-fluid;
+    @include mx.acomodacoes-container-fluid;
     flex-wrap: wrap;
+
+    & article {
+        width: 25%;
+        margin: 1rem;
+    }
 }
 
 .produto_destaque{
@@ -31,6 +36,14 @@
     & p {
         width: 60%;
         text-align: justify;
-        margin: auto;
+        margin: 1rem auto;
+    }
+
+    & .quarto_destaque{
+        width: 60%;
+    }
+
+    & figcaption{
+        margin: 1rem;
     }
 }

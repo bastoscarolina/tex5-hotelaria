@@ -236,3 +236,16 @@ input[type="checkbox"] {
     margin-top: 25%;
   }
 }
+
+/*RESPOSIVIDADE ACOMODACOES*/
+@media (max-width:900px){
+  .principal{
+    margin-top: 9vh;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .quarto_destaque{
+    width:70%;
+  }
+}

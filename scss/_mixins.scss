@@ -16,3 +16,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin acomodacoes-container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
