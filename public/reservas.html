@@ -56,7 +56,7 @@
           Forneça a data de entrada, saída e quantidade de pessoas
         </p>
 
-        <hr class="divider">
+        <hr class="divider" />
 
         <form class="form__date" action="" id="reserves">
           <div>
@@ -176,13 +176,18 @@
             <h2 class="resume__title">Resumo da reserva</h2>
 
             <ul class="resume__items">
-              <li class="resume__item">Apartamento: XXXXX</li>
-              <li class="resume__item">Checkin: XX/XX/XXXX</li>
-              <li class="resume__item">Checkout: XX/XX/XXXX</li>
+              <li class="resume__item" data-name="apartamento">Apartamento:</li>
+              <li class="resume__item" data-name="checkin">Checkin:</li>
+              <li class="resume__item" data-name="checkout">Checkout:</li>
+              <li class="resume__item" data-name="quantidadePessoas">
+                Quantidade de Pessoas:
+              </li>
             </ul>
 
-            <a class="resume__addServices" id="myBtn">Adicionar mais serviços</a>
-            
+            <a class="resume__addServices" id="myBtn"
+              >Adicionar mais serviços</a
+            >
+
             <button class="resume__continue">Continuar</button>
           </div>
         </aside>
@@ -206,56 +211,83 @@
 
     <!-- MODAL SERVIÇOS ADICIONAIS  -->
     <div id="myModal" class="modal">
-
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2 class="modal__title">Serviços adicionais</h2>
-          <form class="modal__form" action="#">
-
-            <div class="modal__options">
-              <div>
-                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="cafe-da-manha">
-                <label for="cafe-da-manha">Café da Manhã</label>
-              </div>
-              <span><strong>R$ 35,00</strong></span>
+        <form class="modal__form" action="#">
+          <div class="modal__options">
+            <div>
+              <input
+                style="accent-color: #415a77"
+                class="checkModal"
+                type="checkbox"
+                name="servicos"
+                id="cafe-da-manha"
+              />
+              <label for="cafe-da-manha">Café da Manhã</label>
             </div>
+            <span><strong>R$ 35,00</strong></span>
+          </div>
 
-            <div class="modal__options">
-              <div>
-                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="cofre">
-                <label for="cofre">Cofre</label>
-              </div>
-              <span><strong>R$ 35,00</strong></span>
+          <div class="modal__options">
+            <div>
+              <input
+                style="accent-color: #415a77"
+                class="checkModal"
+                type="checkbox"
+                name="servicos"
+                id="cofre"
+              />
+              <label for="cofre">Cofre</label>
             </div>
+            <span><strong>R$ 35,00</strong></span>
+          </div>
 
-            <div class="modal__options">
-              <div>
-                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="lavanderia">
-                <label for="lavanderia">Lavanderia</label>
-              </div>
-              <span><strong>R$ 35,00</strong></span>
+          <div class="modal__options">
+            <div>
+              <input
+                style="accent-color: #415a77"
+                class="checkModal"
+                type="checkbox"
+                name="servicos"
+                id="lavanderia"
+              />
+              <label for="lavanderia">Lavanderia</label>
             </div>
+            <span><strong>R$ 35,00</strong></span>
+          </div>
 
-            <div class="modal__options">
-              <div>
-                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="spa">
-                <label for="spa">Spa</label>
-              </div>
-              <span><strong>R$ 35,00</strong></span>
+          <div class="modal__options">
+            <div>
+              <input
+                style="accent-color: #415a77"
+                class="checkModal"
+                type="checkbox"
+                name="servicos"
+                id="spa"
+              />
+              <label for="spa">Spa</label>
             </div>
+            <span><strong>R$ 35,00</strong></span>
+          </div>
 
-            <div class="modal__options">
-              <div>
-                <input style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="translado">
-                <label for="translado">Translado</label>
-              </div>
-              <span><strong>R$ 35,00</strong></span>
+          <div class="modal__options">
+            <div>
+              <input
+                style="accent-color: #415a77"
+                class="checkModal"
+                type="checkbox"
+                name="servicos"
+                id="translado"
+              />
+              <label for="translado">Translado</label>
             </div>
+            <span><strong>R$ 35,00</strong></span>
+          </div>
+        </form>
 
-          </form>
-
-        <hr class="dividerModal">
+        <hr class="dividerModal" />
 
         <span class="totalServies">
           <strong>R$ 638,00</strong>
