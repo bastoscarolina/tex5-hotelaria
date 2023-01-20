@@ -1,29 +1,33 @@
 var modal = document.getElementById("myModal");
-const reservaQuatidadePessoas = document.querySelector('[data-name="quantidadePessoas"]')
+const reservaQuantidadePessoas = document.querySelector('[data-name="quantidadePessoas"]')
 const reservaCheckin  = document.querySelector('[data-name="checkin"]')
 const reservaCheckout  = document.querySelector('[data-name="checkout"]')
 const reservaApartamento  = document.querySelector('[data-name="apartamento"]')
 
-const apartamento = document.getElementsByName("tipo-acomodacao")
+const apartamentos = document.getElementsByName("tipo-acomodacao")
 const quantidadePessoas = document.querySelector("#qtd_pessoas")
 const checkout = document.querySelector("#checkout")
 const checkin = document.querySelector("#checkin")
-console.log(apartamento)
 
-apartamento.forEach()
-quantidadePessoas.addEventListener("input", () => {
-  reservaQuatidadePessoas.innerHTML = `Quantidade de Pessoas: ${quantidadePessoas.value}` 
-} )
-apartamento.addEventListener("input",() => {
-  reservaApartamento.innerHTML = `Apartamento: ${reservaApartamento.value}`
+apartamentos.forEach(apartamento => {
+  apartamento.addEventListener("input",() => {
+    reservaApartamento.innerHTML = `Apartamento: ${apartamento.value}`
+  })
 })
-// checkin.addEventListener("input", () => {
-//   reservaCheckin.innerHTML = `Checkin: ${reservaCheckin.value}`
-// })
-// checkout.addEventListener("input", () => {
-//   reservaCheckout.innerHTML = `Checkout: ${reservaCheckout.value}`
-// })
+quantidadePessoas.addEventListener("input", () => {
+  reservaQuantidadePessoas.innerHTML = `Quantidade de Pessoas: ${quantidadePessoas.value}` 
+} )
 
+checkin.addEventListener("input", () => {
+  const data = new Date(checkin.value)
+  const dataFormatada = data.getUTCDate()+"/"+(data.getMonth()+1)+"/"+data.getFullYear()
+  reservaCheckin.innerHTML = `Checkin: ${dataFormatada}`
+})
+checkout.addEventListener("input", () => {
+  const data = new Date(checkout.value)
+  const dataFormatada = data.getUTCDate()+"/"+(data.getMonth()+1)+"/"+data.getFullYear()
+  reservaCheckout.innerHTML = `Checkout: ${dataFormatada}`
+})
 
 var btn = document.getElementById("myBtn");
 
