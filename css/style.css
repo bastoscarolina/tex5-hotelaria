@@ -1,4 +1,76 @@
 @charset "UTF-8";
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
 li {
   list-style: none;
 }
@@ -8,6 +80,84 @@ li {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
 /* Header */
@@ -293,6 +443,84 @@ input[type=checkbox] {
     width: 70%;
   }
 }
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -527,6 +755,84 @@ input[type=checkbox] {
   }
 }
 /* HOME */
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
 /*HOME*/
 img {
   width: 100%;
@@ -707,6 +1013,84 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
 /* Header */
@@ -1570,6 +1954,84 @@ input[type=checkbox] {
     width: 100%;
   }
 }
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
 /* Header */
 a {
   text-decoration: none;
@@ -1973,6 +2435,84 @@ input[type=checkbox] {
   outline: 0;
 }
 
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -2206,6 +2746,84 @@ input[type=checkbox] {
     width: 70%;
   }
 }
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
 /* Header */
 a {
   text-decoration: none;
@@ -2978,6 +3596,701 @@ input[type=checkbox] {
   }
   .quarto_destaque {
     width: 70%;
+  }
+}
+#card1 {
+  background-image: url(/images/pexels-asman-chema-594077.jpg);
+  background-size: cover;
+}
+
+#card1 h2::before {
+  content: "Que vista";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/pexels-naim-benjelloun-2290753.jpg);
+  background-size: cover;
+}
+
+#card2 h2::before {
+  content: "Imenso Salão";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/pexels-pixabay-161758.jpg);
+  background-size: cover;
+}
+
+#card3 h2::before {
+  content: "Escadaria Colonial";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/pexels-pixabay-262047.jpg);
+  background-size: cover;
+}
+
+#card4 h2::before {
+  content: "Cozinha Contemporânea";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/swimming-pool.jpg);
+  background-size: cover;
+}
+
+#card5 h2::before {
+  content: "Borda Infinita";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/sun-loungers-near-palms-and-swimming-pool-in-sunny-day.jpg);
+  background-size: cover;
+}
+
+#card6 h2::before {
+  content: "Dia de sol";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+/* Header */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #415a77;
+  opacity: 0.9;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav__links a {
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.menu li:hover {
+  background-color: #516b8a;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* MENU SUSPENSO */
+.services {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown {
+  background-color: #415a77;
+  padding: 1em 0;
+  position: absolute; /*COM RELAÇÃO AOS PAIS*/
+  display: none;
+  border-radius: 8px;
+  top: 30px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #516b8a;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 8%;
+    padding-left: 2%;
+  }
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+  .main .contato .titulo_da_secao {
+    font-size: 1rem;
+  }
+  .main .contato .info ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  .main {
+    margin-top: 12%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 912px) {
+  .main {
+    margin-top: 12%;
+    height: 79vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 10%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 710px) {
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+}
+@media (max-width: 735px) {
+  .main {
+    display: flex;
+    height: 150vh;
+  }
+  .main .contato {
+    display: block;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  .main {
+    height: 115vh;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    height: 142vh;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    height: 146vh;
+    margin-top: 25%;
+  }
+}
+/*RESPOSIVIDADE ACOMODACOES*/
+@media (max-width: 900px) {
+  .principal {
+    margin-top: 9vh;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .quarto_destaque {
+    width: 70%;
+  }
+}
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c1926;
+  padding: 3% 0;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  margin: 30px 0;
+}
+
+footer ul li {
+  margin-right: 20px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+footer p {
+  font-size: 0.7rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+/* NAVBAR MENU RESPONSIVA*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/*ARROW ICON*/
+.arrow-icon {
+  /* display: none; */
+  font-size: 10px;
+  user-select: none;
+}
+
+/* APLICAÇÃO MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #415a77;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #516b8a;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+}
+/* BREAKPOINTS HOME */
+@media (max-width: 700px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.5rem;
+  }
+}
+/* BREAKPOINTS CONHECA O HOTEL */
+@media (max-width: 700px) {
+  .conheca-o-hotel .grid li.small,
+  .conheca-o-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+}
+/* BREAKPOINTS CARACTRISTICAS */
+@media (max-width: 700px) {
+  .caracteristicas .grid {
+    flex-direction: column;
+  }
+}
+/* RESPONSIVIDADE CONTATOS */
+@media (max-width: 1595px) {
+  .contato {
+    height: 75vh;
+  }
+  .contato .informacao_de_contato button {
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+  }
+  .contato input {
+    width: 50%;
+    height: 10px;
+    text-indent: 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    margin-top: 8%;
+    padding-left: 2%;
+  }
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+  .main .contato .titulo_da_secao {
+    font-size: 1rem;
+  }
+  .main .contato .info ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 820px) {
+  .main {
+    margin-top: 12%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 912px) {
+  .main {
+    margin-top: 12%;
+    height: 79vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 10%;
+    height: 78vh;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 710px) {
+  .main .contato {
+    width: 100%;
+    height: 76vh;
+  }
+}
+@media (max-width: 735px) {
+  .main {
+    display: flex;
+    height: 150vh;
+  }
+  .main .contato {
+    display: block;
+  }
+  .main .contato .informacao_de_contato {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato input {
+    width: 90%;
+  }
+  .main .contato .informacao_de_contato select {
+    width: 90%;
+  }
+}
+@media (max-width: 390px) {
+  .main {
+    height: 115vh;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    height: 142vh;
+  }
+}
+@media (max-width: 280px) {
+  .main {
+    height: 146vh;
+    margin-top: 25%;
+  }
+}
+/*RESPOSIVIDADE ACOMODACOES*/
+@media (max-width: 900px) {
+  .principal {
+    margin-top: 9vh;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .quarto_destaque {
+    width: 70%;
+  }
+}
+/*SOBRE*/
+.sobre__nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 170, 255, 0.075)), url(../images/5451_ho_00_p_1024x768.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  color: #e0e1dd;
+}
+.sobre__nos h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #e0e1dd;
+}
+.sobre__nos h3 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.lugares__hotel {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.lugares__titulo {
+  font-size: 2rem;
+  margin: 45px 0 35px 0;
+  color: #0c1926;
+  text-align: center;
+}
+
+.lugares__paragrafo {
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  color: #0c1926;
+  text-align: center;
+}
+
+.lugares__divisor {
+  width: 500px;
+  height: 2px;
+  background-color: #0c1926;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.lugares__gridImagens {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 45%;
+  height: 300px;
+  box-shadow: 8px 8px 10px #999;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 415px) and (orientation: portrait) {
+  .lugares__hotel {
+    width: 90%;
+  }
+  .card {
+    width: 100%;
+  }
+  .lugares__divisor {
+    width: 25%;
+  }
+}
+@media (max-width: 915px) and (orientation: landscape) {
+  .lugares__hotel {
+    width: 90%;
+  }
+  .card {
+    width: 100%;
   }
 }
 
