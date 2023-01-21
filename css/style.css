@@ -1827,9 +1827,30 @@ input[type=checkbox] {
   display: inline !important;
 }
 
+.totalServies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalServies button {
+  background-color: #0d1b2a;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 4px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.totalServies button:hover {
+  background-color: rgba(13, 27, 42, 0.9);
+}
+
 .resume {
+  align-self: start;
   position: sticky;
-  height: 400px;
   background: #415a77;
   color: #fff;
   top: 200px;

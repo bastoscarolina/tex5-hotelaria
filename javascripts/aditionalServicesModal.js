@@ -74,3 +74,28 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// SOMA DOS SERVIÇOS ADICIONAIS
+let totalServices = document.getElementById('total')
+function totalIt() {
+  let input = document.getElementsByName("servicos");
+  let total = 0;
+  for (var i = 0; i < input.length; i++) {
+    if (input[i].checked) {
+      total += parseFloat(input[i].value);
+    }
+  }
+  totalServices.innerHTML = `R$ ${total.toFixed(2).replace('.', ',')}`   
+}
+
+// ADICIONA SERVIÇOS ADICIONAIS NO RESUMO
+function addServiceToResume() {
+  const node = document.createElement("li")
+
+  node.classList.add("resume__item")
+
+  const textnode = document.createTextNode("Translado");
+
+  node.appendChild(textnode)
+  document.getElementById("resume__items").appendChild(node);
+}
