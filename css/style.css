@@ -3598,8 +3598,6 @@ input[type=checkbox] {
     width: 70%;
   }
 }
-<<<<<<< HEAD
-=======
 #card1 {
   background-image: url(/images/pexels-asman-chema-594077.jpg);
   background-size: cover;
@@ -3678,7 +3676,6 @@ input[type=checkbox] {
   padding: 1rem 0.5rem;
 }
 
->>>>>>> efbc430a21daade4fb978590c790f6ed5166fe56
 /* Header */
 a {
   text-decoration: none;
@@ -4207,11 +4204,7 @@ input[type=checkbox] {
   }
 }
 /*SOBRE*/
-<<<<<<< HEAD
-.sobre_nos {
-=======
 .sobre__nos {
->>>>>>> efbc430a21daade4fb978590c790f6ed5166fe56
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4224,40 +4217,17 @@ input[type=checkbox] {
   width: 100%;
   color: #e0e1dd;
 }
-<<<<<<< HEAD
-.sobre_nos h1 {
-=======
 .sobre__nos h1 {
->>>>>>> efbc430a21daade4fb978590c790f6ed5166fe56
   font-size: 3.5rem;
   margin-bottom: 15px;
   color: #e0e1dd;
 }
-<<<<<<< HEAD
-.sobre_nos h3 {
-=======
 .sobre__nos h3 {
->>>>>>> efbc430a21daade4fb978590c790f6ed5166fe56
   font-size: 2.2rem;
   margin-bottom: 50px;
   color: #fff;
 }
 
-<<<<<<< HEAD
-.lugares_hotel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 50px;
-}
-.lugares_hotel h3 {
-  font-size: 2rem;
-  margin-bottom: 35px;
-  color: #0c1926;
-  text-align: center;
-}
-.lugares_hotel p {
-=======
 .lugares__hotel {
   width: 80%;
   margin: 0 auto;
@@ -4275,7 +4245,6 @@ input[type=checkbox] {
 }
 
 .lugares__paragrafo {
->>>>>>> efbc430a21daade4fb978590c790f6ed5166fe56
   font-size: 1.2rem;
   max-width: 900px;
   margin-bottom: 35px;
@@ -4283,30 +4252,6 @@ input[type=checkbox] {
   color: #0c1926;
   text-align: center;
 }
-<<<<<<< HEAD
-.lugares_hotel hr {
-  width: 500px;
-  height: 2px;
-  background-color: #0c1926;
-  margin-bottom: 70px;
-  border: none;
-}
-.lugares_hotel .lugares_hotel {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: 21%;
-}
-.lugares_hotel .card img {
-  max-width: 100%;
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  margin: 10px;
-=======
 
 .lugares__divisor {
   width: 500px;
@@ -4347,7 +4292,6 @@ input[type=checkbox] {
   .card {
     width: 100%;
   }
->>>>>>> efbc430a21daade4fb978590c790f6ed5166fe56
 }
 
 /*# sourceMappingURL=style.css.map */
