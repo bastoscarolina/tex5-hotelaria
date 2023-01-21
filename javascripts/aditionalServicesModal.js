@@ -1,33 +1,65 @@
-var modal = document.getElementById("myModal");
-const reservaQuatidadePessoas = document.querySelector('[data-name="quantidadePessoas"]')
+const modal = document.getElementById("myModal");
+
+// VARIÁREIS PARA IMPRIMIR INFORMAÇÕES NA PÁGINA DE RESERVAS
+const reservaQuantidadePessoas = document.querySelector('[data-name="quantidadePessoas"]')
 const reservaCheckin  = document.querySelector('[data-name="checkin"]')
 const reservaCheckout  = document.querySelector('[data-name="checkout"]')
 const reservaApartamento  = document.querySelector('[data-name="apartamento"]')
 
-const apartamento = document.getElementsByName("tipo-acomodacao")
+const apartamentos = document.getElementsByName("tipo-acomodacao")
 const quantidadePessoas = document.querySelector("#qtd_pessoas")
 const checkout = document.querySelector("#checkout")
 const checkin = document.querySelector("#checkin")
-console.log(apartamento)
 
-apartamento.forEach()
-quantidadePessoas.addEventListener("input", () => {
-  reservaQuatidadePessoas.innerHTML = `Quantidade de Pessoas: ${quantidadePessoas.value}` 
-} )
-apartamento.addEventListener("input",() => {
-  reservaApartamento.innerHTML = `Apartamento: ${reservaApartamento.value}`
+// FUNÇÃO PARA ESCOLHA DE APARTAMENTO NA PÁGINA DE RESERVAS
+apartamentos.forEach(apartamento => {
+  apartamento.addEventListener("input",() => {
+    reservaApartamento.innerHTML = `Apartamento: ${apartamento.value}`
+  })
 })
-// checkin.addEventListener("input", () => {
-//   reservaCheckin.innerHTML = `Checkin: ${reservaCheckin.value}`
-// })
-// checkout.addEventListener("input", () => {
-//   reservaCheckout.innerHTML = `Checkout: ${reservaCheckout.value}`
-// })
+quantidadePessoas.addEventListener("input", () => {
+  reservaQuantidadePessoas.innerHTML = `Quantidade de Pessoas: ${quantidadePessoas.value}` 
+} )
 
+//FUNÇÃO PARA CHECK-IN
+checkin.addEventListener("input", () => {
+  const data = new Date(checkin.value);
 
-var btn = document.getElementById("myBtn");
+  //Colocando mês com 0 na frente
+  let month = new Date(checkin.value).getMonth() + 1;
+  let todayMonth = month.toString();
+  if (todayMonth < 10) todayMonth = '0' + month.toString();
 
-var span = document.getElementsByClassName("close")[0];
+  //Colocando dia com o 0 na frente
+  let todayDay = data.getUTCDate();
+  if (todayDay < 10) todayDay = '0' + data.getUTCDate();
+
+  const dataFormatada = todayDay + "/" + todayMonth + "/" + data.getFullYear();
+  reservaCheckin.innerHTML = `Checkin: ${dataFormatada}`;
+})
+
+//FUNÇÃO PARA CHECK-OUT
+checkout.addEventListener("input", () => {
+  const data = new Date(checkout.value);
+
+    //Colocando mês com 0 na frente
+    let month = new Date(checkout.value).getMonth() + 1;
+    let todayMonth = month.toString();
+    if (todayMonth < 10) todayMonth = '0' + month.toString();
+  
+    //Colocando dia com o 0 na frente
+    let todayDay = data.getUTCDate();
+    if (todayDay < 10) todayDay = '0' + data.getUTCDate();
+
+    const dataFormatada = todayDay + "/" + todayMonth + "/" + data.getFullYear();
+    reservaCheckout.innerHTML = `Checkout: ${dataFormatada}`;
+})
+
+//MODAL PARA SERVIÇOS DICIONAIS
+
+const btn = document.getElementById("myBtn");
+
+const span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
   modal.style.display = "block";
