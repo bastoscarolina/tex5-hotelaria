@@ -110,11 +110,9 @@ function servico(e) {
     return checkbox.name;
   })
 
-  
-  var adicionarAoResumo = servicosAdicionais.servicos.join(''); // converte para string
-  
-  adicionarAoResumo.map((service) =>   document.getElementById("resume__item").innerHTML = service)
+  var adicionarAoResumo = servicosAdicionais.servicos.join(", "); // converte para string
 
+  document.getElementById("resume__item").innerHTML = adicionarAoResumo; // imprime em resumo
 }
 
 boxes.forEach((checkbox) => {
