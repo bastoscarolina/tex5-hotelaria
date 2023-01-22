@@ -175,7 +175,7 @@
           <div class="resume__reserve">
             <h2 class="resume__title">Resumo da reserva</h2>
 
-            <ul class="resume__items">
+            <ul class="resume__items" id="resume__items">
               <li class="resume__item" data-name="apartamento">Apartamento:</li>
               <li class="resume__item" data-name="checkin">Checkin:</li>
               <li class="resume__item" data-name="checkout">Checkout:</li>
@@ -215,83 +215,62 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2 class="modal__title">Serviços adicionais</h2>
-        <form class="modal__form" action="#">
+        <form id="modal__form" action="#">
+
           <div class="modal__options">
             <div>
-              <input
-                style="accent-color: #415a77"
-                class="checkModal"
-                type="checkbox"
-                name="servicos"
-                id="cafe-da-manha"
-              />
+              <input style="accent-color: #415A77" class="checkModal" 
+              onclick="totalIt()" value="45" type="checkbox" name="servicos" id="cafe-da-manha">
               <label for="cafe-da-manha">Café da Manhã</label>
             </div>
-            <span><strong>R$ 35,00</strong></span>
+            <span><strong>R$ 45,00</strong></span>
           </div>
 
           <div class="modal__options">
             <div>
-              <input
-                style="accent-color: #415a77"
-                class="checkModal"
-                type="checkbox"
-                name="servicos"
-                id="cofre"
-              />
+              <input style="accent-color: #415A77" class="checkModal" 
+              onclick="totalIt()" value="52" type="checkbox" name="servicos" id="cofre">
               <label for="cofre">Cofre</label>
             </div>
-            <span><strong>R$ 35,00</strong></span>
+            <span><strong>R$ 52,00</strong></span>
           </div>
 
           <div class="modal__options">
             <div>
-              <input
-                style="accent-color: #415a77"
-                class="checkModal"
-                type="checkbox"
-                name="servicos"
-                id="lavanderia"
-              />
-              <label for="lavanderia">Lavanderia</label>
+              <input style="accent-color: #415A77" class="checkModal" 
+              onclick="totalIt()" value="98" type="checkbox" name="servicos" id="massagem">
+              <label for="massagem">Massagem</label>
             </div>
-            <span><strong>R$ 35,00</strong></span>
+            <span><strong>R$ 98,00</strong></span>
           </div>
 
           <div class="modal__options">
             <div>
-              <input
-                style="accent-color: #415a77"
-                class="checkModal"
-                type="checkbox"
-                name="servicos"
-                id="spa"
-              />
+              <input onclick="totalIt()" value="280" style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="spa">
               <label for="spa">Spa</label>
             </div>
-            <span><strong>R$ 35,00</strong></span>
+            <span><strong>R$ 280,00</strong></span>
           </div>
 
           <div class="modal__options">
             <div>
-              <input
-                style="accent-color: #415a77"
-                class="checkModal"
-                type="checkbox"
-                name="servicos"
-                id="translado"
-              />
+              <input onclick="totalIt()" value="110" style="accent-color: #415A77" class="checkModal" type="checkbox" name="servicos" id="translado">
               <label for="translado">Translado</label>
             </div>
-            <span><strong>R$ 35,00</strong></span>
+            <span><strong>R$ 110,00</strong></span>
           </div>
+
         </form>
 
         <hr class="dividerModal" />
 
-        <span class="totalServies">
-          <strong>R$ 638,00</strong>
-        </span>
+        <div class="totalServies">
+          <button id="addService" onclick="addServiceToResume()">Adicionar Serviços</button>
+          <div class="resultCalc">
+            <span>Total:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <strong id="total">R$ 0,00</strong>
+          </div>
+        </div>
       </div>
     </div>
   </body>
