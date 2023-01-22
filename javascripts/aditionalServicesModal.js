@@ -78,24 +78,47 @@ window.onclick = function(event) {
 // SOMA DOS SERVIÇOS ADICIONAIS
 let totalServices = document.getElementById('total')
 function totalIt() {
-  let input = document.getElementsByName("servicos");
+  let input = document.getElementsByClassName("checkModal");
   let total = 0;
   for (var i = 0; i < input.length; i++) {
     if (input[i].checked) {
       total += parseFloat(input[i].value);
     }
   }
-  totalServices.innerHTML = `R$ ${total.toFixed(2).replace('.', ',')}`   
+  totalServices.innerHTML = `R$ ${total.toFixed(2).replace('.', ',')}`  
 }
 
 // ADICIONA SERVIÇOS ADICIONAIS NO RESUMO
-function addServiceToResume() {
-  const node = document.createElement("li")
-
-  node.classList.add("resume__item")
-
-  const textnode = document.createTextNode("Translado");
-
-  node.appendChild(textnode)
-  document.getElementById("resume__items").appendChild(node);
+var servicosAdicionais = {
+  servicos: []
 }
+
+var boxes = document.querySelectorAll(".checkModal");
+
+/* Array de checkboxes */
+var boxesArray = Array.prototype.slice.call(boxes, 0);
+
+/*Function*/
+function servico(e) {
+  /* Filtra os checkboxes que não estão marcados */
+  var checkedBoxes = boxesArray.filter((checkbox) => {
+    return checkbox.checked;
+  });
+
+  /* Cria um novo array com os nomes dos serviços */
+  servicosAdicionais.servicos = checkedBoxes.map((checkbox) => {
+    return checkbox.name;
+  })
+
+  var adicionarAoResumo = servicosAdicionais.servicos.join(", "); // converte para string
+
+  document.getElementById("resume__item").innerHTML = adicionarAoResumo; // imprime em resumo
+}
+
+boxes.forEach((checkbox) => {
+  if (checkbox.attachEvent) {
+    checkbox.attachEvent("onchange", servico);
+  } else {
+    checkbox.addEventListener("change", servico, false);
+  }
+})
