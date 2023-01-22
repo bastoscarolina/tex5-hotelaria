@@ -1827,12 +1827,6 @@ input[type=checkbox] {
   display: inline !important;
 }
 
-.totalServies {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .totalServies button {
   background-color: #0d1b2a;
   color: #fff;
@@ -1879,6 +1873,7 @@ input[type=checkbox] {
 }
 .resume__continue {
   width: 100%;
+  margin: 1rem 0 0 0;
   padding: 1rem;
   text-transform: uppercase;
   font-size: 1rem;
