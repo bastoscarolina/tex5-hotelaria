@@ -14,6 +14,10 @@ li {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 //Seção Header e Footer
 @import "header";
 @import "footer";

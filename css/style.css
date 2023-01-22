@@ -82,6 +82,10 @@ li {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #card1 {
   background-image: url(/images/pexels-asman-chema-594077.jpg);
   background-size: cover;
