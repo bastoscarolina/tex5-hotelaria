@@ -1631,7 +1631,6 @@ input[type=checkbox] {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: url(../images/recepcao.png);
   background-size: cover;
   min-height: 100vh;
   width: 100%;
@@ -1744,7 +1743,7 @@ input[type=checkbox] {
 .roomOptions__roomPrice {
   display: block;
   width: 10vw;
-  background-color: #00FF00;
+  background-color: #00ff00;
   text-align: center;
   padding: 1rem;
   margin: 0 0 0 1rem;
@@ -1895,7 +1894,8 @@ input[type=checkbox] {
   .roomOptions {
     margin: 0;
   }
-  .roomOptions, .resume {
+  .roomOptions,
+  .resume {
     width: 100%;
   }
   .roomOptions__roomPrice {
@@ -1936,7 +1936,8 @@ input[type=checkbox] {
   .roomOptions {
     margin: 0;
   }
-  .roomOptions, .resume {
+  .roomOptions,
+  .resume {
     width: 100%;
   }
   .roomOptions__roomPrice {
@@ -4215,7 +4216,11 @@ input[type=checkbox] {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 170, 255, 0.075)), url(../images/5451_ho_00_p_1024x768.jpg);
+  /* background-image: linear-gradient(
+      rgba(0, 0, 0, 0.479),
+      rgba(0, 170, 255, 0.075)
+    ),
+    url(../images/5451_ho_00_p_1024x768.jpg); */
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
