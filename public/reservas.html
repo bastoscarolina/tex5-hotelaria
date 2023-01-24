@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../javascripts/imgreload.js" defer></script>
     <script src="../javascripts/aditionalServicesModal.js" async></script>
     <title>Reservas</title>
   </head>
@@ -43,7 +44,7 @@
       </nav>
     </header>
 
-    <section class="reservaHero">
+    <section id="reload" class="reservaHero">
       <h1>As férias dos seus sonhos está aqui...</h1>
       <h3>"Facilidade e segurança que você precisa"</h3>
       <a href="#reserves" class="btn">Reserve agora</a>
@@ -63,7 +64,12 @@
             <label class="field-form-reserva" for="checkin"
               >Escolha a data de entrada</label
             >
-            <input type="date" name="checkin" id="checkin" class="autofocus required" />
+            <input
+              type="date"
+              name="checkin"
+              id="checkin"
+              class="autofocus required"
+            />
           </div>
 
           <div>
@@ -94,10 +100,11 @@
             <div>
               <h3 class="roomOptions__roomTitle">Suíte Club</h3>
               <p class="roomOptions__roomDescription">
-                Quarto com varanda, cama de casal, Queen ou King Size, ar-condicionado,
-                WI-FI, TV LED 40”, telefones, minibar, amenities, secador de cabelo,
-                mesa de trabalho, cofre, roupão, chinelo e muito mais. Os apartamentos
-                superiores Suíte Club estão localizados do 15º ao 18º andar.
+                Quarto com varanda, cama de casal, Queen ou King Size,
+                ar-condicionado, WI-FI, TV LED 40”, telefones, minibar,
+                amenities, secador de cabelo, mesa de trabalho, cofre, roupão,
+                chinelo e muito mais. Os apartamentos superiores Suíte Club
+                estão localizados do 15º ao 18º andar.
               </p>
 
               <label class="roomOptions__roomPrice">R$150,00</label>
@@ -124,10 +131,10 @@
             />
             <h3 class="roomOptions__roomTitle">Quarto Luxo</h3>
             <p class="roomOptions__roomDescription">
-              Quarto com camas de solteiro, dispõe de ar-condicionado, WI-FI, TV LED 40”,
-              telefones, minibar, amenities, secador de cabelo, mesa de trabalho, cofre,
-              e muito mais. Os apartamentos de luxo estão localizados do 1º até o 6º andar.
-              De 20 a 29m².
+              Quarto com camas de solteiro, dispõe de ar-condicionado, WI-FI, TV
+              LED 40”, telefones, minibar, amenities, secador de cabelo, mesa de
+              trabalho, cofre, e muito mais. Os apartamentos de luxo estão
+              localizados do 1º até o 6º andar. De 20 a 29m².
             </p>
             <label class="roomOptions__roomPrice">R$100,00</label>
 
@@ -151,7 +158,12 @@
             />
             <h3 class="roomOptions__roomTitle">Quarto Suíte Família</h3>
             <p class="roomOptions__roomDescription">
-              Com vista parcial para o oceano. onde você pode passar o tempo descansando à sombra de um guarda-sol com quem você mais ama. piscinas externas oferecem horas de diversão, e os hóspedes que quiserem relaxar poderão visitar o spa para aproveitar massagens musculares profundas, tratamentos faciais e tratamentos ayurvédicos.
+              Com vista parcial para o oceano. onde você pode passar o tempo
+              descansando à sombra de um guarda-sol com quem você mais ama.
+              piscinas externas oferecem horas de diversão, e os hóspedes que
+              quiserem relaxar poderão visitar o spa para aproveitar massagens
+              musculares profundas, tratamentos faciais e tratamentos
+              ayurvédicos.
             </p>
             <span class="roomOptions__roomPrice">R$200,00</span>
 
@@ -182,7 +194,7 @@
             </ul>
 
             <a class="resume__addServices" id="myBtn"
-            >Adicionar mais serviços</a
+              >Adicionar mais serviços</a
             >
             <h2 class="resume__title">Serviços Adicionais</h2>
             <ul class="resume__items">
@@ -217,11 +229,17 @@
         <span class="close">&times;</span>
         <h2 class="modal__title">Serviços adicionais</h2>
         <form id="modal__form" action="#">
-
           <div class="modal__options">
             <div>
-              <input style="accent-color: #415A77" class="checkModal" 
-              onclick="totalIt()" value="45" type="checkbox" name="Café da manhã" id="cafe-da-manha">
+              <input
+                style="accent-color: #415a77"
+                class="checkModal"
+                onclick="totalIt()"
+                value="45"
+                type="checkbox"
+                name="Café da manhã"
+                id="cafe-da-manha"
+              />
               <label for="cafe-da-manha">Café da Manhã</label>
             </div>
             <span><strong>R$ 45,00</strong></span>
@@ -229,8 +247,15 @@
 
           <div class="modal__options">
             <div>
-              <input style="accent-color: #415A77" class="checkModal" 
-              onclick="totalIt()" value="52" type="checkbox" name="Cofre" id="cofre">
+              <input
+                style="accent-color: #415a77"
+                class="checkModal"
+                onclick="totalIt()"
+                value="52"
+                type="checkbox"
+                name="Cofre"
+                id="cofre"
+              />
               <label for="cofre">Cofre</label>
             </div>
             <span><strong>R$ 52,00</strong></span>
@@ -238,8 +263,15 @@
 
           <div class="modal__options">
             <div>
-              <input style="accent-color: #415A77" class="checkModal" 
-              onclick="totalIt()" value="98" type="checkbox" name="Massagem" id="massagem">
+              <input
+                style="accent-color: #415a77"
+                class="checkModal"
+                onclick="totalIt()"
+                value="98"
+                type="checkbox"
+                name="Massagem"
+                id="massagem"
+              />
               <label for="massagem">Massagem</label>
             </div>
             <span><strong>R$ 98,00</strong></span>
@@ -247,7 +279,15 @@
 
           <div class="modal__options">
             <div>
-              <input onclick="totalIt()" value="280" style="accent-color: #415A77" class="checkModal" type="checkbox" name="SPA" id="spa">
+              <input
+                onclick="totalIt()"
+                value="280"
+                style="accent-color: #415a77"
+                class="checkModal"
+                type="checkbox"
+                name="SPA"
+                id="spa"
+              />
               <label for="spa">Spa</label>
             </div>
             <span><strong>R$ 280,00</strong></span>
@@ -255,12 +295,19 @@
 
           <div class="modal__options">
             <div>
-              <input onclick="totalIt()" value="110" style="accent-color: #415A77" class="checkModal" type="checkbox" name="Translado" id="translado">
+              <input
+                onclick="totalIt()"
+                value="110"
+                style="accent-color: #415a77"
+                class="checkModal"
+                type="checkbox"
+                name="Translado"
+                id="translado"
+              />
               <label for="translado">Translado</label>
             </div>
             <span><strong>R$ 110,00</strong></span>
           </div>
-
         </form>
         <hr class="dividerModal" />
 

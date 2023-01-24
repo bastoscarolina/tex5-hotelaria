@@ -16,11 +16,11 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(0, 0, 0, 0.479),
       rgba(0, 170, 255, 0.075)
     ),
-    url(../images/5451_ho_00_p_1024x768.jpg);
+    url(../images/5451_ho_00_p_1024x768.jpg); */
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
@@ -41,73 +41,73 @@
 }
 
 .lugares__hotel {
-	width: 80%;
-	margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-	padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .lugares__titulo {
-	font-size: 2rem;
-	margin: 45px 0 35px 0;
-	color: #0c1926;
-	text-align: center;
+  font-size: 2rem;
+  margin: 45px 0 35px 0;
+  color: #0c1926;
+  text-align: center;
 }
 
 .lugares__paragrafo {
-	font-size: 1.2rem;
-	max-width: 900px;
-	margin-bottom: 35px;
-	letter-spacing: 1px;
-	color: v.$link;
-	text-align: center;
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  color: v.$link;
+  text-align: center;
 }
 
 .lugares__divisor {
-	width: 500px;
-	height: 2px;
-	background-color: v.$link;
-	margin-bottom: 2rem;
-	border: none;
+  width: 500px;
+  height: 2px;
+  background-color: v.$link;
+  margin-bottom: 2rem;
+  border: none;
 }
 
 .lugares__gridImagens {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
-	width: 45%;
-	height: 300px;
-	box-shadow: 8px 8px 10px #999;
-	margin: 1rem;
-	border-radius: 5px;
+  width: 45%;
+  height: 300px;
+  box-shadow: 8px 8px 10px #999;
+  margin: 1rem;
+  border-radius: 5px;
 }
 
-// MOBILE 
+// MOBILE
 
 @media (max-width: 415px) and (orientation: portrait) {
-	.lugares__hotel {
-		width: 90%;
-	}
+  .lugares__hotel {
+    width: 90%;
+  }
 
-	.card {
-		width: 100%;
-	}
+  .card {
+    width: 100%;
+  }
 
-	.lugares__divisor {
-		width: 25%;
-	}
+  .lugares__divisor {
+    width: 25%;
+  }
 }
 
 @media (max-width: 915px) and (orientation: landscape) {
-	.lugares__hotel {
-		width: 90%;
-	}
+  .lugares__hotel {
+    width: 90%;
+  }
 
-	.card {
-		width: 100%;
-	}
+  .card {
+    width: 100%;
+  }
 }
