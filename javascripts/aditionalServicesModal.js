@@ -1,3 +1,4 @@
+
 const modal = document.getElementById("myModal");
 
 // VARIÁREIS PARA IMPRIMIR INFORMAÇÕES NA PÁGINA DE RESERVAS
@@ -43,6 +44,7 @@ checkin.addEventListener("input", () => {
 //FUNÇÃO PARA CHECK-OUT
 checkout.addEventListener("input", () => {
   const data = new Date(checkout.value);
+
 
   //Colocando mês com 0 na frente
   let month = new Date(checkout.value).getMonth() + 1;
