@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../javascripts/imgreload.js" defer></script>
     <script src="../javascripts/aditionalServicesModal.js" async></script>
+    <script src="../javascripts/aditionalServicesResume.js" async></script>
+    <script src="../javascripts/reserve.js" async></script>
     <title>Reservas</title>
   </head>
   <body>
@@ -85,6 +87,9 @@
             >
             <input type="number" name="qtd_pessoas" id="qtd_pessoas" min="1" />
           </div>
+          <div>
+            <button class="btnReservar" id="btnSaveDate" onclick="saveDates()">Continuar</button>
+          </div>
         </form>
       </section>
 
@@ -110,15 +115,19 @@
               <label class="roomOptions__roomPrice">R$150,00</label>
 
               <div class="roomOptions__selectRoom">
-                <input
-                  class="roomOptions__roomRadioBtn"
-                  type="radio"
-                  name="tipo-acomodacao"
-                  id="quartoX"
-                  value="Suíte Club"
-                />
-
-                <label for="quartoX">Selecionar Suíte Club</label>
+                <form action="">
+                  <div>
+                    <input
+                      class="roomOptions__roomRadioBtn"
+                      type="checkbox"
+                      name="Suíte Club"
+                      id="suite-club"
+                      value="150"
+                    />
+                    <label for="quartoX">Selecionar Suíte Club</label>
+                    <button class="btnReservar" onclick="saveApartment()">Adicionar</button>
+                  </div>
+                </form>
               </div>
             </div>
           </article>
@@ -136,17 +145,22 @@
               trabalho, cofre, e muito mais. Os apartamentos de luxo estão
               localizados do 1º até o 6º andar. De 20 a 29m².
             </p>
-            <label class="roomOptions__roomPrice">R$100,00</label>
+            <label class="roomOptions__roomPrice">R$200,00</label>
 
             <div class="roomOptions__selectRoom">
-              <input
-                class="roomOptions__roomRadioBtn"
-                type="radio"
-                name="tipo-acomodacao"
-                id="quartoY"
-                value="Quarto Luxo"
-              />
-              <label for="quartoY">Selecionar Quarto Luxo</label>
+              <form action="">
+                <div>
+                  <input
+                    class="roomOptions__roomRadioBtn"
+                    type="checkbox"
+                    name="Quarto Luxo"
+                    id="quarto-luxo"
+                    value="200"
+                  />
+                  <label for="quartoY">Selecionar Quarto Luxo</label>
+                </div>
+                <button class="btnReservar" class="button" onclick="saveApartment()">Adicionar</button>
+              </form>
             </div>
           </article>
 
@@ -165,17 +179,22 @@
               musculares profundas, tratamentos faciais e tratamentos
               ayurvédicos.
             </p>
-            <span class="roomOptions__roomPrice">R$200,00</span>
+            <span class="roomOptions__roomPrice">R$300,00</span>
 
             <div class="roomOptions__selectRoom">
-              <input
-                class="roomOptions__roomRadioBtn"
-                type="radio"
-                name="tipo-acomodacao"
-                id="quartoZ"
-                value="Suíte Família"
-              />
-              <label for="quartoZ">Selecionar Suíte Família</label>
+              <form action="">
+                <div>
+                  <input
+                    class="roomOptions__roomRadioBtn"
+                    type="checkbox"
+                    name="Suíte Família"
+                    id="suite-familia"
+                    value="300"
+                  />
+                  <label for="quartoZ">Selecionar Suíte Família</label>
+                </div>
+                <button class="btnReservar" onclick="saveApartment()">Adicionar</button>
+              </form>
             </div>
           </article>
         </div>
@@ -185,11 +204,26 @@
             <h2 class="resume__title">Resumo da reserva</h2>
 
             <ul class="resume__items">
-              <li class="resume__item" data-name="apartamento">Apartamento:</li>
-              <li class="resume__item" data-name="checkin">Checkin:</li>
-              <li class="resume__item" data-name="checkout">Checkout:</li>
-              <li class="resume__item" data-name="quantidadePessoas">
-                Quantidade de Pessoas:
+              <li class="resume__item">
+                Apartamento: <strong id="resumeApartamento"></strong>
+              </li>
+              <li class="resume__item">
+                Checkin: <strong id="resumeCheckin"></strong>
+              </li>
+              <li class="resume__item">
+                Checkout: <strong id="resumeCheckout"></strong>
+              </li>
+              <li class="resume__item">
+                Quantidade de Pessoas: <strong id="resumeQtdPessoas"></strong>
+              </li>
+              <li class="resume__item">
+                Diárias reservadas: <strong id="diarias"></strong>
+              </li>
+              <li class="resume__item">
+                Valor diária: <strong id="valorDiaria"></strong>
+              </li>
+              <li class="resume__item">
+                Valor total diárias: <strong id="valorTotalDiarias"></strong>
               </li>
             </ul>
 
