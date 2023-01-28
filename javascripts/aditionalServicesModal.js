@@ -1,25 +1,33 @@
 const modal = document.getElementById("myModal");
 
 // VARIÁREIS PARA IMPRIMIR INFORMAÇÕES NA PÁGINA DE RESERVAS
-const reservaQuantidadePessoas = document.querySelector('[data-name="quantidadePessoas"]')
-const reservaCheckin  = document.querySelector('[data-name="checkin"]')
-const reservaCheckout  = document.querySelector('[data-name="checkout"]')
-const reservaApartamento  = document.querySelector('[data-name="apartamento"]')
+const reservaQuantidadePessoas = document.querySelector(
+  '[data-name="quantidadePessoas"]'
+);
 
-const apartamentos = document.getElementsByName("tipo-acomodacao")
-const quantidadePessoas = document.querySelector("#qtd_pessoas")
-const checkout = document.querySelector("#checkout")
-const checkin = document.querySelector("#checkin")
+const reservaCheckin = document.querySelector('[data-name="checkin"]');
+const reservaCheckout = document.querySelector('[data-name="checkout"]');
+const reservaApartamento = document.querySelector('[data-name="apartamento"]');
+
+const apartamentos = document.getElementsByName("tipo-acomodacao");
+const quantidadePessoas = document.querySelector("#qtd_pessoas");
+const checkout = document.querySelector("#checkout");
+const checkin = document.querySelector("#checkin");
+
+//VARIAVEIS CALCULOS
+let apartamentoEscolhido
 
 // FUNÇÃO PARA ESCOLHA DE APARTAMENTO NA PÁGINA DE RESERVAS
-apartamentos.forEach(apartamento => {
-  apartamento.addEventListener("input",() => {
-    reservaApartamento.innerHTML = `Apartamento: ${apartamento.value}`
-  })
-})
+apartamentos.forEach((apartamento) => {
+  apartamento.addEventListener("input", () => {
+    reservaApartamento.innerHTML = `Apartamento: ${apartamento.value}`;
+    apartamentoEscolhido = apartamento.value
+  });
+});
+
 quantidadePessoas.addEventListener("input", () => {
-  reservaQuantidadePessoas.innerHTML = `Quantidade de Pessoas: ${quantidadePessoas.value}` 
-} )
+  reservaQuantidadePessoas.innerHTML = `Quantidade de Pessoas: ${quantidadePessoas.value}`;
+});
 
 //FUNÇÃO PARA CHECK-IN
 checkin.addEventListener("input", () => {
@@ -28,32 +36,34 @@ checkin.addEventListener("input", () => {
   //Colocando mês com 0 na frente
   let month = new Date(checkin.value).getMonth() + 1;
   let todayMonth = month.toString();
-  if (todayMonth < 10) todayMonth = '0' + month.toString();
+  if (todayMonth < 10) todayMonth = "0" + month.toString();
 
   //Colocando dia com o 0 na frente
   let todayDay = data.getUTCDate();
-  if (todayDay < 10) todayDay = '0' + data.getUTCDate();
+  if (todayDay < 10) todayDay = "0" + data.getUTCDate();
 
   const dataFormatada = todayDay + "/" + todayMonth + "/" + data.getFullYear();
   reservaCheckin.innerHTML = `Checkin: ${dataFormatada}`;
-})
+});
 
 //FUNÇÃO PARA CHECK-OUT
 checkout.addEventListener("input", () => {
   const data = new Date(checkout.value);
 
-    //Colocando mês com 0 na frente
-    let month = new Date(checkout.value).getMonth() + 1;
-    let todayMonth = month.toString();
-    if (todayMonth < 10) todayMonth = '0' + month.toString();
-  
-    //Colocando dia com o 0 na frente
-    let todayDay = data.getUTCDate();
-    if (todayDay < 10) todayDay = '0' + data.getUTCDate();
 
-    const dataFormatada = todayDay + "/" + todayMonth + "/" + data.getFullYear();
-    reservaCheckout.innerHTML = `Checkout: ${dataFormatada}`;
-})
+  //Colocando mês com 0 na frente
+  let month = new Date(checkout.value).getMonth() + 1;
+  let todayMonth = month.toString();
+  if (todayMonth < 10) todayMonth = "0" + month.toString();
+
+  //Colocando dia com o 0 na frente
+  let todayDay = data.getUTCDate();
+  if (todayDay < 10) todayDay = "0" + data.getUTCDate();
+
+  const dataFormatada = todayDay + "/" + todayMonth + "/" + data.getFullYear();
+  reservaCheckout.innerHTML = `Checkout: ${dataFormatada}`;
+
+});
 
 //MODAL PARA SERVIÇOS DICIONAIS
 
@@ -61,22 +71,22 @@ const btn = document.getElementById("myBtn");
 
 const span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
-}
+};
 
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
-}
+};
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 // SOMA DOS SERVIÇOS ADICIONAIS
-let totalServices = document.getElementById('total')
+let totalServices = document.getElementById("total");
 function totalIt() {
   let input = document.getElementsByClassName("checkModal");
   let total = 0;
@@ -85,13 +95,13 @@ function totalIt() {
       total += parseFloat(input[i].value);
     }
   }
-  totalServices.innerHTML = `R$ ${total.toFixed(2).replace('.', ',')}`  
+  totalServices.innerHTML = `R$ ${total.toFixed(2).replace(".", ",")}`;
 }
 
 // ADICIONA SERVIÇOS ADICIONAIS NO RESUMO
 var servicosAdicionais = {
-  servicos: []
-}
+  servicos: [],
+};
 
 var boxes = document.querySelectorAll(".checkModal");
 
@@ -108,10 +118,10 @@ function servico(e) {
   /* Cria um novo array com os nomes dos serviços */
   servicosAdicionais.servicos = checkedBoxes.map((checkbox) => {
     return checkbox.name;
-  })
+  });
 
-  document.getElementById("resume__item").innerHTML = servicosAdicionais.servicos.map(service => `${service} <br>`).join("");
-  
+  document.getElementById("resume__item").innerHTML =
+    servicosAdicionais.servicos.map((service) => `${service} <br>`).join("");
 }
 
 boxes.forEach((checkbox) => {
@@ -120,4 +130,5 @@ boxes.forEach((checkbox) => {
   } else {
     checkbox.addEventListener("change", servico, false);
   }
-})
+});
+

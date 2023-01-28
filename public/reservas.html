@@ -83,7 +83,7 @@
             <label class="field-form-reserva" for="qtd_pessoas"
               >Quantidade de pessoas</label
             >
-            <input type="number" name="qtd_pessoas" id="qtd_pessoas" min="1" />
+            <input type="number" name="qtd_pessoas" id="qtd_pessoas" min="1" max="10" />
           </div>
         </form>
       </section>
@@ -107,7 +107,7 @@
                 estão localizados do 15º ao 18º andar.
               </p>
 
-              <label class="roomOptions__roomPrice">R$150,00</label>
+              <label class="roomOptions__roomPrice">R$100,00</label>
 
               <div class="roomOptions__selectRoom">
                 <input
@@ -116,6 +116,8 @@
                   name="tipo-acomodacao"
                   id="quartoX"
                   value="Suíte Club"
+                  data-name="Suíte Club"
+                  onclick="click()"
                 />
 
                 <label for="quartoX">Selecionar Suíte Club</label>
@@ -136,7 +138,7 @@
               trabalho, cofre, e muito mais. Os apartamentos de luxo estão
               localizados do 1º até o 6º andar. De 20 a 29m².
             </p>
-            <label class="roomOptions__roomPrice">R$100,00</label>
+            <label class="roomOptions__roomPrice">R$150,00</label>
 
             <div class="roomOptions__selectRoom">
               <input
@@ -145,6 +147,7 @@
                 name="tipo-acomodacao"
                 id="quartoY"
                 value="Quarto Luxo"
+                data-name="Quarto Luxo"
               />
               <label for="quartoY">Selecionar Quarto Luxo</label>
             </div>
@@ -191,6 +194,7 @@
               <li class="resume__item" data-name="quantidadePessoas">
                 Quantidade de Pessoas:
               </li>
+              <li class="resume__item" data-name="valorDias">Valor: </li>
             </ul>
 
             <a class="resume__addServices" id="myBtn"
