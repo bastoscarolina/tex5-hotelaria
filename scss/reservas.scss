@@ -71,6 +71,7 @@
   display: flex;
   padding: 5rem 0 4rem 0;
   justify-content: space-evenly;
+  align-items: flex-end;
   column-gap: 1rem;
 }
 
@@ -81,9 +82,18 @@
 .form__date input {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 0 0 0;
   outline: none;
   border: 1px solid #ccc;
+}
+
+.btnReservar {
+  background-color: #0c1926;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: .9rem;
+  cursor: pointer;
 }
 
 .reservContent {
@@ -138,7 +148,13 @@
   }
 
   &__selectRoom {
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
+  }
+
+  &__selectRoom form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__selectRoom label {
@@ -220,7 +236,8 @@
   cursor: pointer;
 }
 
-.checkModal {
+.checkModal,
+.roomOptions__roomRadioBtn {
   display: inline !important;
 }
 
