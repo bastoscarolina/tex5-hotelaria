@@ -46,10 +46,8 @@ const resumeCheckin = document.getElementById("resumeCheckin")
 const resumeCheckout = document.getElementById("resumeCheckout")
 const resumeQtdPessoas = document.getElementById("resumeQtdPessoas")
 
-let dataEntrada = new Date(localStorage.getItem('checkin'))
-let dataSaida = new Date(localStorage.getItem('checkout'))
-resumeCheckin.innerHTML =  new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'short', year: 'numeric'} ).format(dataEntrada)
-resumeCheckout.innerHTML = new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'short', year: 'numeric'} ).format(dataSaida)
+resumeCheckin.innerHTML = localStorage.getItem('checkin')
+resumeCheckout.innerHTML = localStorage.getItem('checkout')
 resumeQtdPessoas.innerHTML = `${localStorage.getItem('qtdPessoas')} pessoas`
 
 // Inseri no Resumo o nome do apartamento
