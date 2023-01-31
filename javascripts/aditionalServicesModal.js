@@ -20,49 +20,49 @@ window.onclick = function(event) {
   }
 }
 
-// SOMA DOS SERVIÇOS ADICIONAIS
-let totalServices = document.getElementById('total')
-function totalIt() {
-  let input = document.getElementsByClassName("checkModal");
-  let total = 0;
-  for (var i = 0; i < input.length; i++) {
-    if (input[i].checked) {
-      total += parseFloat(input[i].value);
+const serviceCheckboxes = document.querySelectorAll('.checkModal')
+const listService = document.querySelector('#listService')
+const totalListService = document.querySelector('#totalListService')
+const totalModalListService = document.querySelector('#totalModalListService')
+const totalGeral = document.getElementById('totalGeral')
+
+for (const checkbox of serviceCheckboxes) {
+  checkbox.addEventListener('click', (e) => {
+    localStorage.setItem(e.target.id, e.target.checked)
+    updateList()
+    updateTotal()
+  })
+}
+
+// Carregar o estado dos checkboxes ao carregar a página
+for (const checkbox of serviceCheckboxes) {
+  if (localStorage.getItem(checkbox.id) === 'true') {
+    checkbox.setAttribute('checked', 'checked')
+  }
+}
+
+function updateList() {
+  listService.innerHTML = ''
+  for (const checkbox of serviceCheckboxes) {
+    if (checkbox.checked) {
+      const item = document.createElement('li')
+      item.textContent = `${checkbox.dataset.service}: R$ ${checkbox.dataset.price}`
+      listService.appendChild(item)
     }
   }
-  totalServices.innerHTML = `R$ ${total.toFixed(2).replace('.', ',')}`  
 }
 
-// ADICIONA SERVIÇOS ADICIONAIS NO RESUMO
-var servicosAdicionais = {
-  servicos: []
-}
-
-var boxes = document.querySelectorAll(".checkModal");
-
-/* Array de checkboxes */
-var boxesArray = Array.prototype.slice.call(boxes, 0);
-
-/*Function*/
-function servico(e) {
-  /* Filtra os checkboxes que não estão marcados */
-  var checkedBoxes = boxesArray.filter((checkbox) => {
-    return checkbox.checked;
-  });
-
-  /* Cria um novo array com os nomes dos serviços */
-  servicosAdicionais.servicos = checkedBoxes.map((checkbox) => {
-    return checkbox.name;
-  })
-
-  document.getElementById("resume__item").innerHTML = servicosAdicionais.servicos.map(service => `${service} <br>`).join("");
-  
-}
-
-boxes.forEach((checkbox) => {
-  if (checkbox.attachEvent) {
-    checkbox.attachEvent("onchange", servico);
-  } else {
-    checkbox.addEventListener("change", servico, false);
+function updateTotal() {
+  let sum = 0;
+  for (const checkbox of serviceCheckboxes) {
+    if (checkbox.checked) {
+      sum += parseFloat(checkbox.dataset.price)
+    }
   }
-})
+  totalListService.textContent = `Total dos serviços adicionais: R$ ${sum.toFixed(2).replace('.', ',')}`
+  totalModalListService.textContent = `Total dos serviços adicionais: R$ ${sum.toFixed(2).replace('.', ',')}`
+}
+
+// Atualizar a lista e o total quando a página é carregada
+updateList();
+updateTotal();
