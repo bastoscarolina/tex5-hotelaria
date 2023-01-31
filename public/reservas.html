@@ -232,9 +232,12 @@
               >Adicionar mais serviços</a
             >
             <h2 class="resume__title">Serviços Adicionais</h2>
-            <ul class="resume__items">
+            <!-- <ul class="resume__items">
               <li class="resume__item" id="resume__item"></li>
-            </ul>
+            </ul> -->
+            <ul id="listService"></ul>
+            <p id="totalListService"></p>
+            <p id="totalGeral"></p>
 
             <button class="resume__continue" id="btnContinue">Continuar</button>
           </div>
@@ -268,14 +271,13 @@
             <div>
               <input
                 style="accent-color: #415a77"
+                data-service="Café da manhã" data-price="45.00"
                 class="checkModal"
-                onclick="totalIt()"
-                value="45"
                 type="checkbox"
                 name="Café da manhã"
-                id="cafe-da-manha"
+                id="item1"
               />
-              <label for="cafe-da-manha">Café da Manhã</label>
+              <label for="item1">Café da Manhã</label>
             </div>
             <span><strong>R$ 45,00</strong></span>
           </div>
@@ -284,14 +286,13 @@
             <div>
               <input
                 style="accent-color: #415a77"
+                data-service="Cofre" data-price="52.00"
                 class="checkModal"
-                onclick="totalIt()"
-                value="52"
                 type="checkbox"
                 name="Cofre"
-                id="cofre"
+                id="item2"
               />
-              <label for="cofre">Cofre</label>
+              <label for="item2">Cofre</label>
             </div>
             <span><strong>R$ 52,00</strong></span>
           </div>
@@ -300,14 +301,13 @@
             <div>
               <input
                 style="accent-color: #415a77"
+                data-service="Massagem" data-price="98.00"
                 class="checkModal"
-                onclick="totalIt()"
-                value="98"
                 type="checkbox"
                 name="Massagem"
-                id="massagem"
+                id="item3"
               />
-              <label for="massagem">Massagem</label>
+              <label for="item3">Massagem</label>
             </div>
             <span><strong>R$ 98,00</strong></span>
           </div>
@@ -315,15 +315,15 @@
           <div class="modal__options">
             <div>
               <input
-                onclick="totalIt()"
-                value="280"
+                
                 style="accent-color: #415a77"
+                data-service="SPA" data-price="280.00"
                 class="checkModal"
                 type="checkbox"
                 name="SPA"
-                id="spa"
+                id="item4"
               />
-              <label for="spa">Spa</label>
+              <label for="item4">Spa</label>
             </div>
             <span><strong>R$ 280,00</strong></span>
           </div>
@@ -331,15 +331,15 @@
           <div class="modal__options">
             <div>
               <input
-                onclick="totalIt()"
-                value="110"
+                
                 style="accent-color: #415a77"
+                data-service="Translado" data-price="110.00"
                 class="checkModal"
                 type="checkbox"
                 name="Translado"
-                id="translado"
+                id="item5"
               />
-              <label for="translado">Translado</label>
+              <label for="item5">Translado</label>
             </div>
             <span><strong>R$ 110,00</strong></span>
           </div>
@@ -347,9 +347,9 @@
         <hr class="dividerModal" />
 
         <div class="totalServices">
-          <div class="resultCalc">
+          <div class="resultCalc" id="totalModalListService">
             <span>Total:&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <strong id="total">R$ 0,00</strong>
+            <strong >R$ 0,00</strong>
           </div>
         </div>
       </div>
