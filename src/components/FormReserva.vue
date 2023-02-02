@@ -27,7 +27,7 @@
 <script>
 export default {
   name: 'FormReserva',
-  deta() {
+  data() {
     return {
       checkin: '',
       checkout: '',

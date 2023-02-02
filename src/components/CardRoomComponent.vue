@@ -33,7 +33,7 @@ export default {
     return {
       card: {
         bedroom: this.bedroom,
-        price: this.price,
+        price: this.price
       },
     };
   },

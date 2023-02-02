@@ -5,7 +5,7 @@
   </HeroComponent>
 
   <main class="containerReserv">
-    <FormReserva />
+    <FormReserva @update:data="updateData"/>
 
     <h2 class="roomOptions__paragraph">Escolha seu quarto</h2>
 
@@ -55,6 +55,9 @@
       <aside class="resume">
         <div class="resume__reserve">
           <h2 class="resume__title">Resumo da reserva</h2>
+          <p>Data de Entrada: {{ formData.checkin }}</p>
+          <p>Data de Saída: {{ formData.checkout }}</p>
+          <p>Número de Hóspedes: {{ formData.guests }}</p>
           <a class="resume__addServices" id="myBtn">Adicionar mais serviços</a>
           <button class="resume__continue" id="btnContinue">Continuar</button>
         </div>
@@ -77,12 +80,20 @@ export default {
   },
   data() {
     return {
-      title: "As férias dos seus sonhos está aqui...",
-      subtitle: '"Facilidade e segurança que você precisa"',
-      img1: 'https://via.placeholder.com/150x150'
-    };
+      formData: {
+        checkin: '',
+        checkout: '',
+        guests: ''
+      }    
+    }
   },
-};
+  methods: {
+    updateData(data) {
+      this.formData = data;
+    }
+  }
+}
+  
 </script>
 
 <style scoped>
