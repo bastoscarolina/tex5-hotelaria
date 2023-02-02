@@ -38,7 +38,6 @@
         </ul>
       </nav>
   </header>
-  
 </template>
 
 <style scoped>

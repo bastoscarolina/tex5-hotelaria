@@ -1,8 +1,26 @@
 <template>
-  <div class="container">
-    <h1>Página de reservas</h1>
-  </div>
+  <HeroComponent>
+    <h3>{{ titleReservas }}</h3>
+    <h1>{{ subtitleReservas }}</h1>
+  </HeroComponent>
 </template>
+
+<script>
+import HeroComponent from '@/components/HeroComponent.vue';
+
+export default {
+  name: 'ReservasView',
+  components: {
+    HeroComponent
+  },
+  data() {
+    return {
+      title: 'As férias dos seus sonhos está aqui...',
+      subtitle: '\"Facilidade e segurança que você precisa\"'
+    }
+  }
+}
+</script>
 
 <style>
 .container {
