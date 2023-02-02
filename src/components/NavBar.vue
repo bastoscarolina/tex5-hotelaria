@@ -13,10 +13,18 @@
             <li>
               <router-link to="/">Início</router-link>
             </li>
-            <li><a href="#">Acomodações</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li>
+              <router-link to="acomodacoes">Acomodações</router-link>
+            </li>
+            <li>
+              <router-link to="reservas">Reservas</router-link>
+            </li>
+            <li>
+              <router-link to="sobre">Sobre</router-link>
+            </li>
+            <li>
+              <router-link to="contato">Contato</router-link>
+            </li>
             <li class="services">
               <a href="/">Visitante <span class="arrow-icon">&#9660;</span></a>
               <!-- MENU SUSPENSO OU DROPDOWN MENU -->
@@ -49,7 +57,6 @@ a:hover {
   justify-content: space-between;
   padding: 20px;
   background-color: #415a77;
-  opacity: 0.9;
   width: 100%;
   color: #fff;
   position: fixed;

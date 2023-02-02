@@ -1,16 +1,8 @@
 <template>
   <div class="container">
-    <h1>Home page</h1>
+    <h1>Página de reservas</h1>
   </div>
 </template>
-
-<script>
-
-
-export default {
-  name: 'InicioView'
-}
-</script>
 
 <style>
 .container {
