@@ -37,12 +37,11 @@
           </div>
         </ul>
       </nav>
-    </header>
+  </header>
   
 </template>
 
 <style scoped>
-/* Header */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -62,6 +61,10 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.nav__links {
+  list-style: none;
 }
 
 .nav__links a {
