@@ -5,48 +5,34 @@
   </HeroComponent>
 
   <main class="containerReserv">
-    <FormReserva @update:data="updateData"/>
+    <FormReserva @update:data="updateData" />
 
     <h2 class="roomOptions__paragraph">Escolha seu quarto</h2>
-
+    <div class="roomOptions"></div>
     <div class="reservContent">
       <div class="roomOptions">
         <CardRoomComponent
-          bedroom="Quarto Suíte Club"
+          bedroom="Suíte Executiva"
           image="./assets/quartosParaReservar/quarto_1.jpg"
-          description="Quarto com varanda, cama de casal, Queen ou King Size,
-                        ar-condicionado, WI-FI, TV LED 40”, telefones, minibar, amenities,
-                        secador de cabelo, mesa de trabalho, cofre, roupão, chinelo e
-                        muito mais. Os apartamentos superiores Suíte Club estão
-                        localizados do 15º ao 18º andar."
-          price="150"
+          description="O apartamento possui uma sala com TV, mesa de refeição com 04 lugares sofá e mesa de trabalho. O quarto há uma cama de King Size. Vista mar."
+          price="R$ 200,00"
           v-model="selectedCard"
           @update:selectedCard="updateSelectedCard"
         />
-
         <CardRoomComponent
-          bedroom="Quarto Luxo"
+          bedroom="Suíte Master"
           image="./assets/quartosParaReservar/quarto_2.jpg"
-          description="Quarto com camas de solteiro, dispõe de ar-condicionado, 
-                       WI-FI, TV LED 40”, telefones, minibar, amenities, secador 
-                       de cabelo, mesa de trabalho, cofre, e muito mais. Os 
-                       apartamentos de luxo estão localizados do 1º até o 6º andar. 
-                       De 20 a 29m²."
-          price="200"
+          description="SUÍTE MASTER
+O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala com TV e som, mesa de refeição com quatro cadeiras, sofá e mesa de trabalho. O quarto há 01 cama King Size. Vista mar."
+          price="R$ 250,00"
           v-model="selectedCard"
           @update:selectedCard="updateSelectedCard"
         />
-
         <CardRoomComponent
-          bedroom="Quarto Suíte Família"
+          bedroom="Suíte Presidencial"
           image="./assets/quartosParaReservar/quarto_3.jpg"
-          description="Com vista parcial para o oceano. onde você pode passar o 
-                       tempo descansando à sombra de um guarda-sol com quem você 
-                       mais ama. piscinas externas oferecem horas de diversão, e 
-                       os hóspedes que quiserem relaxar poderão visitar o spa para 
-                       aproveitar massagens musculares profundas, tratamentos faciais 
-                       e tratamentos ayurvédicos."
-          price="300"
+          description="Possui uma sala com TV e DVD, mesa com 04 lugares e refeições com 10 lugares, conjunto de sofá, bar com bancada, frigobar e lavabo. O quarto há 01 cama super King Size, TV e um sofá para leitura e o banheiro amplo com hidromassagem. Vista mar."
+          price="R$ 350,00"
           v-model="selectedCard"
           @update:selectedCard="updateSelectedCard"
         />
@@ -58,6 +44,8 @@
           <p>Data de Entrada: {{ formData.checkin }}</p>
           <p>Data de Saída: {{ formData.checkout }}</p>
           <p>Número de Hóspedes: {{ formData.guests }}</p>
+          <p v-if="selectedCard.bedroom">Quarto: {{ selectedCard.bedroom }}</p>
+          <p v-if="selectedCard.price">Preço: {{ selectedCard.price }}</p>
           <a class="resume__addServices" id="myBtn">Adicionar mais serviços</a>
           <button class="resume__continue" id="btnContinue">Continuar</button>
         </div>
@@ -81,19 +69,22 @@ export default {
   data() {
     return {
       formData: {
-        checkin: '',
-        checkout: '',
-        guests: ''
-      }    
-    }
+        checkin: "",
+        checkout: "",
+        guests: "",
+      },
+      selectedCard: {},
+    };
   },
   methods: {
     updateData(data) {
       this.formData = data;
-    }
-  }
-}
-  
+    },
+    updateSelectedCard(card) {
+      this.selectedCard = card;
+    },
+  },
+};
 </script>
 
 <style scoped>
