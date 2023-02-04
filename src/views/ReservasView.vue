@@ -15,7 +15,7 @@
           bedroom="Suíte Executiva"
           image="./assets/quartosParaReservar/quarto_1.jpg"
           description="O apartamento possui uma sala com TV, mesa de refeição com 04 lugares sofá e mesa de trabalho. O quarto há uma cama de King Size. Vista mar."
-          price="R$ 200,00"
+          price="200"
           v-model="selectedCard"
           @update:selectedCard="updateSelectedCard"
         />
@@ -24,7 +24,7 @@
           image="./assets/quartosParaReservar/quarto_2.jpg"
           description="SUÍTE MASTER
 O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala com TV e som, mesa de refeição com quatro cadeiras, sofá e mesa de trabalho. O quarto há 01 cama King Size. Vista mar."
-          price="R$ 250,00"
+          price="250"
           v-model="selectedCard"
           @update:selectedCard="updateSelectedCard"
         />
@@ -32,7 +32,7 @@ O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala 
           bedroom="Suíte Presidencial"
           image="./assets/quartosParaReservar/quarto_3.jpg"
           description="Possui uma sala com TV e DVD, mesa com 04 lugares e refeições com 10 lugares, conjunto de sofá, bar com bancada, frigobar e lavabo. O quarto há 01 cama super King Size, TV e um sofá para leitura e o banheiro amplo com hidromassagem. Vista mar."
-          price="R$ 350,00"
+          price="350"
           v-model="selectedCard"
           @update:selectedCard="updateSelectedCard"
         />
@@ -44,8 +44,12 @@ O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala 
           <p>Data de Entrada: {{ formData.checkin }}</p>
           <p>Data de Saída: {{ formData.checkout }}</p>
           <p>Número de Hóspedes: {{ formData.guests }}</p>
+          <p>Diárias: {{ totalDays }}</p>
           <p v-if="selectedCard.bedroom">Quarto: {{ selectedCard.bedroom }}</p>
           <p v-if="selectedCard.price">Preço: {{ selectedCard.price }}</p>
+          <p>
+            Valor total: {{ totalAmount }}
+          </p>
           <a class="resume__addServices" id="myBtn">Adicionar mais serviços</a>
           <button class="resume__continue" id="btnContinue">Continuar</button>
         </div>
@@ -82,9 +86,26 @@ export default {
     },
     updateSelectedCard(card) {
       this.selectedCard = card;
-    },
+    }
   },
-};
+  computed: {
+    totalDays() {
+      if (this.formData.checkin && this.formData.checkout) {
+        const checkin = new Date(this.formData.checkin);
+        const checkout = new Date(this.formData.checkout);
+        const differenceInTime = checkout.getTime() - checkin.getTime();
+        return Math.ceil(differenceInTime / (1000 * 3600 * 24));
+      }
+      return "";
+    },
+    totalAmount() {
+      let price = parseFloat(this.selectedCard.price || 0);
+      let totalDays = parseInt(this.totalDays || 0);
+      let guests = parseInt(this.formData.guests || 0);
+      return price * totalDays * guests || 0;
+    }
+  }
+}
 </script>
 
 <style scoped>

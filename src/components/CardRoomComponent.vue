@@ -18,7 +18,7 @@ export default {
     return {
       card: {
         bedroom: this.bedroom,
-        price: this.price
+        price: parseFloat(this.price)
       }
     }
   },
