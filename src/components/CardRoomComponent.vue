@@ -3,7 +3,7 @@
     <img :src="image" class="roomOptions__roomImagem"/>
       <h3 class="roomOptions__roomTitle">{{ bedroom }}</h3>
       <p class="roomOptions__roomDescription">{{ description }}</p>
-      <label :for="bedroom" class="roomOptions__roomPrice">{{ price }}</label>
+      <label :for="bedroom" class="roomOptions__roomPrice">{{ `R$ ${price}` }}</label>
       <div class="roomOptions__selectRoom">
         <input class="form-check-input" type="radio" :name="card" :id="bedroom" :value="card" v-model="selectedCard" @change="updateSelectedCard"/>
         <label class="form-check-label">{{ bedroom }}</label>

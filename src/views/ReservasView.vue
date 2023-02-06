@@ -22,8 +22,7 @@
         <CardRoomComponent
           bedroom="Suíte Master"
           image="./assets/quartosParaReservar/quarto_2.jpg"
-          description="SUÍTE MASTER
-O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala com TV e som, mesa de refeição com quatro cadeiras, sofá e mesa de trabalho. O quarto há 01 cama King Size. Vista mar."
+          description="O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala com TV e som, mesa de refeição com quatro cadeiras, sofá e mesa de trabalho. O quarto há 01 cama King Size. Vista mar."
           price="250"
           v-model="selectedCard"
           @update:selectedCard="updateSelectedCard"
@@ -39,18 +38,38 @@ O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala 
       </div>
 
       <aside class="resume">
+
         <div class="resume__reserve">
+
           <h2 class="resume__title">Resumo da reserva</h2>
-          <p>Data de Entrada: {{ formData.checkin }}</p>
-          <p>Data de Saída: {{ formData.checkout }}</p>
-          <p>Número de Hóspedes: {{ formData.guests }}</p>
-          <p>Diárias: {{ totalDays }}</p>
-          <p v-if="selectedCard.bedroom">Quarto: {{ selectedCard.bedroom }}</p>
-          <p v-if="selectedCard.price">Preço: {{ selectedCard.price }}</p>
-          <p>
-            Valor total: {{ totalAmount }}
-          </p>
-          <a class="resume__addServices" id="myBtn">Adicionar mais serviços</a>
+          <ul class="resume__l">
+            <li class="resume__listItem">
+              Data de Entrada: {{ formData.checkin }}
+            </li>
+            <li class="resume__listItem">
+              Data de Saída: {{ formData.checkout }}
+            </li>
+            <li class="resume__listItem">
+              Número de Hóspedes: {{ formData.guests }}
+            </li>
+            <li class="resume__listItem">
+              Diárias: {{ totalDays }}
+            </li>
+            <li v-if="selectedCard.bedroom" class="resume__listItem">
+              Quarto: {{ selectedCard.bedroom  }}
+            </li>
+            <li v-if="selectedCard.price" class="resume__listItem">
+              Valor do quarto: R$ {{ (selectedCard.price).toFixed(2).replace('.', ',') }}
+            </li>
+          </ul>
+          
+          <AditionalServicesModal />
+          
+          <ul class="resume__total">
+            <li class="resume__listItem">Valor da hospedagem: R$ {{ (totalReserve).toFixed(2).replace('.', ',') }}</li>
+            <li class="resume__listItem">Valor total: R$ {{ totalAditionalServices }}</li>
+          </ul>
+
           <button class="resume__continue" id="btnContinue">Continuar</button>
         </div>
       </aside>
@@ -62,6 +81,7 @@ O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala 
 import HeroComponent from "@/components/HeroComponent.vue";
 import FormReserva from "@/components/FormReserva.vue";
 import CardRoomComponent from "@/components/CardRoomComponent.vue";
+import AditionalServicesModal from "@/components/AditionalServicesModal.vue";
 
 export default {
   name: "ReservasView",
@@ -69,6 +89,7 @@ export default {
     HeroComponent,
     FormReserva,
     CardRoomComponent,
+    AditionalServicesModal
   },
   data() {
     return {
@@ -77,7 +98,7 @@ export default {
         checkout: "",
         guests: "",
       },
-      selectedCard: {},
+      selectedCard: {}
     };
   },
   methods: {
@@ -98,11 +119,11 @@ export default {
       }
       return "";
     },
-    totalAmount() {
-      let price = parseFloat(this.selectedCard.price || 0);
-      let totalDays = parseInt(this.totalDays || 0);
-      let guests = parseInt(this.formData.guests || 0);
-      return price * totalDays * guests || 0;
+    totalReserve() {
+      let price = parseFloat(this.selectedCard.price || 0)
+      let totalDays = parseInt(this.totalDays || 0)
+      let guests = parseInt(this.formData.guests || 0)
+      return price * totalDays * guests || 0
     }
   }
 }
@@ -146,7 +167,6 @@ export default {
   border-radius: 5px;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.07);
 }
-
 .resume__reserve {
   padding: 2rem;
 }
@@ -156,10 +176,10 @@ export default {
   margin-bottom: 2rem;
 }
 
-.resume__item {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 2.5rem;
+.resume__listItem {
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
 
 .resume__addServices {
@@ -178,5 +198,8 @@ export default {
   font-weight: 900;
   color: #415a77;
   cursor: pointer;
+}
+.resume__total {
+  margin: 2rem 0;
 }
 </style>
