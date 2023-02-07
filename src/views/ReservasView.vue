@@ -63,7 +63,7 @@
             </li>
           </ul>
           
-          <AditionalServicesModal />
+          <AditionalServicesModal @totalAditionalServices="handleTotalAditionalServices"/>
           
           <ul class="resume__total">
             <li class="resume__listItem">Valor da hospedagem: R$ {{ (totalReserve).toFixed(2).replace('.', ',') }}</li>
@@ -98,7 +98,8 @@ export default {
         checkout: "",
         guests: "",
       },
-      selectedCard: {}
+      selectedCard: {},
+      totalAditionalServices: 0
     };
   },
   methods: {
@@ -107,6 +108,9 @@ export default {
     },
     updateSelectedCard(card) {
       this.selectedCard = card;
+    },
+    handleTotalAditionalServices(totalAditionalServices) {
+      this.totalAditionalServices = totalAditionalServices + this.totalReserve
     }
   },
   computed: {

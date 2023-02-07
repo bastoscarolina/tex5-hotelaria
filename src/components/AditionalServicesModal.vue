@@ -49,7 +49,16 @@ export default {
     },
     totalAditionalServices() {
       return this.selectedItems.reduce((acc, item) => acc + item.price, 0)
-    
+    }
+  },
+  methods: {
+    emitTotalAditionalServices() {
+      this.$emit('totalAditionalServices', this.totalAditionalServices)
+    }
+  },
+  watch: {
+    totalAditionalServices() {
+      this.emitTotalAditionalServices()
     }
   }
 }
