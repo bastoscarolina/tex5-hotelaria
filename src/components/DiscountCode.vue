@@ -3,8 +3,9 @@
     <form>
       <label>
         Código de desconto:
-        <input type="text" v-model="discountCode" @input="applyDiscount" class="discount"/>
+        <input type="text" v-model="discountCode" class="discount"/>
       </label>
+      <button @click.prevent="applyDiscount">Aplicar</button>
     </form>
     <p v-if="discountApplied">Desconto aplicado: R$ {{ discountAmount.toFixed(2).replace('.', ',') }}</p>
   </div>
@@ -28,15 +29,26 @@ export default {
   },
   methods: {
     applyDiscount() {
+      if (this.discountCode === '') {
+        alert('Digite um código de desconto antes de continuar.')
+        return
+      }
+
       let usedDiscountCodes = JSON.parse(localStorage.getItem('usedDiscountCodes')) || []
       if (usedDiscountCodes.includes(this.discountCode)) {
         alert('Este código já foi usado.')
-        return this.discountCode = ''
+        return
       }
-      if (this.discountAmount > 0) {
-        usedDiscountCodes.push(this.discountCode)
-        localStorage.setItem('usedDiscountCodes', JSON.stringify(usedDiscountCodes))
+
+      if (this.discountAmount === 0) {
+        alert('Código de desconto inválido.')
+        this.discountCode = ''
+        return
       }
+
+      usedDiscountCodes.push(this.discountCode)
+      localStorage.setItem('usedDiscountCodes', JSON.stringify(usedDiscountCodes))
+      this.discountCode = ''
     }
   }
 }

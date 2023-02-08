@@ -105,16 +105,16 @@ export default {
         checkout: "",
         guests: "",
       },
-      selectedCard: '',
+      selectedCard: {},
       totalAditionalServices: 0
     };
   },
   methods: {
     updateData(data) {
-      this.formData = data;
+      this.formData = data
     },
     updateSelectedCard(card) {
-      this.selectedCard = card;
+      this.selectedCard = card
     },
     handleTotalAditionalServices(totalAditionalServices) {
       this.totalAditionalServices = totalAditionalServices + this.totalReserve
@@ -123,24 +123,18 @@ export default {
   computed: {
     totalDays() {
       if (this.formData.checkin && this.formData.checkout) {
-        const checkin = new Date(this.formData.checkin);
-        const checkout = new Date(this.formData.checkout);
-        const differenceInTime = checkout.getTime() - checkin.getTime();
-        return Math.ceil(differenceInTime / (1000 * 3600 * 24));
+        const checkin = new Date(this.formData.checkin)
+        const checkout = new Date(this.formData.checkout)
+        const differenceInTime = checkout.getTime() - checkin.getTime()
+        return Math.ceil(differenceInTime / (1000 * 3600 * 24))
       }
-      return "";
+      return ""
     },
     totalReserve() {
       let price = parseFloat(this.selectedCard.price || 0)
       let totalDays = parseInt(this.totalDays || 0)
       let guests = parseInt(this.formData.guests || 0)
       return price * totalDays * guests || 0
-    },
-    sortedCards () {
-      if (this.selectedCard === '') {
-      return this.cards
-      }
-      return this.cards.sort((a, b) => a.bedroom === this.selectedCard ? -1 : 1)
     }
   }
 }
