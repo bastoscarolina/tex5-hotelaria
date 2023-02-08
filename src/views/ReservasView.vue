@@ -111,10 +111,10 @@ export default {
   },
   methods: {
     updateData(data) {
-      this.formData = data;
+      this.formData = data
     },
     updateSelectedCard(card) {
-      this.selectedCard = card;
+      this.selectedCard = card
     },
     handleTotalAditionalServices(totalAditionalServices) {
       this.totalAditionalServices = totalAditionalServices + this.totalReserve
@@ -123,12 +123,12 @@ export default {
   computed: {
     totalDays() {
       if (this.formData.checkin && this.formData.checkout) {
-        const checkin = new Date(this.formData.checkin);
-        const checkout = new Date(this.formData.checkout);
-        const differenceInTime = checkout.getTime() - checkin.getTime();
-        return Math.ceil(differenceInTime / (1000 * 3600 * 24));
+        const checkin = new Date(this.formData.checkin)
+        const checkout = new Date(this.formData.checkout)
+        const differenceInTime = checkout.getTime() - checkin.getTime()
+        return Math.ceil(differenceInTime / (1000 * 3600 * 24))
       }
-      return "";
+      return ""
     },
     totalReserve() {
       let price = parseFloat(this.selectedCard.price || 0)
