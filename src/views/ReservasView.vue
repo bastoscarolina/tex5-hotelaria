@@ -61,13 +61,18 @@
             <li v-if="selectedCard.price" class="resume__listItem">
               Valor do quarto: R$ {{ (selectedCard.price).toFixed(2).replace('.', ',') }}
             </li>
+            <li class="resume__listItem">
+              Valor da hospedagem: R$ {{ (totalReserve).toFixed(2).replace('.', ',') }}
+            </li>
           </ul>
+          
           
           <AditionalServicesModal @totalAditionalServices="handleTotalAditionalServices"/>
           
+          <DiscountCode />
+          
           <ul class="resume__total">
-            <li class="resume__listItem">Valor da hospedagem: R$ {{ (totalReserve).toFixed(2).replace('.', ',') }}</li>
-            <li class="resume__listItem">Valor total: R$ {{ totalAditionalServices }}</li>
+            <li class="resume__listItem">Valor total: R$ {{ (totalAditionalServices).toFixed(2).replace('.', ',') }}</li>
           </ul>
 
           <button class="resume__continue" id="btnContinue">Continuar</button>
@@ -82,6 +87,7 @@ import HeroComponent from "@/components/HeroComponent.vue";
 import FormReserva from "@/components/FormReserva.vue";
 import CardRoomComponent from "@/components/CardRoomComponent.vue";
 import AditionalServicesModal from "@/components/AditionalServicesModal.vue";
+import DiscountCode from "@/components/DiscountCode.vue";
 
 export default {
   name: "ReservasView",
@@ -89,7 +95,8 @@ export default {
     HeroComponent,
     FormReserva,
     CardRoomComponent,
-    AditionalServicesModal
+    AditionalServicesModal, 
+    DiscountCode
   },
   data() {
     return {
