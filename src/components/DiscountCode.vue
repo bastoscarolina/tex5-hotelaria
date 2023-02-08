@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     discountAmount() { 
-      return this.discountCode === 'DESCONTO10' ? this.$parent.totalAditionalServices * 0.1 : 0
+      return this.discountCode === 'DESCON10' ? this.$parent.totalAditionalServices * 0.1 : 0
     },
     discountApplied() {
       return this.discountAmount > 0
@@ -28,7 +28,15 @@ export default {
   },
   methods: {
     applyDiscount() {
-
+      let usedDiscountCodes = JSON.parse(localStorage.getItem('usedDiscountCodes')) || []
+      if (usedDiscountCodes.includes(this.discountCode)) {
+        alert('Este código já foi usado.')
+        return this.discountCode = ''
+      }
+      if (this.discountAmount > 0) {
+        usedDiscountCodes.push(this.discountCode)
+        localStorage.setItem('usedDiscountCodes', JSON.stringify(usedDiscountCodes))
+      }
     }
   }
 }

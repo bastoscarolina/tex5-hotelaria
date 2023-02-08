@@ -105,7 +105,7 @@ export default {
         checkout: "",
         guests: "",
       },
-      selectedCard: {},
+      selectedCard: '',
       totalAditionalServices: 0
     };
   },
@@ -135,6 +135,12 @@ export default {
       let totalDays = parseInt(this.totalDays || 0)
       let guests = parseInt(this.formData.guests || 0)
       return price * totalDays * guests || 0
+    },
+    sortedCards () {
+      if (this.selectedCard === '') {
+      return this.cards
+      }
+      return this.cards.sort((a, b) => a.bedroom === this.selectedCard ? -1 : 1)
     }
   }
 }
