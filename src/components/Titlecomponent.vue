@@ -29,7 +29,7 @@
     min-height: 100vh;
     width: 100%;
     color: #415a77;
-    background-color: #0c1926;
+    background-image: url(../assets/images/banner1.jpeg);
   }
   .reservaHero h1 {
     font-size: 3.2rem;

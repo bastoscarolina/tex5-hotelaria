@@ -78,4 +78,122 @@ export default {
 }
 </script>
 <style>
+.main {
+    width: 100%;
+    height: 71vh;
+    background: black;
+}
+
+/*form*/
+.contato {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.informacao_de_contato {
+    width: 50%;
+    margin: 50px 50px 50px 0;
+    align-items: center;
+    border: 1px solid blue;
+    box-shadow: 7px 9px 3px green;
+    color: #999;
+} 
+.informacao_de_contato legend {
+        text-align: center;
+}
+
+
+.info {
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15% 5%;
+}
+
+.contato ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.informacao_de_contato ul li{
+            width: 100%;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #999;
+            text-transform: uppercase;
+}
+
+.informacao_de_contato input {
+        width: 90%;
+        margin-top: 10px;
+        padding: 20px 0;
+        height: 30px;
+        background-color: #fff;
+        border: none;
+        text-indent: 1rem;
+    }
+.informacao_de_contato label {
+        font-size: 15px;
+        display: flex;
+    }
+
+
+.select {
+    width: 40%;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: none;
+    text-indent: 1rem;
+    color: gray;
+}
+
+.titulo_da_secao {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nome, .email, .telefone, .assunto, .mensage {
+    margin: 1rem 0 0 1rem;
+}
+
+.textarea {
+    width: 80%;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    resize:none;
+}
+
+.informacao_de_contato button {
+        border: none;
+        background-color: #ffff;
+        color: #999;
+        margin: 1rem;
+        padding: .7rem;
+        cursor: pointer;
+        transition: .5s;
+        border-radius: 5px;
+}
+.informacao_de_contato:hover {
+            opacity: .9;
+            transition: .5s;
+        }
+
+.informacao_de_contato textarea:focus, input:focus, select:focus {
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    } 
+
 </style>

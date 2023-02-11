@@ -1,8 +1,5 @@
-<template>
-  <Titlecomponent>
-    <h3>{{ titleReservas }}</h3>
-    <h1>{{ subtitleReservas }}</h1>
-  </Titlecomponent>
+ <template>
+ 
   <section id="reload" class="sobre__nos">
       <h1>Um pouco sobre nosso querido hotel</h1>
       <h3>"Aconchego, conforto, simpatia e alto astral"</h3>
@@ -57,15 +54,76 @@
 </template>
 
 <script>
-import Titlecomponent from "@/components/Titlecomponent.vue";
 
-
-export default {
-  name: "InicioView",
-  components: {
-    Titlecomponent
-  }
-}
 </script>
 <style>
+.sobre__nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(../assets/images/banner2.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  color: black;
+}
+.sobre__nos h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: black;
+  }
+.sobre__nos h3 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    color: black;
+  }
+
+.lugares__hotel {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.lugares__titulo {
+  font-size: 2rem;
+  margin: 45px 0 35px 0;
+  color: #0c1926;
+  text-align: center;
+}
+
+.lugares__paragrafo {
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  color:#999;
+  text-align: center;
+}
+
+.lugares__divisor {
+  width: 500px;
+  height: 2px;
+  background-color:#999;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.lugares__gridImagens {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 45%;
+  height: 300px;
+  box-shadow: 8px 8px 10px #999;
+  margin: 1rem;
+  border-radius: 5px;
+}
 </style>
