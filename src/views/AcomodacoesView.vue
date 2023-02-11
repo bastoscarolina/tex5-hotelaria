@@ -140,4 +140,48 @@ export default {
 }
 </script>
 <style>
+.principal{
+    color: black;
+    background: #005500;
+    margin-top: 11vh;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.principal h2{
+        color: crimson;
+        font-size: 1.5rem;
+        padding-top:1rem;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container article {
+    width: 25%;
+    margin: 1rem;
+    }
+
+
+.produto_destaque{
+    border:2px solid black;
+    margin: 1rem;
+}
+
+.produto_destaque p {
+   width: 60%;
+   text-align: justify;
+    margin: 1rem auto;
+ }
+.produto_destaque .quarto_destaque{
+    width: 60%;
+ }
+
+.produto_destaque figcaption{
+     margin: 1rem;
+ }
 </style>

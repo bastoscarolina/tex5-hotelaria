@@ -29,7 +29,7 @@ export default {
   min-height: 100vh;
   width: 100%;
   color: #415a77;
-  background-color: #0c1926;
+  background-image: url(../assets/images/banner2.jpeg);
 }
 .reservaHero h1 {
   font-size: 3.2rem;
@@ -47,5 +47,6 @@ export default {
   color: #0c1926;
   padding: 20px 50px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 </style>
