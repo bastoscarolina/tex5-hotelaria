@@ -20,6 +20,7 @@ export default {
     }
   },
   computed: {
+
     discountAmount() { 
       return this.discountCode === 'DESCON10' ? this.$parent.totalAditionalServices * 0.1 : 0
     },

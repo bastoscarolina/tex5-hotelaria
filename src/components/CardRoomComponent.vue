@@ -1,50 +1,84 @@
 <template>
-  <article class="roomOptions__room">
-    <img :src="image" class="roomOptions__roomImagem"/>
-      <h3 class="roomOptions__roomTitle">{{ bedroom }}</h3>
-      <p class="roomOptions__roomDescription">{{ description }}</p>
-      <label :for="bedroom" class="roomOptions__roomPrice">{{ `R$ ${price}` }}</label>
-      <div class="roomOptions__selectRoom">
-        <input class="form-check-input" type="radio" :name="card" :id="bedroom" :value="card" v-model="selectedCard" @change="updateSelectedCard"/>
-        <label class="form-check-label">{{ bedroom }}</label>
-      </div>
-  </article>
+  <div class="roomOptions__room">
+    <h3 class="roomOptions__paragraph">Escolha seu quarto</h3>
+    <p>{{ item }}</p>
+    <div v-for="quartos in quartosHotel" :key="quartos">
+      <br />
+      <p class="roomOptions__roomTitle">
+        {{ quartos.title }}
+      </p>
+      <img :src="quartos.img" title="Quartos Hotel"
+      class="roomOptions__roomImagem" />
+
+      <p class="roomOptions__roomDescription">
+        {{quartos.description}}
+      </p>
+      
+      <p class="roomOptions__roomPrice">
+        R$ {{quartos.preco }}
+      </p>
+      
+      <input class="roomOptions__selectRoom reserva"
+            type="radio"
+            :id="quartos.id" 
+            :value="quartos.id"
+            name="quarto"
+            @change="dadosHotel(
+              quartos
+            )"
+      />
+      <label class="roomOptions__selectRoom">Selecione o quarto {{ quartos.title }}</label>
+    </div>
+
+  </div>
 </template>
 
 <script>
 export default {
-  props: ['bedroom', 'image', 'description', 'price'],
-  data() {
+  
+  name: "CardRoomComponent",
+  el: "quartos.id",
+  data () {
     return {
-      card: {
-        bedroom: this.bedroom,
-        price: parseFloat(this.price)
-      }
+
     }
   },
+  computed: {
+    quartosHotel(){
+      return this.$store.getters.quartosHotel;
+    },
+  },
+
   methods: {
-    updateSelectedCard() {
-      this.$emit('update:selectedCard', this.card)
+    dadosHotel: function(title) {
+      this.$store.commit('updateAcomodacao', title)
     }
-  }
+  },
+
 }
 </script>
 
 <style>
+
 .roomOptions__room {
   background-color: #fff;
   border: 1px solid #415a77;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
   border-radius: 5px;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.07);
+  width: 50%;
 }
 
 .roomOptions__roomImagem {
   padding: 0 0 2rem 0;
-  width: 100%;
+  width: 80%;
 }
 
 .roomOptions__roomTitle {
+  font-size: 1.5rem;
   padding: 0 0 1rem 1rem;
   color: #0c1926;
   font-weight: 600;
@@ -53,6 +87,7 @@ export default {
 .roomOptions__roomDescription {
   text-align: justify;
   padding: 0 1rem 1.7rem 1rem;
+  width: 80%;
 }
 
 .roomOptions__roomPrice {
@@ -68,9 +103,15 @@ export default {
 
 .roomOptions__selectRoom {
   padding: 1rem;
+  margin-top: 1.5rem;
 }
 
-.roomOptions__selectRoom label {
-  padding-left: 0.5rem;
+.roomOptions__paragraph {
+  position: relative;
+  color: #0c1926;
+  font-size: 2rem;
+  margin: 45px 0 5px 0;
+  text-align: left;
 }
+
 </style>

@@ -10,38 +10,68 @@
     <form class="form__date">
       <div>
         <label class="field-form-reserva">Escolha a data de entrada</label>
-        <input type="date" v-model="checkin" class="form-control" @input="updateData">
+        <input type="date" :value="dadosReserva.checkin" class="form-control" @input="updateDataCheckin"
+          @change="diarias()">
       </div>
       <div>
         <label class="field-form-reserva">Escolha a data de saída</label>
-        <input type="date" v-model="checkout" class="form-control" @input="updateData">
+        <input type="date" :value="dadosReserva.checkout" class="form-control" @input="updateDataCheckout"
+          @change="diarias()">
       </div>
       <div>
         <label class="field-form-reserva">Quantidade de pessoas</label>
-        <input type="number" v-model="guests" min="1" class="form-control" @input="updateData">
+        <input type="number" :value="dadosReserva.pessoas" min="1" max="10" class="form-control"
+          @input="updatePessoas">
       </div>
     </form>
   </section>
 </template>
 
 <script>
+import store from '@/store';
+
 export default {
   name: 'FormReserva',
   data() {
     return {
-      checkin: '',
-      checkout: '',
-      guests: ''
+
+    }
+  },
+  computed: {
+    dadosReserva() {
+      return store.state.dadosReserva;
     }
   },
   methods: {
-    updateData() {
-      this.$emit('update:data', {
-        checkin: this.checkin,
-        checkout: this.checkout,
-        guests: this.guests
-      })
-    }
+    updateDataCheckin(e) {
+      this.$store.commit('updateDataCheckin', e.target.value);
+    },
+
+    updateDataCheckout(e) {
+      this.$store.commit('updateDataCheckout', e.target.value);
+    },
+
+    updatePessoas(e) {
+      this.$store.commit('updatePessoas', e.target.value);
+    },
+
+    diarias: function () {
+      if (
+        this.$store.getters.agendarDiaria.checkout &&
+        this.$store.getters.agendarDiaria.checkin
+        ) {
+        const diarias = this.$store.getters.agendarDiaria.checkout
+          ? Number(
+            this.$store.getters.agendarDiaria.checkout.slice(8)
+          ) -
+          Number(
+            this.$store.getters.agendarDiaria.checkin.slice(8)
+          )
+          : ''
+        this.$store.commit('updateDiarias', diarias)
+      }
+    },
+
   }
 }
 </script>
@@ -50,7 +80,7 @@ export default {
 .form__title {
   color: #0c1926;
   font-size: 2rem;
-  margin: 45px 0 35px 0;
+  margin: 45px 0 0px 0;
   text-align: center;
 }
 
@@ -62,7 +92,7 @@ export default {
 }
 
 .divider {
-  width: 200px;
+  width: 100px;
   height: 2px;
   background-color: #0c1926;
   margin: 0 auto;
