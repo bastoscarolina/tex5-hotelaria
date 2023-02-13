@@ -4,63 +4,47 @@
     <div v-if="showModal" @click="showModal = false">
       <div class="modal-content" @click.stop>
         <ul>
-          <li v-for="(item, index) in items" :key="index">
-            <input type="checkbox" v-model="item.selected"/>
-            {{ item.name }} - R$ {{ (item.price).toFixed(2).replace('.', ',') }}
+          <li v-for="item in servicosAdicionais" :key="item">
+            <input type="checkbox" v-model="item.selected" :id="item.id" :value="item.id" name="adicional" @change="updateTotalAdicionais(
+              totalAditionalServices 
+            )" />
+            {{ item.name }} - R$ {{ item.price }}
           </li>
         </ul>
         <button @click="showModal = false">Fechar</button>
       </div>
     </div>
-    <div v-if="selectedItems.length > 0">
-      <h2 class="resume__titleAddServices">
-        Serviços adicionais:
-      </h2>
-      <ul>
-        <li v-for="(item, index) in selectedItems" :key="index" class="resume__listItem">
-          {{ item.name }}: R$ {{ (item.price).toFixed(2).replace('.', ',') }}
-        </li>
-        <li class="resume__listItem">
-          Total serviços adicionais: R$ {{ totalAditionalServices.toFixed(2).replace('.', ',') }}
-        </li>
-      </ul>
-    </div>
   </div>
 </template>
 
 <script>
+import store from '@/store';
+
 export default {
   name: 'AditionalServicesModal',
   data() {
     return {
       showModal: false,
-      items: [
-        { name: 'Café da manhã', price: 35, selected: false },
-        { name: 'Cofre', price: 30, selected: false },
-        { name: 'Massagem', price: 120, selected: false },
-        { name: 'SPA', price: 280, selected: false },
-        { name: 'Translado', price: 110, selected: false }
-      ]
     }
   },
   computed: {
+    servicosAdicionais() {
+      return store.state.servicosAdicionais;
+    },
     selectedItems() {
-      return this.items.filter(item => item.selected)
+      return this.servicosAdicionais.filter(item => item.selected)
     },
     totalAditionalServices() {
       return this.selectedItems.reduce((acc, item) => acc + item.price, 0)
     }
+
   },
   methods: {
-    emitTotalAditionalServices() {
-      this.$emit('totalAditionalServices', this.totalAditionalServices)
-    }
+    updateTotalAdicionais: function (preco) {
+      this.$store.commit('updateTotalAdicionais', preco)
+    },
   },
-  watch: {
-    totalAditionalServices() {
-      this.emitTotalAditionalServices()
-    }
-  }
+
 }
 </script>
 
