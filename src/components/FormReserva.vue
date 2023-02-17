@@ -11,7 +11,7 @@
       <div>
         <label class="field-form-reserva">Escolha a data de entrada</label>
         <input type="date" :value="dadosReserva.checkin" class="form-control" @input="updateDataCheckin"
-          @change="diarias()">
+          @change="diarias()" >
       </div>
       <div>
         <label class="field-form-reserva">Escolha a data de saída</label>

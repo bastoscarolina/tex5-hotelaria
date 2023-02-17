@@ -22,6 +22,7 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {

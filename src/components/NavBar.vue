@@ -2,7 +2,9 @@
   <header>
       <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo">T.EXperience Hotel</div>
+        <div class="logo">
+          <img src="../assets/images/svg/texhotel_logo2.svg" />
+        </div>
         <!-- NAVEGAÇÃO MENU -->
         <ul class="nav__links">
           <!-- CHECKBOX HACK -->
@@ -53,7 +55,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding-left: 2rem;
   background-color: #415a77;
   width: 100%;
   color: #fff;
@@ -72,7 +74,7 @@ a:hover {
 
 /* LOGO */
 .logo {
-  font-size: 32px;
+  width: 8.5%;
 }
 
 /* NAVBAR MENU */
@@ -101,7 +103,7 @@ a:hover {
   padding: 1em 0;
   position: absolute; /*COM RELAÇÃO AOS PAIS*/
   display: none;
-  margin-right: 40px;
+  margin-right: 10px;
   border-radius: 8px;
   top: 30px;
 }
