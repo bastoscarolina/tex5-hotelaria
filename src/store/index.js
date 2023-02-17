@@ -63,6 +63,7 @@ export default createStore({
       valorTotal: '',
       totalAdicionais: '',
       totalResAd: '',
+      valorDesconto: '',
     },
 
   },
@@ -143,7 +144,11 @@ export default createStore({
 
     updateTotalResAd (state, totalResAd) {
       state.dadosReserva.totalResAd = totalResAd;
-    }
+    },
+
+    updateValorDesconto (state, addDesconto) {
+      state.dadosReserva.valorDesconto = addDesconto;
+    },
 
   },
   actions: {

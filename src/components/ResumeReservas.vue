@@ -6,7 +6,7 @@
 
                 <h2 class="resume__title">Resumo da reserva</h2>
                 <ul class="resume__l">
-                    <li class="resume__listItem">
+                    <li class="resume__listItem" >
                         Data de Entrada: {{ dadosReserva.checkin }}
                     </li>
                     <li class="resume__listItem">
@@ -43,7 +43,6 @@
                     </li>
                 </ul>
 
-                <!-- <button class="resume__continue" id="btnContinue">Continuar</button> -->
                 <ResumeContinueModal />
             </div>
         </aside>
@@ -75,12 +74,6 @@ export default {
             const preco = this.$store.getters.agendarDiaria.acomodacao.preco ?? 0;
             const total = this.$store.getters.agendarDiaria.diarias * preco;
             this.$store.commit('updatePrecoTotal', total);
-        },
-
-        totalAdicionais() {
-            if (this.$store.getters.totalAdicionais.servicosAdicionais.price) {
-                console.log(this.$store.getters.totalAdicionais.servicosAdicionais.price)
-            }
         },
 
         handleTotalAditionalServices(totalAditionalServices) {

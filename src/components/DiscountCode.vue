@@ -2,8 +2,9 @@
   <div>
     <form>
       <label>
-        Código de desconto:
-        <input type="text" v-model="discountCode" class="discount"/>
+        <br />
+        Código de desconto: DESCON10
+        <input type="text" v-model="discountCode" class="discount" />
       </label>
       <button @click.prevent="applyDiscount">Aplicar</button>
     </form>
@@ -12,6 +13,8 @@
 </template>
 
 <script>
+import store from '@/store';
+
 export default {
   name: 'DiscountCode',
   data() {
@@ -20,9 +23,12 @@ export default {
     }
   },
   computed: {
+    dadosReserva() {
+      return store.state.dadosReserva;
+    },
 
-    discountAmount() { 
-      return this.discountCode === 'DESCON10' ? this.$parent.totalAditionalServices * 0.1 : 0
+    discountAmount() {
+      return this.discountCode === 'DESCON10' ? this.$store.getters.agendarDiaria.totalResAd * 0.1 : 0
     },
     discountApplied() {
       return this.discountAmount > 0
@@ -30,6 +36,7 @@ export default {
   },
   methods: {
     applyDiscount() {
+
       if (this.discountCode === '') {
         alert('Digite um código de desconto antes de continuar.')
         return
@@ -49,14 +56,26 @@ export default {
 
       usedDiscountCodes.push(this.discountCode)
       localStorage.setItem('usedDiscountCodes', JSON.stringify(usedDiscountCodes))
-      this.discountCode = ''
+      this.discountCode = '';
+
+    },
+
+    updateValorDesconto() {
+      if (this.applyDiscount == 0) {
+        const valorTotal = this.$store.getters.agendarDiaria.totalResAd ?? 0;
+        const addDesconto = this.discountAmount - valorTotal;
+
+        console.log(addDesconto);
+        this.$store.commit('updateValorDesconto', addDesconto);
+      }
     }
-  }
+
+  },
 }
+
 </script>
 
 <style scoped>
-
 input[type='text'] {
   padding: 10px 20px;
   margin: 20px 5px;
