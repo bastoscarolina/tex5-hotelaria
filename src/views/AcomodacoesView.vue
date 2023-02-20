@@ -1,187 +1,132 @@
 <template>
-  <Titlecomponent>
+  <HeroComponent>
     <h3>{{ titleReservas }}</h3>
     <h1>{{ subtitleReservas }}</h1>
-  </Titlecomponent>
-
-  <main class="principal">
-      <h2 class="text_acomodacao">Nossas Acomodações</h2>
-
-      <section class="container">
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_1.jpg"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_9.png"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_2.jpg"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_3.jpg"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_4.jpg"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_5.png"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_6.jpg"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_7.png"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-
-        <article>
-          <figure>
-            <img
-              src="../assets/images/quartos/quarto_8.png"
-              width="350"
-              alt="Lorem ipsum"
-            />
-          </figure>
-        </article>
-      </section>
-
-      <section>
-        <article class="produto_destaque">
-          <div class="texto">
-            <h2>Produto em Destaque</h2>
-            <p>
-              Aconchegante apartamento Superior Suíte Double de aproximadamente 35m²
-              com vista para o mar. Quarto com varanda,
-              cama de casal, Queen ou King Size, ar-condicionado, WI-FI, TV LED 50”, piscina privada, 
-              telefones, minibar, amenities, secador de cabelo, mesa de trabalho, cofre,
-              roupão, chinelo e muito mais.
-            </p>
-          </div>
-
-          <div class="imagem">
-            <figure>
-              <img
-                src="../assets/images/casal.jpg"
-                alt="Lorem ipsum"
-                class="quarto_destaque"
-              />
-              <figcaption>Superior Suíte Double</figcaption>
-            </figure>
-          </div>
-        </article>
-      </section>
+  </HeroComponent>
+  <container class="container">
+    <h2 class="acomodacao_title">Nossas Acomodações</h2>
+    <main class="acomodacao_container">
+      <CardRoomComponent
+        v-for="quartoHotel in quartosHotel"
+        :key="quartoHotel.id"
+        :img="quartoHotel.img"
+        :title="quartoHotel.title"
+        :description="quartoHotel.description"
+        :preco="quartoHotel.preco"
+        :clickEvent="() => handleClick(quartoHotel)"
+        :show-button="true"
+      />
     </main>
-    
+  </container>
 </template>
 
-
 <script>
-import Titlecomponent from "@/components/Titlecomponent.vue";
-
+import store from "@/store/index";
+import HeroComponent from "@/components/HeroComponent.vue";
+import CardRoomComponent from "@/components/CardRoomComponent.vue";
 
 export default {
-  name: "InicioView",
+  name: "AcomodacoesView",
   components: {
-    Titlecomponent
-  }
-}
-</script>
-<style>
-.principal{
-    color: black;
-    background: #005500;
-    margin-top: 11vh;
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.principal h2{
-        color: crimson;
-        font-size: 1.5rem;
-        padding-top:1rem;
-}
-.container{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.container article {
-    width: 25%;
-    margin: 1rem;
+    HeroComponent,
+    CardRoomComponent,
+  },
+  computed: {
+    quartosHotel() {
+      return [
+        {
+          id: 1,
+          img: require("@/assets/quartosParaReservar/quarto_1.jpg"),
+          title: "Suíte Executiva",
+          description:
+            "O apartamento possui uma sala com TV, mesa de refeição com 04 lugares sofá e mesa de trabalho. O quarto há uma cama de King Size. Vista mar.",
+          preco: 200,
+        },
+        {
+          id: 2,
+          img: require("@/assets/quartosParaReservar/quarto_2.jpg"),
+          title: "Suíte Master",
+          description:
+            "O apartamento possui uma decoração moderna e luxuosa, sendo composta por sala com TV e som, mesa de refeição com quatro cadeiras, sofá e mesa de trabalho. O quarto há 01 cama King Size. Vista mar.",
+          preco: 250,
+        },
+        {
+          id: 3,
+          img: require("@/assets/quartosParaReservar/quarto_3.jpg"),
+          title: "Suíte Presidencial",
+          description:
+            "Possui uma sala com TV e DVD, mesa com 04 lugares e refeições com 10 lugares, conjunto de sofá, bar com bancada, frigobar e lavabo. O quarto há 01 cama super King Size, TV e um sofá para leitura e o banheiro amplo com hidromassagem. Vista mar.",
+          preco: 350,
+        },
+        {
+          id: 4,
+          img: require("@/assets/quartosParaReservar/quarto_4.jpg"),
+          title: "Suíte Advanced",
+          description:
+            "Possui uma sala com TV e DVD, mesa com 04 lugares e refeições com 10 lugares, conjunto de sofá, bar com bancada, frigobar e lavabo. O quarto há 01 cama super King Size, TV e um sofá para leitura e o banheiro amplo com hidromassagem. Vista mar.",
+          preco: 150,
+        },
+        {
+          id: 5,
+          img: require("@/assets/quartosParaReservar/quarto_5.png"),
+          title: "Suíte Standard",
+          description:
+            "Possui uma sala com TV e DVD, mesa com 04 lugares e refeições com 10 lugares, conjunto de sofá, bar com bancada, frigobar e lavabo. O quarto há 01 cama super King Size, TV e um sofá para leitura e o banheiro amplo com hidromassagem. Vista mar.",
+          preco: 350,
+        },
+        {
+          id: 6,
+          img: require("@/assets/quartosParaReservar/quarto_6.jpg"),
+          title: "Suíte Junior",
+          description:
+            "Possui uma sala com TV e DVD, mesa com 04 lugares e refeições com 10 lugares, conjunto de sofá, bar com bancada, frigobar e lavabo. O quarto há 01 cama super King Size, TV e um sofá para leitura e o banheiro amplo com hidromassagem. Vista mar.",
+          preco: 450,
+        }
+      ];
+    },
+  },
+  methods: {
+    handleClick(quartoHotel) {
+      store.commit('updateCards', quartoHotel)
+      this.$router.push('/reservas')
     }
+  }
+};
+</script>
 
-
-.produto_destaque{
-    border:2px solid black;
-    margin: 1rem;
+<style scoped>
+.container {
+	color: #25334a;
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.4'%3E%3Cpath fill='%23ccfcff' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%2399f8ff' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%2366f5ff' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%2333f1ff' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%2300EEFF' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%2300f1ff' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%2300f5ff' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%2300f8ff' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%2300fcff' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%2300FFFF' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
-.produto_destaque p {
-   width: 60%;
-   text-align: justify;
-    margin: 1rem auto;
- }
-.produto_destaque .quarto_destaque{
-    width: 60%;
- }
+.acomodacao_title {
+  color: #0c1926;
+  font-size: 2rem;
+  margin: 45px 0 35px 0;
+  text-align: center;
+}
 
-.produto_destaque figcaption{
-     margin: 1rem;
- }
+
+.acomodacao_container {
+	width: 80%;
+  margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.acomodacao_container article {
+  width: 30%;
+}
+
 </style>

@@ -10,70 +10,73 @@
     <form class="form__date">
       <div>
         <label class="field-form-reserva">Escolha a data de entrada</label>
-        <input type="date" :value="dadosReserva.checkin" class="form-control" @input="updateDataCheckin"
-          @change="diarias()">
+        <input
+          type="date"
+          :value="dadosReserva.checkin"
+          class="form-control"
+          @input="updateDataCheckin"
+          @change="diarias()"
+        />
       </div>
       <div>
         <label class="field-form-reserva">Escolha a data de saída</label>
-        <input type="date" :value="dadosReserva.checkout" class="form-control" @input="updateDataCheckout"
-          @change="diarias()">
+        <input
+          type="date"
+          :value="dadosReserva.checkout"
+          class="form-control"
+          @input="updateDataCheckout"
+          @change="diarias()"
+        />
       </div>
       <div>
         <label class="field-form-reserva">Quantidade de pessoas</label>
-        <input type="number" :value="dadosReserva.pessoas" min="1" max="10" class="form-control"
-          @input="updatePessoas">
+        <input
+          type="number"
+          :value="dadosReserva.pessoas"
+          min="1"
+          max="10"
+          class="form-control"
+          @input="updatePessoas"
+        />
       </div>
     </form>
   </section>
 </template>
 
 <script>
-import store from '@/store';
+import store from "@/store";
 
 export default {
-  name: 'FormReserva',
-  data() {
-    return {
-
-    }
-  },
+  name: "FormReserva",
   computed: {
     dadosReserva() {
       return store.state.dadosReserva;
-    }
+    },
   },
   methods: {
     updateDataCheckin(e) {
-      this.$store.commit('updateDataCheckin', e.target.value);
+      this.$store.commit("updateDataCheckin", e.target.value);
     },
-
     updateDataCheckout(e) {
-      this.$store.commit('updateDataCheckout', e.target.value);
+      this.$store.commit("updateDataCheckout", e.target.value);
     },
-
     updatePessoas(e) {
-      this.$store.commit('updatePessoas', e.target.value);
+      this.$store.commit("updatePessoas", e.target.value);
     },
-
     diarias: function () {
       if (
         this.$store.getters.agendarDiaria.checkout &&
         this.$store.getters.agendarDiaria.checkin
-        ) {
+      ) {
         const diarias = this.$store.getters.agendarDiaria.checkout
-          ? Number(
-            this.$store.getters.agendarDiaria.checkout.slice(8)
-          ) -
-          Number(
-            this.$store.getters.agendarDiaria.checkin.slice(8)
-          )
-          : ''
-        this.$store.commit('updateDiarias', diarias)
+          ? Number(this.$store.getters.agendarDiaria.checkout.slice(8)) -
+            Number(this.$store.getters.agendarDiaria.checkin.slice(8))
+          : "";
+        this.$store.commit("updateDiarias", diarias);
       }
     },
-
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
